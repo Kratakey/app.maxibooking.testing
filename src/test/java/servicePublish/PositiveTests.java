@@ -3,7 +3,7 @@ package servicePublish;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pageObjects.Variables;
+import pageObjects.LogIn;
 import pageObjects.ServicePublish;
 
 
@@ -11,26 +11,28 @@ public class PositiveTests extends setup.TestBase {
 
 
     ServicePublish act = new ServicePublish();
-    Variables get = new Variables();
+    LogIn log = new LogIn();
 
     @Test
     @Feature("Service Publish")
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic Positive Service Registration service location: Online")
+    @DisplayName("Basic Positive Service Registration, service location: Online")
     void basicPositiveServiceRegistrationOnline() {
 
-        act.openPage(get.url);
+        log.account1();
+
+        act.openPage(urlServicePublish);
 
         act.chooseCategory();
         act.chooseSubcategory();
         act.clickFirstStep();
 
-        act.enterServiceName(get.serviceName);
-        act.enterServiceDescription(get.serviceDescription);
-        act.setDuration(get.serviceDurationDays, get.serviceDurationHours, get.serviceDurationMinutes);
-        act.setPrice(get.servicePrice);
+        act.enterServiceName(serviceName);
+        act.enterServiceDescription(serviceDescription);
+        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
+        act.setPrice(servicePrice);
         act.scrollDown();
         act.selectServiceLocationOnline();
         act.clickSecondStep();
@@ -39,7 +41,7 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickFifthStep();
 
-        act.fillSpecialization(get.serviceSpecialization);
+        act.fillSpecialization(serviceSpecialization);
         act.clickSixthStep();
 
         act.fillSchedule();
@@ -48,7 +50,7 @@ public class PositiveTests extends setup.TestBase {
         act.selectOnlinePayment();
         act.clickSeventhStep();
 
-        act.checkPublishFormOnline(get.serviceName, get.servicePrice, get.serviceTotalDuration, get.serviceDescription);
+        act.checkPublishFormOnline(serviceName, servicePrice, serviceTotalDuration, serviceDescription);
     }
 
     @Test
@@ -56,19 +58,21 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic Positive Service Registration service location: Client's place")
+    @DisplayName("Basic Positive Service Registration, service location: Client's place")
     void basicPositiveServiceRegistrationClient() {
 
-        act.openPage(get.url);
+        log.account1();
+
+        act.openPage(urlServicePublish);
 
         act.chooseCategory();
         act.chooseSubcategory();
         act.clickFirstStep();
 
-        act.enterServiceName(get.serviceName);
-        act.enterServiceDescription(get.serviceDescription);
-        act.setDuration(get.serviceDurationDays, get.serviceDurationHours, get.serviceDurationMinutes);
-        act.setPrice(get.servicePrice);
+        act.enterServiceName(serviceName);
+        act.enterServiceDescription(serviceDescription);
+        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
+        act.setPrice(servicePrice);
         act.scrollDown();
         act.selectServiceLocationClient();
         act.clickSecondStep();
@@ -77,19 +81,19 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickFifthStep();
 
-        act.fillSpecialization(get.serviceSpecialization);
+        act.fillSpecialization(serviceSpecialization);
         act.clickSixthStep();
 
         act.fillSchedule();
         act.confirmInstantBooking();
-        act.fillServiceGeo(get.serviceCountry, get.serviceCity, get.serviceAddress);
-        act.fillServiceDistance(get.serviceDistance);
+        act.fillServiceGeo(serviceCountry, serviceCity, serviceAddress);
+        act.fillServiceDistance(serviceDistance);
         act.scrollDown2();
         act.selectPaymentByCash();
         act.selectOnlinePayment();
         act.clickSeventhStep();
 
-        act.checkPublishFormClient(get.serviceName, get.servicePrice, get.serviceTotalDuration, get.serviceDescription, get.serviceCountry, get.serviceCity, get.serviceAddress);
+        act.checkPublishFormClient(serviceName, servicePrice, serviceTotalDuration, serviceDescription, serviceCountry, serviceCity, serviceAddress);
     }
 
     @Test
@@ -97,19 +101,21 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic Positive Service Registration service location: Professional's place")
+    @DisplayName("Basic Positive Service Registration, service location: Professional's place")
     void basicPositiveServiceRegistrationMaster() {
 
-        act.openPage(get.url);
+        log.account1();
+
+        act.openPage(urlServicePublish);
 
         act.chooseCategory();
         act.chooseSubcategory();
         act.clickFirstStep();
 
-        act.enterServiceName(get.serviceName);
-        act.enterServiceDescription(get.serviceDescription);
-        act.setDuration(get.serviceDurationDays, get.serviceDurationHours, get.serviceDurationMinutes);
-        act.setPrice(get.servicePrice);
+        act.enterServiceName(serviceName);
+        act.enterServiceDescription(serviceDescription);
+        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
+        act.setPrice(servicePrice);
         act.scrollDown();
         act.selectServiceLocationMaster();
         act.clickSecondStep();
@@ -118,17 +124,59 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickFifthStep();
 
-        act.fillSpecialization(get.serviceSpecialization);
+        act.fillSpecialization(serviceSpecialization);
         act.clickSixthStep();
 
         act.fillSchedule();
         act.confirmInstantBooking();
-        act.fillServiceGeo(get.serviceCountry, get.serviceCity, get.serviceAddress);
+        act.fillServiceGeo(serviceCountry, serviceCity, serviceAddress);
         act.scrollDown2();
         act.selectPaymentByCash();
         act.selectOnlinePayment();
         act.clickSeventhStep();
 
-        act.checkPublishFormClient(get.serviceName, get.servicePrice, get.serviceTotalDuration, get.serviceDescription, get.serviceCountry, get.serviceCity, get.serviceAddress);
+        act.checkPublishFormClient(serviceName, servicePrice, serviceTotalDuration, serviceDescription, serviceCountry, serviceCity, serviceAddress);
+    }
+
+    @Test
+    @Feature("Service Publish")
+    @Owner("Egor Khlebnikov")
+    @Story("Minimal service publication")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Basic Positive Service Registration with no account, service location: Online")
+    void basicPositiveServiceRegistrationWithoutAccount() {
+
+        act.openPage(urlServicePublish);
+
+        act.chooseCategory();
+        act.chooseSubcategory();
+        act.clickFirstStep();
+
+        act.enterServiceName(serviceName);
+        act.enterServiceDescription(serviceDescription);
+        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
+        act.setPrice(servicePrice);
+        act.scrollDown();
+        act.selectServiceLocationOnline();
+        act.clickSecondStep();
+
+        act.clickThirdStep();
+
+        act.fillEmail(testUser3);
+        act.fillUserInfo(userFirstName, userLastName, testPassword3, userCountry, userCity);
+        act.clickFourthStep();
+
+        act.clickFifthStep();
+
+        act.fillSpecialization(serviceSpecialization);
+        act.clickSixthStep();
+
+        act.fillSchedule();
+        act.confirmInstantBooking();
+        act.selectPaymentByCash();
+        act.selectOnlinePayment();
+        act.clickSeventhStep();
+
+        act.checkPublishFormOnline(serviceName, servicePrice, serviceTotalDuration, serviceDescription);
     }
 }

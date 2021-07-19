@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class ServicePublish {
 
     @Step("Open the page")
-    public void openPage(String url) {
-        open(url);
+    public void openPage(String urlServicePublish) {
+        open(urlServicePublish);
     }
 
     @Step("Choose a category")
@@ -82,8 +82,33 @@ public class ServicePublish {
         $("ion-button[type='submit']", 2).click();
     }
 
+    public void fillEmail(String serviceEmail) {
+        $("app-service-publish-step-four").$("input",0).val(serviceEmail);
+    }
+
+    public void fillUserInfo(String userFirstName, String userLastName, String userPassword, String userCountry, String userCity) {
+        $("app-service-publish-step-four").$("input",1).val(userFirstName);
+        $("app-service-publish-step-four").$("input",2).val(userLastName);
+        $("app-service-publish-step-four").$("input",3).val(userPassword);
+        $("app-service-publish-step-four").$("input",4).val(userPassword);
+
+        $("app-service-publish-step-four").$("app-country-selector").$("button").click();
+        sleep(1000);
+        $("ionic-selectable-modal").$("input").sendKeys(userCountry);
+        sleep(500);
+        $("ionic-selectable-modal").$("ion-label", 0).click();
+
+        $("app-service-publish-step-four").$("app-city-selector").$("button").click();
+        sleep(1000);
+        $("ionic-selectable-modal").$("input").sendKeys(userCity);
+        sleep(500);
+        $("ionic-selectable-modal").$("ion-label", 0).click();
+    }
+
+    public void clickFourthStep() { $("app-service-publish-step-four").$("ion-button[type='submit']").click(); }
+
     public void clickFifthStep() {
-        $("ion-button[type='submit']", 3).click();
+        $("app-service-publish-step-five").$("ion-button[type='submit']").click();
     }
 
     @Step("Fill the specialization form")
@@ -92,7 +117,7 @@ public class ServicePublish {
     }
 
     public void clickSixthStep() {
-        $("ion-button[type='submit']", 4).click();
+        $("app-service-publish-step-six").$("ion-button[type='submit']").click();
     }
 
     @Step("Set a schedule")
@@ -119,15 +144,11 @@ public class ServicePublish {
     @Step("Fill a service geography")
     public void fillServiceGeo(String serviceCountry, String serviceCity, String serviceAddress) {
         $("app-service-publish-step-seven").$("form").$("ionic-selectable", 0).click();
-        sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(serviceCountry);
-        sleep(500);
         $("ionic-selectable-modal").$("ion-label").click();
 
         $("app-service-publish-step-seven").$("form").$("ionic-selectable", 1).click();
-        sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(serviceCity);
-        sleep(500);
         $("ionic-selectable-modal").$("ion-label").click();
 
         $("app-service-publish-step-seven").$("form").$("textarea").setValue(serviceAddress);
