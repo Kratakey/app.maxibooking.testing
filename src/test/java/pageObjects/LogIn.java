@@ -1,5 +1,9 @@
 package pageObjects;
 
+import org.junit.jupiter.api.Test;
+
+import static com.codeborne.selenide.Selectors.byClassName;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class LogIn extends setup.TestBase {
@@ -26,5 +30,20 @@ public class LogIn extends setup.TestBase {
         $("app-login").$("input", 1).setValue(testPassword3);
         $("ion-button[type='submit']").click();
         sleep(1000);
+    }
+    public void langRU() {
+        open(urlBase);
+        $(byClassName("flag-icon")).click();
+        $("app-flag-menu").$("ion-select").click();
+        $("ion-alert").$("button",1).click();
+        $(byText("OK")).click();
+    }
+
+    public void langEN() {
+        open(urlBase);
+        $(byClassName("flag-icon")).click();
+        $("app-flag-menu").$("ion-select").click();
+        $("ion-alert").$("button",0).click();
+        $(byText("OK")).click();
     }
 }

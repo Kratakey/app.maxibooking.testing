@@ -22,6 +22,7 @@ public class PositiveTests extends setup.TestBase {
     void basicPositiveServiceRegistrationOnline() {
 
         log.account1();
+        log.langEN();
 
         act.openPage(urlServicePublish);
 
@@ -62,6 +63,7 @@ public class PositiveTests extends setup.TestBase {
     void basicPositiveServiceRegistrationClient() {
 
         log.account1();
+        log.langEN();
 
         act.openPage(urlServicePublish);
 
@@ -105,6 +107,7 @@ public class PositiveTests extends setup.TestBase {
     void basicPositiveServiceRegistrationMaster() {
 
         log.account1();
+        log.langEN();
 
         act.openPage(urlServicePublish);
 
