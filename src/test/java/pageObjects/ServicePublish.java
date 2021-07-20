@@ -143,13 +143,17 @@ public class ServicePublish {
 
     @Step("Fill a service geography")
     public void fillServiceGeo(String serviceCountry, String serviceCity, String serviceAddress) {
-        $("app-service-publish-step-seven").$("form").$("ionic-selectable", 0).click();
+        $("app-country-selector").$("button").click();
+        sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(serviceCountry);
-        $("ionic-selectable-modal").$("ion-label").click();
+        sleep(500);
+        $("ionic-selectable-modal").$("ion-label", 0).click();
 
-        $("app-service-publish-step-seven").$("form").$("ionic-selectable", 1).click();
+        $("app-city-selector").$("button").click();
+        sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(serviceCity);
-        $("ionic-selectable-modal").$("ion-label").click();
+        sleep(500);
+        $("ionic-selectable-modal").$("ion-label", 0).click();
 
         $("app-service-publish-step-seven").$("form").$("textarea").setValue(serviceAddress);
     }

@@ -8,6 +8,14 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class LogIn extends setup.TestBase {
 
+    public void presetAcc1() {
+        open(urlLogin);
+        $("app-login").$("input", 0).setValue("SeleTest3@gg.gg");
+        $("app-login").$("input", 1).setValue("qazxcdew");
+        $("ion-button[type='submit']").click();
+        sleep(1000);
+    }
+
     public void account1() {
         open(urlLogin);
         $("app-login").$("input", 0).setValue(testUser1);
