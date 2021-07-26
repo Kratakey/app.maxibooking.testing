@@ -118,10 +118,14 @@ public class ServicePublish {
         $("ionic-selectable-modal").$("ion-label", 0).click();
     }
 
-    public void clickFourthStep() { $("app-service-publish-step-four").$("ion-button[type='submit']").click(); }
+    public void clickFourthStep() {
+        $("app-service-publish-step-four").$("ion-button[type='submit']").click();
+        sleep(200);
+    }
 
     public void clickFifthStep() {
         $("app-service-publish-step-five").$("ion-button[type='submit']").click();
+        sleep(200);
     }
 
     @Step("Fill the specialization form")
@@ -228,7 +232,7 @@ public class ServicePublish {
     @Step("Publish a service")
     public void publishService() {
         $("app-service-publish-final-step").$("ion-content").$("ion-button", 1).click();
-        sleep(2000);
+        sleep(3000);
     }
 
 

@@ -14,8 +14,8 @@ public class Booking {
 
     @Step("Click Search button")
     public void clickSearch() {
-        sleep(1000);
-        $("ion-icon[aria-label='search']").click();
+        $("app-main-menu").$(byText("Search")).click();
+        sleep(300);
     }
 
     @Step("Input search text and press Enter")
@@ -41,6 +41,19 @@ public class Booking {
         $("app-search-result").$("ion-card-content").$("app-price").shouldHave(text(ServicePrice));
         $("app-search-result").$("ion-card-content")
                 .shouldHave(text(ServiceAddress), text(ServiceCity), text(ServiceCountry));
+    }
+
+    @Step("Verify that the search result is correct")
+    public void verifyServiceSearchOnline(
+            String FirstName,
+            String LastName,
+            String Specialization,
+            String ServiceName,
+            String ServicePrice) {
+        $("app-search-result").$("ion-card-content").$("app-professional-card")
+                .shouldHave(text(FirstName), text(LastName), text(Specialization));
+        $("app-search-result").$("ion-card-content").$("app-service-link").shouldHave(text(ServiceName));
+        $("app-search-result").$("ion-card-content").$("app-price").shouldHave(text(ServicePrice));
     }
 
     @Step("Select a service")
@@ -93,7 +106,7 @@ public class Booking {
 
     @Step("Click the 'Date' button to book")
     public void clickDate() {
-        $("app-content-wrapper").$(byText("Date")).click();
+        $("ion-button").$(byText("Date")).click();
     }
 
     @Step("Select the next day")
