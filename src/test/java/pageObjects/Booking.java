@@ -106,7 +106,7 @@ public class Booking {
 
     @Step("Click the 'Date' button to book")
     public void clickDate() {
-        $("ion-button").$(byText("Date")).click();
+        $(byText("Date")).click();
     }
 
     @Step("Select the next day")
