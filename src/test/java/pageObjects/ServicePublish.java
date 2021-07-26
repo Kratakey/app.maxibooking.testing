@@ -3,13 +3,26 @@ package pageObjects;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class ServicePublish {
 
     @Step("Open the page")
-    public void openPage(String urlServicePublish) {
+    public void openPageUrl(String urlServicePublish) {
         open(urlServicePublish);
+    }
+
+    @Step("Open the page")
+    public void openPageEN() {
+        $("app-main-menu").$(byText("Service publication")).click();
+        sleep(300);
+    }
+
+    @Step("Open the page")
+    public void openPageRU() {
+        $("app-main-menu").$(byText("Публикация услуги")).click();
+        sleep(300);
     }
 
     @Step("Choose a category")
@@ -25,7 +38,7 @@ public class ServicePublish {
     }
 
     public void clickFirstStep() {
-        $("ion-button[type='submit']").click();
+        $("app-service-publish-step-one").$("ion-button[type='submit']").click();
     }
 
     @Step("Enter a service name")
@@ -56,7 +69,7 @@ public class ServicePublish {
         $("textarea").scrollIntoView(true);
     }
     public void scrollDown2() {
-        $("app-service-publish-step-seven").$("textarea").scrollIntoView(true);
+        $("app-service-publish-step-seven").$("ion-button[type='submit']").scrollIntoView(false);
     }
 
     @Step("Select a service location")
@@ -75,11 +88,11 @@ public class ServicePublish {
     }
 
     public void clickSecondStep() {
-        $("ion-button[type='submit']", 1).click();
+        $("app-service-publish-step-two").$("ion-button[type='submit']").click();
     }
 
     public void clickThirdStep() {
-        $("ion-button[type='submit']", 2).click();
+        $("app-service-publish-step-three").$("ion-button[type='submit']").click();
     }
 
     public void fillEmail(String serviceEmail) {
@@ -133,12 +146,32 @@ public class ServicePublish {
         $("app-timetable-add-time-popover").$("ion-label", 3).click();
         $("app-add-button").$("ion-label").click();
         $("app-timetable-add-time-popover").$("ion-label", 4).click();
+        $("app-add-button").$("ion-label").click();
+        $("app-timetable-add-time-popover").$("ion-label", 5).click();
+        $("app-add-button").$("ion-label").click();
+        $("app-timetable-add-time-popover").$("ion-label", 6).click();
         $("app-timetable").$("app-content-wrapper").$("ion-button[type='submit']").click();
+    }
+
+    @Step("Set a schedule")
+    public void fillScheduleLite() {
+        $("app-service-publish-step-seven").$("form").$("ion-icon").click();
+        sleep(300);
+        $("app-add-button").$("ion-label").click();
+        sleep(300);
+        $("app-timetable-add-time-popover").$("ion-label", 5).click();
+        sleep(300);
+        $("app-add-button").$("ion-label").click();
+        sleep(300);
+        $("app-timetable-add-time-popover").$("ion-label", 6).click();
+        sleep(1000);
+        $("app-timetable").$("ion-button[type='submit']").click();
+        sleep(300);
     }
 
     @Step("Confirm Instant Booking")
     public void confirmInstantBooking() {
-        $("app-service-publish-step-seven").$("form").$("ion-item", 2).click();
+        $("app-service-publish-step-seven").$("form").$("ion-item",9).click();
     }
 
     @Step("Fill a service geography")
@@ -159,17 +192,17 @@ public class ServicePublish {
     }
     @Step("Fill a service distance")
     public void fillServiceDistance(String serviceDistance) {
-        $("app-service-publish-step-seven").$("form").$("ion-row").$("input", 1).setValue(serviceDistance);
+        $("app-service-publish-step-seven").$("form").$("ion-input").$("input").setValue(serviceDistance);
     }
 
     @Step("Select payment by cash")
     public void selectPaymentByCash() {
-        $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 1).click();
+        $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 0).click();
     }
 
     @Step("Select online payment")
     public void selectOnlinePayment() {
-        $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 2).click();
+        $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 1).click();
     }
 
     public void clickSeventhStep() {
@@ -195,6 +228,7 @@ public class ServicePublish {
     @Step("Publish a service")
     public void publishService() {
         $("app-service-publish-final-step").$("ion-content").$("ion-button", 1).click();
+        sleep(2000);
     }
 
 

@@ -1,4 +1,4 @@
-package servicePublish;
+package aServicePublish;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
@@ -21,19 +21,20 @@ public class PositiveTests extends setup.TestBase {
     @DisplayName("Basic Positive Service Registration, service location: Online")
     void basicPositiveServiceRegistrationOnline() {
 
+        log.popupSelect();
         log.account1();
         log.langEN();
 
-        act.openPage(urlServicePublish);
+        act.openPageEN();
 
         act.chooseCategory();
         act.chooseSubcategory();
         act.clickFirstStep();
 
-        act.enterServiceName(serviceName);
-        act.enterServiceDescription(serviceDescription);
-        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
-        act.setPrice(servicePrice);
+        act.enterServiceName(service1Name);
+        act.enterServiceDescription(service1Description);
+        act.setDuration(service1DurationDays, service1DurationHours, service1DurationMinutes);
+        act.setPrice(service1Price);
         act.scrollDown();
         act.selectServiceLocationOnline();
         act.clickSecondStep();
@@ -42,16 +43,18 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickFifthStep();
 
-        act.fillSpecialization(serviceSpecialization);
+        act.fillSpecialization(service1Specialization);
         act.clickSixthStep();
 
-        act.fillSchedule();
+        act.fillScheduleLite();
         act.confirmInstantBooking();
+        act.scrollDown2();
         act.selectPaymentByCash();
         act.selectOnlinePayment();
         act.clickSeventhStep();
 
-        act.checkPublishFormOnline(serviceName, servicePrice, serviceTotalDuration, serviceDescription);
+        act.checkPublishFormOnline(service1Name, service1Price, service1TotalDuration, service1Description);
+        act.publishService();
     }
 
     @Test
@@ -62,19 +65,20 @@ public class PositiveTests extends setup.TestBase {
     @DisplayName("Basic Positive Service Registration, service location: Client's place")
     void basicPositiveServiceRegistrationClient() {
 
-        log.account1();
+        log.popupSelect();
+        log.account2();
         log.langEN();
 
-        act.openPage(urlServicePublish);
+        act.openPageEN();
 
         act.chooseCategory();
         act.chooseSubcategory();
         act.clickFirstStep();
 
-        act.enterServiceName(serviceName);
-        act.enterServiceDescription(serviceDescription);
-        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
-        act.setPrice(servicePrice);
+        act.enterServiceName(service2Name);
+        act.enterServiceDescription(service2Description);
+        act.setDuration(service2DurationDays, service2DurationHours, service2DurationMinutes);
+        act.setPrice(service2Price);
         act.scrollDown();
         act.selectServiceLocationClient();
         act.clickSecondStep();
@@ -83,19 +87,20 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickFifthStep();
 
-        act.fillSpecialization(serviceSpecialization);
+        act.fillSpecialization(service2Specialization);
         act.clickSixthStep();
 
-        act.fillSchedule();
+        act.fillScheduleLite();
         act.confirmInstantBooking();
-        act.fillServiceGeo(serviceCountry, serviceCity, serviceAddress);
-        act.fillServiceDistance(serviceDistance);
         act.scrollDown2();
+        act.fillServiceGeo(service2Country, service2City, service2Address);
+        act.fillServiceDistance(service2Distance);
         act.selectPaymentByCash();
         act.selectOnlinePayment();
         act.clickSeventhStep();
 
-        act.checkPublishFormClient(serviceName, servicePrice, serviceTotalDuration, serviceDescription, serviceCountry, serviceCity, serviceAddress);
+        act.checkPublishFormClient(service2Name, service2Price, service2TotalDuration, service2Description, service2Country, service2City, service2Address);
+        act.publishService();
     }
 
     @Test
@@ -106,19 +111,20 @@ public class PositiveTests extends setup.TestBase {
     @DisplayName("Basic Positive Service Registration, service location: Professional's place")
     void basicPositiveServiceRegistrationMaster() {
 
-        log.account1();
+        log.popupSelect();
+        log.account3();
         log.langEN();
 
-        act.openPage(urlServicePublish);
+        act.openPageEN();
 
         act.chooseCategory();
         act.chooseSubcategory();
         act.clickFirstStep();
 
-        act.enterServiceName(serviceName);
-        act.enterServiceDescription(serviceDescription);
-        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
-        act.setPrice(servicePrice);
+        act.enterServiceName(service3Name);
+        act.enterServiceDescription(service3Description);
+        act.setDuration(service3DurationDays, service3DurationHours, service3DurationMinutes);
+        act.setPrice(service3Price);
         act.scrollDown();
         act.selectServiceLocationMaster();
         act.clickSecondStep();
@@ -127,18 +133,19 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickFifthStep();
 
-        act.fillSpecialization(serviceSpecialization);
+        act.fillSpecialization(service3Specialization);
         act.clickSixthStep();
 
-        act.fillSchedule();
+        act.fillScheduleLite();
         act.confirmInstantBooking();
-        act.fillServiceGeo(serviceCountry, serviceCity, serviceAddress);
         act.scrollDown2();
+        act.fillServiceGeo(service3Country, service3City, service3Address);
         act.selectPaymentByCash();
         act.selectOnlinePayment();
         act.clickSeventhStep();
 
-        act.checkPublishFormClient(serviceName, servicePrice, serviceTotalDuration, serviceDescription, serviceCountry, serviceCity, serviceAddress);
+        act.checkPublishFormClient(service3Name, service3Price, service3TotalDuration, service3Description, service3Country, service3City, service3Address);
+        act.publishService();
     }
 
     @Test
@@ -148,38 +155,41 @@ public class PositiveTests extends setup.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic Positive Service Registration with no account, service location: Online")
     void basicPositiveServiceRegistrationWithoutAccount() {
+        log.popupSelect();
+        act.openPageEN();
 
-        act.openPage(urlServicePublish);
 
         act.chooseCategory();
         act.chooseSubcategory();
         act.clickFirstStep();
 
-        act.enterServiceName(serviceName);
-        act.enterServiceDescription(serviceDescription);
-        act.setDuration(serviceDurationDays, serviceDurationHours, serviceDurationMinutes);
-        act.setPrice(servicePrice);
+        act.enterServiceName(service4Name);
+        act.enterServiceDescription(service4Description);
+        act.setDuration(service4DurationDays, service4DurationHours, service4DurationMinutes);
+        act.setPrice(service4Price);
         act.scrollDown();
         act.selectServiceLocationOnline();
         act.clickSecondStep();
 
         act.clickThirdStep();
 
-        act.fillEmail(testUser3);
-        act.fillUserInfo(userFirstName, userLastName, testPassword3, userCountry, userCity);
+        act.fillEmail(testUser4);
+        act.fillUserInfo(user4FirstName, user4LastName, testPassword4, user4Country, user4City);
         act.clickFourthStep();
 
         act.clickFifthStep();
 
-        act.fillSpecialization(serviceSpecialization);
+        act.fillSpecialization(service4Specialization);
         act.clickSixthStep();
 
-        act.fillSchedule();
+        act.fillScheduleLite();
         act.confirmInstantBooking();
+        act.scrollDown2();
         act.selectPaymentByCash();
         act.selectOnlinePayment();
         act.clickSeventhStep();
 
-        act.checkPublishFormOnline(serviceName, servicePrice, serviceTotalDuration, serviceDescription);
+        act.checkPublishFormOnline(service4Name, service4Price, service4TotalDuration, service4Description);
+        act.publishService();
     }
 }

@@ -13,8 +13,18 @@ import static com.codeborne.selenide.Condition.text;
 public class Registration {
 
     @Step("Open the page")
-    public void openPage(String urlUserRegistration) {
+    public void openPageUrl(String urlUserRegistration) {
         open(urlUserRegistration);
+    }
+
+    @Step("Open the page")
+    public void openPageEN() {
+        $("app-main-menu").$(byText("Sign-up")).click();
+    }
+
+    @Step("Open the page")
+    public void openPageRU() {
+        $("app-main-menu").$(byText("Регистрация")).click();
     }
 
     @Step("Fill the first name")
@@ -40,7 +50,7 @@ public class Registration {
 
     @Step("Fill a phone number")
     public void fillPhoneNumber(String userPhoneNumber, String userCountry) {
-        $("input[name='ion-input-5']").setValue(userPhoneNumber);
+        $("app-phone-editor").$("input").setValue(userPhoneNumber);
         $("app-registration-form").$("button[type='button']").click();
         sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(userCountry);
@@ -68,7 +78,7 @@ public class Registration {
 
     @Step("Confirm")
     public void confirm() {
-        $("ion-button[type='submit']").click();
+        $("app-registration-form").$("ion-button[type='submit']").click();
     }
 
     @Step("Verify basic registration data")
