@@ -52,7 +52,6 @@ public class PositiveTests extends setup.TestBase {
         act.bookTime();
         act.clickForward();
         act.bookForMe();
-        act.chooseServiceLocation();
         act.placeOrder();
         act.verifyOrderDetails();
     }

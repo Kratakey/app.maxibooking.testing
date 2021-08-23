@@ -110,42 +110,42 @@ public class TestBase {
 
     public static void setTestData() {
         Faker generate = new Faker(new Locale("en-US"));
-        testUser1 = generate.name().username() + "@dd.dd";
-        testUser2 = generate.name().username() + "@dd.dd";
-        testUser3 = generate.name().username() + "@dd.dd";
-        testUser4 = generate.name().username() + "@dd.dd";
-        testUser5 = generate.name().username() + "@dd.dd";
+        testUser1 = generate.name().username() + "@uu.dd";
+        testUser2 = generate.name().username() + "@uu.dd";
+        testUser3 = generate.name().username() + "@uu.dd";
+        testUser4 = generate.name().username() + "@uu.dd";
+        testUser5 = generate.name().username() + "@uu.dd";
         testPassword1 = generate.internet().password();
         testPassword2 = generate.internet().password();
         testPassword3 = generate.internet().password();
         testPassword4 = generate.internet().password();
         testPassword5 = generate.internet().password();
 
-        user1FirstName = generate.name().firstName();
+        user1FirstName = generate.name().firstName() + generate.name().suffix();
         user1LastName = generate.name().lastName();
         user1PhoneNumber = "911" + generate.number().digits(7);
         user1Country = "Russia";
         user1City = "Moscow";
 
-        user2FirstName = generate.name().firstName();
+        user2FirstName = generate.name().firstName() + generate.name().suffix();
         user2LastName = generate.name().lastName();
         user2PhoneNumber = "911" + generate.number().digits(7);
         user2Country = "Russia";
         user2City = "Moscow";
 
-        user3FirstName = generate.name().firstName();
+        user3FirstName = generate.name().firstName() + generate.name().suffix();
         user3LastName = generate.name().lastName();
         user3PhoneNumber = "911" + generate.number().digits(7);
         user3Country = "Russia";
         user3City = "Moscow";
 
-        user4FirstName = generate.name().firstName();
+        user4FirstName = generate.name().firstName() + generate.name().suffix();
         user4LastName = generate.name().lastName();
         user4PhoneNumber = "911" + generate.number().digits(7);
         user4Country = "Russia";
         user4City = "Moscow";
 
-        user5FirstName = generate.name().firstName();
+        user5FirstName = generate.name().firstName() + generate.name().suffix();
         user5LastName = generate.name().lastName();
         user5PhoneNumber = "911" + generate.number().digits(7);
         user5Country = "Russia";
@@ -153,9 +153,9 @@ public class TestBase {
 
         service1Name = generate.name().title();
         service1Description = generate.lorem().characters(20, 2000);
-        service1DurationDays = String.valueOf(generate.number().numberBetween(0, 7));
-        service1DurationHours = String.valueOf(generate.number().numberBetween(0, 24));
-        service1DurationMinutes = String.valueOf(generate.number().numberBetween(0, 60));
+        service1DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
+        service1DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
+        service1DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service1Price = String.valueOf(generate.number().numberBetween(0, 999));
         service1Specialization = generate.job().title();
         service1Country = "Russia";
@@ -165,9 +165,9 @@ public class TestBase {
 
         service2Name = generate.name().title();
         service2Description = generate.lorem().characters(20, 2000);
-        service2DurationDays = String.valueOf(generate.number().numberBetween(0, 7));
-        service2DurationHours = String.valueOf(generate.number().numberBetween(0, 24));
-        service2DurationMinutes = String.valueOf(generate.number().numberBetween(0, 60));
+        service2DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
+        service2DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
+        service2DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service2Price = String.valueOf(generate.number().numberBetween(0, 999));
         service2Specialization = generate.job().title();
         service2Country = "Russia";
@@ -177,9 +177,9 @@ public class TestBase {
 
         service3Name = generate.name().title();
         service3Description = generate.lorem().characters(20, 2000);
-        service3DurationDays = String.valueOf(generate.number().numberBetween(0, 7));
-        service3DurationHours = String.valueOf(generate.number().numberBetween(0, 24));
-        service3DurationMinutes = String.valueOf(generate.number().numberBetween(0, 60));
+        service3DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
+        service3DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
+        service3DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service3Price = String.valueOf(generate.number().numberBetween(0, 999));
         service3Specialization = generate.job().title();
         service3Country = "Russia";
@@ -189,9 +189,9 @@ public class TestBase {
 
         service4Name = generate.name().title();
         service4Description = generate.lorem().characters(20, 2000);
-        service4DurationDays = String.valueOf(generate.number().numberBetween(0, 7));
-        service4DurationHours = String.valueOf(generate.number().numberBetween(0, 24));
-        service4DurationMinutes = String.valueOf(generate.number().numberBetween(0, 60));
+        service4DurationDays = String.valueOf(generate.number().numberBetween(0, 9));
+        service4DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
+        service4DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service4Price = String.valueOf(generate.number().numberBetween(0, 999));
         service4Specialization = generate.job().title();
         service4Country = "Russia";

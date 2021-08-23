@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 import pageObjects.LogIn;
 import pageObjects.ServicePublish;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 
 public class PositiveTests extends setup.TestBase {
 
