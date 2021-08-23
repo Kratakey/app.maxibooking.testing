@@ -16,7 +16,7 @@ public class PositiveTests extends setup.TestBase {
     LogIn log = new LogIn();
 
     @Test
-    void aLogIntoTheAccount() {
+    void LogIntoAccount() {
         log.popupSkip();
         log.account5();
 
