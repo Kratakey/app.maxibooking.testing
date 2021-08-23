@@ -15,7 +15,7 @@ public class ServicePublish {
 
     @Step("Open the page")
     public void openPageEN() {
-        $("app-main-menu").$(byText("Service publication")).click();
+        $("app-main-menu").$(byText("Publish new service")).click();
         sleep(300);
     }
 
@@ -27,14 +27,20 @@ public class ServicePublish {
 
     @Step("Choose a category")
     public void chooseCategory() {
+        sleep(500);
         $("ionic-selectable").click();
+        sleep(500);
         $("ionic-selectable-modal").$("ion-label").click();
+        sleep(500);
     }
 
     @Step("Choose a subcategory")
     public void chooseSubcategory() {
+        sleep(500);
         $("ionic-selectable", 1).click();
+        sleep(500);
         $("ionic-selectable-modal").$("ion-label").click();
+        sleep(500);
     }
 
     public void clickFirstStep() {
@@ -110,7 +116,7 @@ public class ServicePublish {
         $("ionic-selectable-modal").$("input").sendKeys(userCountry);
         sleep(500);
         $("ionic-selectable-modal").$("ion-label", 0).click();
-
+        sleep(1000);
         $("app-service-publish-step-four").$("app-city-selector").$("button").click();
         sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(userCity);

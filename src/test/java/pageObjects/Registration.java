@@ -19,7 +19,7 @@ public class Registration {
 
     @Step("Open the page")
     public void openPageEN() {
-        $("app-main-menu").$(byText("Sign-up")).click();
+        $("app-main-menu").$(byText("Sign up")).click();
     }
 
     @Step("Open the page")

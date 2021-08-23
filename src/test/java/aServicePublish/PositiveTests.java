@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import pageObjects.LogIn;
 import pageObjects.ServicePublish;
 
+import static com.codeborne.selenide.Selenide.sleep;
+
 
 public class PositiveTests extends setup.TestBase {
 
@@ -18,13 +20,14 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic Positive Service Registration, service location: Online")
-    void basicPositiveServiceRegistrationOnline() {
+    @DisplayName("Basic positive service publishing, service location: Online")
+    void basicPositiveServicePublishingOnline() {
 
-        log.popupSelect();
+        log.popupSkip();
         log.account1();
         log.langEN();
 
+        log.clickSideMenu();
         act.openPageEN();
 
         act.chooseCategory();
@@ -62,13 +65,14 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic Positive Service Registration, service location: Client's place")
-    void basicPositiveServiceRegistrationClient() {
+    @DisplayName("Basic positive service publishing, service location: Client's place")
+    void basicPositiveServicePublishingClient() {
 
-        log.popupSelect();
+        log.popupSkip();
         log.account2();
         log.langEN();
 
+        log.clickSideMenu();
         act.openPageEN();
 
         act.chooseCategory();
@@ -108,13 +112,14 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic Positive Service Registration, service location: Professional's place")
-    void basicPositiveServiceRegistrationMaster() {
+    @DisplayName("Basic positive service publishing, service location: Professional's place")
+    void basicPositiveServicePublishingMaster() {
 
-        log.popupSelect();
+        log.popupSkip();
         log.account3();
         log.langEN();
 
+        log.clickSideMenu();
         act.openPageEN();
 
         act.chooseCategory();
@@ -153,9 +158,11 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic Positive Service Registration with no account, service location: Online")
-    void basicPositiveServiceRegistrationWithoutAccount() {
-        log.popupSelect();
+    @DisplayName("Basic positive service publishing with no account, service location: Online")
+    void basicPositiveServicePublishingWithoutAccount() {
+
+        log.popupSkip();
+        log.clickSideMenu();
         act.openPageEN();
 
 

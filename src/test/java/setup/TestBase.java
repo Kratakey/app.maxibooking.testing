@@ -105,6 +105,7 @@ public class TestBase {
             urlLogin = urlBase + "/auth/login",
             urlLogOut = urlBase + "/auth/login?logout=",
             urlServicePublish = urlBase + "/service/publish",
+            urlOrders = urlBase + "/my-orders/inbox",
             urlUserRegistration = urlBase + "/auth/registration";
 
     public static void setTestData() {

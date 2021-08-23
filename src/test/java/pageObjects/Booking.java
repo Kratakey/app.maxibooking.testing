@@ -18,6 +18,12 @@ public class Booking {
         sleep(300);
     }
 
+    @Step("Close default filters")
+    public void closeFilters() {
+        $("app-applied-filters").$("ion-chip").click();
+        sleep(1000);
+    }
+
     @Step("Input search text and press Enter")
     public void findService(String serviceName) {
         $("app-search").$("form").$("input").setValue("\""+serviceName+"\"");
@@ -27,24 +33,6 @@ public class Booking {
 
     @Step("Verify that the search result is correct")
     public void verifyServiceSearch(
-            String FirstName,
-            String LastName,
-            String Specialization,
-            String ServiceName,
-            String ServicePrice,
-            String ServiceAddress,
-            String ServiceCity,
-            String ServiceCountry) {
-        $("app-search-result").$("ion-card-content").$("app-professional-card")
-                .shouldHave(text(FirstName), text(LastName), text(Specialization));
-        $("app-search-result").$("ion-card-content").$("app-service-link").shouldHave(text(ServiceName));
-        $("app-search-result").$("ion-card-content").$("app-price").shouldHave(text(ServicePrice));
-        $("app-search-result").$("ion-card-content")
-                .shouldHave(text(ServiceAddress), text(ServiceCity), text(ServiceCountry));
-    }
-
-    @Step("Verify that the search result is correct")
-    public void verifyServiceSearchOnline(
             String FirstName,
             String LastName,
             String Specialization,

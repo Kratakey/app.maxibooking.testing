@@ -8,6 +8,7 @@ import pageObjects.LogIn;
 import pageObjects.ServicePublish;
 
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PositiveTests extends setup.TestBase {
@@ -16,8 +17,9 @@ public class PositiveTests extends setup.TestBase {
 
     @Test
     void aLogIntoTheAccount() {
-        log.popupSelect();
+        log.popupSkip();
         log.account5();
+
         log.langEN();
     }
 
@@ -29,13 +31,15 @@ public class PositiveTests extends setup.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic booking online")
     void basicPositiveBookingOnline() {
-        log.popupSelect();
+        log.popupSkip();
         log.account5();
 
+        log.clickSideMenuFromProfile();
         act.clickSearch();
 
+        act.closeFilters();
         act.findService(service1Name);
-        act.verifyServiceSearchOnline(user1FirstName, user1LastName, service1Specialization, service1Name, service1Price);
+        act.verifyServiceSearch(user1FirstName, user1LastName, service1Specialization, service1Name, service1Price);
         act.chooseService();
         act.verifyServiceBase(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName, service1Specialization, service1Description);
         act.verifyServiceLocation("Online");
@@ -60,13 +64,15 @@ public class PositiveTests extends setup.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic booking client's place")
     void basicPositiveBookingClient() {
-        log.popupSelect();
+        log.popupSkip();
         log.account5();
 
+        log.clickSideMenuFromProfile();
         act.clickSearch();
 
+        act.closeFilters();
         act.findService(service2Name);
-        act.verifyServiceSearch(user2FirstName, user2LastName, service2Specialization, service2Name, service2Price, service2Address, service2City, service2Country);
+        act.verifyServiceSearch(user2FirstName, user2LastName, service2Specialization, service2Name, service2Price);
         act.chooseService();
         act.verifyServiceBase(service2Name, service2Price, service2TotalDuration, user2FirstName, user2LastName, service2Specialization, service2Description);
         act.verifyServiceLocation("Client's place");
@@ -92,13 +98,15 @@ public class PositiveTests extends setup.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic booking master's place")
     void basicPositiveBookingMaster() {
-        log.popupSelect();
+        log.popupSkip();
         log.account5();
 
+        log.clickSideMenuFromProfile();
         act.clickSearch();
 
+        act.closeFilters();
         act.findService(service3Name);
-        act.verifyServiceSearch(user3FirstName, user3LastName, service3Specialization, service3Name, service3Price, service3Address, service3City, service3Country);
+        act.verifyServiceSearch(user3FirstName, user3LastName, service3Specialization, service3Name, service3Price);
         act.chooseService();
         act.verifyServiceBase(service3Name, service3Price, service3TotalDuration, user3FirstName, user3LastName, service3Specialization, service3Description);
         act.verifyServiceLocation("Professional's place");

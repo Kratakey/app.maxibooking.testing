@@ -19,7 +19,8 @@ public class PositiveTests extends setup.TestBase {
     @DisplayName("Full Positive User Registration")
     public void fullPositiveUserRegistration1() {
         setTestData();
-        log.popupSelect();
+        log.popupSkip();
+        log.clickSideMenu();
         act.openPageEN();
         act.fillUserFirstName(user1FirstName);
         act.fillUserLastName(user1LastName);
@@ -39,7 +40,8 @@ public class PositiveTests extends setup.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
     public void fullPositiveUserRegistration2() {
-        log.popupSelect();
+        log.popupSkip();
+        log.clickSideMenu();
         act.openPageEN();
         act.fillUserFirstName(user2FirstName);
         act.fillUserLastName(user2LastName);
@@ -59,7 +61,8 @@ public class PositiveTests extends setup.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
     public void fullPositiveUserRegistration3() {
-        log.popupSelect();
+        log.popupSkip();
+        log.clickSideMenu();
         act.openPageEN();
         act.fillUserFirstName(user3FirstName);
         act.fillUserLastName(user3LastName);
@@ -79,7 +82,8 @@ public class PositiveTests extends setup.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic Positive User Registration")
     public void basicPositiveUserRegistration() {
-        log.popupSelect();
+        log.popupSkip();
+        log.clickSideMenu();
         act.openPageEN();
         act.fillUserFirstName(user5FirstName);
         act.fillEmail(testUser5);
