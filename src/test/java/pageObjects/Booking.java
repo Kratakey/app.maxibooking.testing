@@ -1,12 +1,9 @@
 package pageObjects;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selectors;
-import com.google.common.collect.Ordering;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -26,7 +23,7 @@ public class Booking {
 
     @Step("Input search text and press Enter")
     public void findService(String serviceName) {
-        $("app-search").$("form").$("input").setValue("\""+serviceName+"\"");
+        $("app-search").$("form").$("input").setValue("\"" + serviceName + "\"");
         sleep(1000);
         $("app-search").$("form").$("input").pressEnter();
     }
@@ -99,7 +96,7 @@ public class Booking {
 
     @Step("Select the next day")
     public void clickNextDay() {
-        $("app-calendar-component").$("ion-item").$("ion-icon",1).click();
+        $("app-calendar-component").$("ion-item").$("ion-icon", 1).click();
     }
 
     @Step("Scroll down")
@@ -110,6 +107,7 @@ public class Booking {
 
     @Step("Pick booking time")
     public void bookTime() {
+        $("app-calendar-component").$(byText("11:00")).scrollIntoView(true);
         $("app-calendar-component").$(byText("11:00")).click();
     }
 

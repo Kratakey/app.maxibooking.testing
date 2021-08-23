@@ -5,24 +5,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pageObjects.Booking;
 import pageObjects.LogIn;
-import pageObjects.ServicePublish;
-
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.byXpath;
-import static com.codeborne.selenide.Selenide.*;
 
 public class PositiveTests extends setup.TestBase {
     Booking act = new Booking();
     LogIn log = new LogIn();
-
-    @Test
-    void LogIntoAccount() {
-        log.popupSkip();
-        log.account5();
-
-        log.langEN();
-    }
-
 
     @Test
     @Feature("Booking")
@@ -30,11 +16,12 @@ public class PositiveTests extends setup.TestBase {
     @Story("Service booking")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic booking online")
-    void basicPositiveBookingOnline() {
+    void BasicPositiveBookingOnline() {
         log.popupSkip();
         log.account5();
+        log.langEN();
 
-        log.clickSideMenuFromProfile();
+        log.clickSideMenu();
         act.clickSearch();
 
         act.closeFilters();
