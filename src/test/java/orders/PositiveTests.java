@@ -1,11 +1,80 @@
 package orders;
 
-import pageObjects.Booking;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import pageObjects.LogIn;
 import pageObjects.Orders;
+
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class PositiveTests extends setup.TestBase {
 
     Orders act = new Orders();
     LogIn log = new LogIn();
+
+    @Test
+    @Feature("Orders")
+    @Owner("Egor Khlebnikov")
+    @Story("Order check")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Check orders from user side")
+    void UserOrderCheckTest() {
+        log.popupSkip();
+        log.account5();
+
+        act.openPageTopEN();
+        act.checkOrderOutbox(user1FirstName, service1Name, service1Price, service1TotalDuration);
+        act.checkOrderOutbox(user2FirstName, service2Name, service2Price, service2TotalDuration);
+        act.checkOrderOutbox(user3FirstName, service3Name, service3Price, service3TotalDuration);
+
+    }
+
+    @Test
+    @Feature("Orders")
+    @Owner("Egor Khlebnikov")
+    @Story("Order check")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Master completes order: online")
+    void master1OrderCompleteTest() {
+        log.popupSkip();
+        log.account1();
+
+        act.openPageTopEN();
+        act.tabCurrentOrdersInbox();
+        act.checkOrderInbox(user5FirstName, service1Price, service1TotalDuration);
+        act.completeOrder();
+    }
+
+    @Test
+    @Feature("Orders")
+    @Owner("Egor Khlebnikov")
+    @Story("Order check")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Master completes order: client's place")
+    void master2OrderCompleteTest() {
+        log.popupSkip();
+        log.account2();
+
+        act.openPageTopEN();
+        act.tabCurrentOrdersInbox();
+        act.checkOrderInbox(user5FirstName, service2Price, service2TotalDuration);
+        act.completeOrder();
+    }
+
+    @Test
+    @Feature("Orders")
+    @Owner("Egor Khlebnikov")
+    @Story("Order check")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Master completes order: master's place")
+    void master3OrderCompleteTest() {
+        log.popupSkip();
+        log.account3();
+
+        act.openPageTopEN();
+        act.tabCurrentOrdersInbox();
+        act.checkOrderInbox(user5FirstName, service3Price, service3TotalDuration);
+        act.completeOrder();
+    }
 }

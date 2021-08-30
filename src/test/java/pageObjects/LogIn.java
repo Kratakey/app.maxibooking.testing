@@ -9,11 +9,21 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class LogIn extends setup.TestBase {
 
-    public void presetAcc1() {
+    public void presetAcc1User() {
         $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();
         sleep(500);
         $("app-main-menu").$(byText("Log in")).click();
         $("app-login").$("input", 0).setValue("SeleTest5@gg.gg");
+        $("app-login").$("input", 1).setValue("qazxcdew");
+        $("app-login-form").$("ion-button[type='submit']").click();
+        sleep(1000);
+    }
+
+    public void presetAcc2Master() {
+        $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();
+        sleep(500);
+        $("app-main-menu").$(byText("Log in")).click();
+        $("app-login").$("input", 0).setValue("SeleTest6@gg.gg");
         $("app-login").$("input", 1).setValue("qazxcdew");
         $("app-login-form").$("ion-button[type='submit']").click();
         sleep(1000);

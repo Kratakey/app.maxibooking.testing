@@ -106,22 +106,24 @@ public class ServicePublish {
     }
 
     public void fillUserInfo(String userFirstName, String userLastName, String userPassword, String userCountry, String userCity) {
+        sleep(200);
         $("app-service-publish-step-four").$("input",1).val(userFirstName);
         $("app-service-publish-step-four").$("input",2).val(userLastName);
         $("app-service-publish-step-four").$("input",3).val(userPassword);
         $("app-service-publish-step-four").$("input",4).val(userPassword);
 
         $("app-service-publish-step-four").$("app-country-selector").$("button").click();
-        sleep(1000);
+        sleep(300);
         $("ionic-selectable-modal").$("input").sendKeys(userCountry);
-        sleep(500);
+        sleep(300);
         $("ionic-selectable-modal").$("ion-label", 0).click();
-        sleep(1000);
+        sleep(300);
         $("app-service-publish-step-four").$("app-city-selector").$("button").click();
-        sleep(1000);
+        sleep(300);
         $("ionic-selectable-modal").$("input").sendKeys(userCity);
-        sleep(500);
+        sleep(300);
         $("ionic-selectable-modal").$("ion-label", 0).click();
+        sleep(300);
     }
 
     public void clickFourthStep() {

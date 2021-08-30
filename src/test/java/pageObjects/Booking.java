@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 public class Booking {
 
     @Step("Click Search button")
-    public void clickSearch() {
+    public void clickSearchEN() {
         $("app-main-menu").$(byText("Search")).click();
         sleep(300);
     }
@@ -124,13 +124,17 @@ public class Booking {
 
     @Step("Select service location")
     public void chooseServiceLocation() {
+        sleep(200);
         $("app-location-step").$("ion-radio-group").$("ion-item").click();
+        sleep(200);
         $("app-location-step").$(byText("Forward")).click();
     }
 
     @Step("Place the order")
     public void placeOrder() {
+        sleep(500);
         $("app-summary-step").$(byText("Place order")).click();
+        sleep(2000);
     }
 
     @Step("Verify the order details")

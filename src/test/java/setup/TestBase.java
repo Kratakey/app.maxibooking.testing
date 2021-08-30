@@ -98,7 +98,12 @@ public class TestBase {
             service4Country,
             service4City,
             service4Address,
-            service4Distance;
+            service4Distance,
+            reviewText1,
+            reviewText2,
+            reviewText3,
+            reviewText4;
+
 
     public String
             urlBase = "https://app.maxibooking.ru/",
@@ -151,7 +156,7 @@ public class TestBase {
         user5Country = "Russia";
         user5City = "Moscow";
 
-        service1Name = generate.name().title();
+        service1Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
         service1Description = generate.lorem().characters(20, 2000);
         service1DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service1DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
@@ -163,7 +168,7 @@ public class TestBase {
         service1Address = generate.address().fullAddress();
         service1Distance = String.valueOf(generate.number().numberBetween(0, 9999));
 
-        service2Name = generate.name().title();
+        service2Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
         service2Description = generate.lorem().characters(20, 2000);
         service2DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service2DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
@@ -175,7 +180,7 @@ public class TestBase {
         service2Address = generate.address().fullAddress();
         service2Distance = String.valueOf(generate.number().numberBetween(0, 9999));
 
-        service3Name = generate.name().title();
+        service3Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
         service3Description = generate.lorem().characters(20, 2000);
         service3DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service3DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
@@ -187,7 +192,7 @@ public class TestBase {
         service3Address = generate.address().fullAddress();
         service3Distance = String.valueOf(generate.number().numberBetween(0, 9999));
 
-        service4Name = generate.name().title();
+        service4Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
         service4Description = generate.lorem().characters(20, 2000);
         service4DurationDays = String.valueOf(generate.number().numberBetween(0, 9));
         service4DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
@@ -198,6 +203,11 @@ public class TestBase {
         service4City = "Moscow";
         service4Address = generate.address().fullAddress();
         service4Distance = String.valueOf(generate.number().numberBetween(0, 9999));
+
+        reviewText1 = generate.lorem().sentence(10);
+        reviewText2 = generate.lorem().characters(20,2000);
+        reviewText3 = generate.rickAndMorty().quote();
+        reviewText4 = generate.chuckNorris().fact();
 
         long service1DurationDaysLong = parseLong(service1DurationDays),
                 service1DurationHoursLong = parseLong(service1DurationHours),
