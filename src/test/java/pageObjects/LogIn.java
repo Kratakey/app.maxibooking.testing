@@ -119,13 +119,13 @@ public class LogIn extends setup.TestBase {
     }
 
     public void clickSideMenu() {
-        sleep(500);
+        sleep(300);
         $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();
-        sleep(500);
+        sleep(300);
     }
     public void clickSideMenuFromProfile() {
-        sleep(500);
+        sleep(300);
         $("app-profile").$("ion-menu-toggle").$("ion-button").click();
-        sleep(500);
+        sleep(300);
     }
 }

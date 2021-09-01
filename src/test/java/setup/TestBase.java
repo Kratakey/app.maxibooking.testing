@@ -102,7 +102,10 @@ public class TestBase {
             reviewText1,
             reviewText2,
             reviewText3,
-            reviewText4;
+            reviewText4,
+            masterComment,
+            testMessage1,
+            testMessage2;
 
 
     public String
@@ -161,7 +164,7 @@ public class TestBase {
         service1DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service1DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service1DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
-        service1Price = String.valueOf(generate.number().numberBetween(0, 999));
+        service1Price = String.valueOf(generate.number().numberBetween(1, 999));
         service1Specialization = generate.job().title();
         service1Country = "Russia";
         service1City = "Moscow";
@@ -173,7 +176,7 @@ public class TestBase {
         service2DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service2DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service2DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
-        service2Price = String.valueOf(generate.number().numberBetween(0, 999));
+        service2Price = String.valueOf(generate.number().numberBetween(1, 999));
         service2Specialization = generate.job().title();
         service2Country = "Russia";
         service2City = "Moscow";
@@ -185,7 +188,7 @@ public class TestBase {
         service3DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service3DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service3DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
-        service3Price = String.valueOf(generate.number().numberBetween(0, 999));
+        service3Price = String.valueOf(generate.number().numberBetween(1, 999));
         service3Specialization = generate.job().title();
         service3Country = "Russia";
         service3City = "Moscow";
@@ -197,7 +200,7 @@ public class TestBase {
         service4DurationDays = String.valueOf(generate.number().numberBetween(0, 9));
         service4DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service4DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
-        service4Price = String.valueOf(generate.number().numberBetween(0, 999));
+        service4Price = String.valueOf(generate.number().numberBetween(1, 999));
         service4Specialization = generate.job().title();
         service4Country = "Russia";
         service4City = "Moscow";
@@ -205,9 +208,13 @@ public class TestBase {
         service4Distance = String.valueOf(generate.number().numberBetween(0, 9999));
 
         reviewText1 = generate.lorem().sentence(10);
-        reviewText2 = generate.lorem().characters(20,2000);
+        reviewText2 = generate.lorem().characters(2000,2500);
         reviewText3 = generate.rickAndMorty().quote();
         reviewText4 = generate.chuckNorris().fact();
+        masterComment = generate.backToTheFuture().quote();
+
+        testMessage1 = generate.dragonBall().character()+" > "+generate.dragonBall().character();
+        testMessage2 = generate.friends().quote()+" (c) "+generate.dragonBall().character();
 
         long service1DurationDaysLong = parseLong(service1DurationDays),
                 service1DurationHoursLong = parseLong(service1DurationHours),

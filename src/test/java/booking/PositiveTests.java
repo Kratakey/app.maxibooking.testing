@@ -16,7 +16,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Service booking")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic booking online")
-    void aBasicPositiveBookingOnline() {
+    void aBasicPositiveBookingOnlineTest() {
         log.popupSkip();
         log.account5();
         log.langEN();
@@ -49,7 +49,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Service booking")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic booking client's place")
-    void basicPositiveBookingClient() {
+    void basicPositiveBookingClientTest() {
         log.popupSkip();
         log.account5();
 
@@ -83,7 +83,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Service booking")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic booking master's place")
-    void basicPositiveBookingMaster() {
+    void basicPositiveBookingMasterTest() {
         log.popupSkip();
         log.account5();
 

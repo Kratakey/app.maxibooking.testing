@@ -14,7 +14,7 @@ public class Orders extends setup.TestBase {
     }
 
     @Step("Open the page (top bar)")
-    public void openPageTopEN() {
+    public void openOrderPageTopEN() {
         $("app-profile").$("ion-toolbar").$(byText("My orders")).click();
 
     }
@@ -29,19 +29,29 @@ public class Orders extends setup.TestBase {
         $("app-my-orders-page").$("main").$("ion-button").click();
     }
 
-    @Step("Select new orders")
+    @Step("Select new orders: Inbox")
     public void tabNewOrdersInbox() {
         $("app-my-orders-page").$("ion-segment-button", 0).click();
     }
 
-    @Step("Select current orders")
+    @Step("Select current orders: Inbox")
     public void tabCurrentOrdersInbox() {
         $("app-my-orders-page").$("ion-segment-button", 1).click();
     }
 
-    @Step("Select archived orders")
+    @Step("Select archived orders: Inbox")
     public void tabArchivedOrdersInbox() {
         $("app-my-orders-page").$("ion-segment-button", 2).click();
+    }
+
+    @Step("Select current orders: Outbox")
+    public void tabCurrentOrdersOutbox() {
+        $("app-outbox").$("ion-segment-button", 0).click();
+    }
+
+    @Step("Select archived orders: Outbox")
+    public void tabArchivedOrdersOutbox() {
+        $("app-outbox").$("ion-segment-button", 1).click();
     }
 
     @Step("Simple order check inbox")
@@ -85,6 +95,11 @@ public class Orders extends setup.TestBase {
         $("app-received-order-list-item").$("ion-card").$("ion-button",0).click();
     }
 
+    @Step("Click view details: Outbox")
+    public void viewDetailsOutbox() {
+        $("app-outbox").$("ion-card").$("ion-button",1).click();
+    }
+
     @Step("Discard the order")
     public void discardOrder() {
         $("app-received-order-list-item").$("ion-card").$("ion-button",1).click();
@@ -106,5 +121,10 @@ public class Orders extends setup.TestBase {
     @Step("Click 'show more'")
     public void clickShowMore() {
         $("app-more-info").$("ion-note").click();
+    }
+
+    @Step("Select master in Outbox")
+    public void selectMaster(String userName) {
+        $("app-outbox").$(byText(userName)).click();
     }
 }

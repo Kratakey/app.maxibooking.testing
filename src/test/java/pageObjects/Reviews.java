@@ -25,8 +25,18 @@ public class Reviews {
     }
 
     @Step("Click master")
-    public void clickMaster() {
-        $("app-outbox").$("app-professional-card").$("a").click();
+    public void clickMaster1() {
+        $("app-outbox").$("app-professional-card",0).$("a").click();
+    }
+
+    @Step("Click master")
+    public void clickMaster2() {
+        $("app-outbox").$("app-professional-card",1).$("a").click();
+    }
+
+    @Step("Click master")
+    public void clickMaster3() {
+        $("app-outbox").$("app-professional-card",2).$("a").click();
     }
 
     @Step("Open reviews tab")
@@ -49,10 +59,24 @@ public class Reviews {
         $("app-reviews-list").$(byText("Send review")).click();
     }
 
+    @Step("Choose rating 1 stars")
+    public void choseRating1() {
+        sleep(200);
+        $("app-edit-review").$("app-rating-picker").$("ion-item",0).click();
+        sleep(200);
+    }
 
     @Step("Choose rating 4 stars")
     public void choseRating4() {
+        sleep(200);
         $("app-edit-review").$("app-rating-picker").$("ion-item",3).click();
+        sleep(200);
+    }
+
+    @Step("Choose rating 5 stars")
+    public void choseRating5() {
+        sleep(200);
+        $("app-edit-review").$("app-rating-picker").$("ion-item",4).click();
         sleep(200);
     }
 
@@ -62,16 +86,82 @@ public class Reviews {
         sleep(200);
     }
 
+    @Step("Add to favorite")
+    public void addToFavorite() {
+        sleep(200);
+        $("app-edit-review").$("app-saved-professional-toggle").$("ion-button").click();
+        sleep(200);
+    }
+
+    public void scrollDown() {
+        $("app-edit-review").$("ion-row").$("ion-button",1).scrollIntoView(false);
+    }
+
+    public void scrollDown2() {
+        $("app-professional-page").$("main").$(byText("Reviews")).scrollIntoView(true);
+    }
+
     @Step("Send review")
     public void pressSend() {
+        sleep(200);
         $("app-edit-review").$("ion-row").$("ion-button",1).click();
-        sleep(500);
+        sleep(3000);
     }
 
     @Step("Verify review")
     public void verifyReview(String userName, String reviewText) {
         $("app-reviews-list").$("ion-card").$("ion-label").shouldHave(text(userName));
-        $("app-reviews-list").$("ion-card").$("ion-item",2).shouldHave(text("Very good"));
         $("app-reviews-list").$("ion-card").shouldHave(text(reviewText));
+    }
+
+    @Step("Open side menu")
+    public void clickSideMenu(){
+        sleep(300);
+        $("app-reviews-list").$("ion-menu-toggle").$("ion-button").click();
+        sleep(300);
+    }
+
+    @Step("Open bookmarks from the menu")
+    public void openBookmarksMenu() {
+        $("app-main-menu").$(byText("Bookmarks")).click();
+    }
+
+    @Step("Verify bookmarks")
+    public void verifyBookmark(String masterName) {
+        $("app-bookmarks-list-page").$("app-professional-card").shouldHave(text(masterName));
+        $("app-bookmarks-list-page").$("app-rating").shouldHave(text("5.00"));
+    }
+
+
+    @Step("Click menu button")
+    public void clickMenu() {
+        sleep(300);
+        $("app-profile").$("ion-menu-toggle").$("ion-button").click();
+        sleep(300);
+    }
+
+    @Step("Open master's profile")
+    public void openMasterProfile() {
+        $("app-main-menu").$(byText("Professional profile")).click();
+    }
+
+    @Step("Click master's reviews")
+    public void clickMasterReviews() {
+        $("app-professional-page").$("section").$("a").click();
+    }
+
+    @Step("Post master's comment")
+    public void postMasterComment(String masterComment) {
+        $("app-reviews-list").$("app-review-card").$("ion-button").click();
+        sleep(200);
+        $("app-edit-review-comment").$("textarea").sendKeys(masterComment);
+        sleep(200);
+        $("app-edit-review-comment").$("ion-row").$("ion-button").click();
+        sleep(2000);
+    }
+
+    @Step("Verify master's comment")
+    public void verifyMasterComment(String masterComment) {
+        $("app-reviews-list").$("app-review-card").shouldHave(text(masterComment));
     }
 }

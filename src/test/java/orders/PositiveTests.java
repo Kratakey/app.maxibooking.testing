@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 import pageObjects.LogIn;
 import pageObjects.Orders;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class PositiveTests extends setup.TestBase {
 
     Orders act = new Orders();
@@ -23,7 +21,7 @@ public class PositiveTests extends setup.TestBase {
         log.popupSkip();
         log.account5();
 
-        act.openPageTopEN();
+        act.openOrderPageTopEN();
         act.checkOrderOutbox(user1FirstName, service1Name, service1Price, service1TotalDuration);
         act.checkOrderOutbox(user2FirstName, service2Name, service2Price, service2TotalDuration);
         act.checkOrderOutbox(user3FirstName, service3Name, service3Price, service3TotalDuration);
@@ -40,7 +38,7 @@ public class PositiveTests extends setup.TestBase {
         log.popupSkip();
         log.account1();
 
-        act.openPageTopEN();
+        act.openOrderPageTopEN();
         act.tabCurrentOrdersInbox();
         act.checkOrderInbox(user5FirstName, service1Price, service1TotalDuration);
         act.completeOrder();
@@ -56,7 +54,7 @@ public class PositiveTests extends setup.TestBase {
         log.popupSkip();
         log.account2();
 
-        act.openPageTopEN();
+        act.openOrderPageTopEN();
         act.tabCurrentOrdersInbox();
         act.checkOrderInbox(user5FirstName, service2Price, service2TotalDuration);
         act.completeOrder();
@@ -72,7 +70,7 @@ public class PositiveTests extends setup.TestBase {
         log.popupSkip();
         log.account3();
 
-        act.openPageTopEN();
+        act.openOrderPageTopEN();
         act.tabCurrentOrdersInbox();
         act.checkOrderInbox(user5FirstName, service3Price, service3TotalDuration);
         act.completeOrder();
