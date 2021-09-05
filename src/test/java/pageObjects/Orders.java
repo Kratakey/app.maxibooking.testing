@@ -24,24 +24,19 @@ public class Orders extends setup.TestBase {
         $("app-profile").$("ion-toolbar").$(byText("Мои заказы")).click();
     }
 
-    @Step("Click toggle Sent/Received orders")
-    public void toggleSentReceivedClick() {
-        $("app-my-orders-page").$("main").$("ion-button").click();
-    }
-
     @Step("Select new orders: Inbox")
     public void tabNewOrdersInbox() {
-        $("app-my-orders-page").$("ion-segment-button", 0).click();
+        $("app-inbox-page").$("ion-segment-button", 0).click();
     }
 
     @Step("Select current orders: Inbox")
     public void tabCurrentOrdersInbox() {
-        $("app-my-orders-page").$("ion-segment-button", 1).click();
+        $("app-inbox-page").$("ion-segment-button", 1).click();
     }
 
     @Step("Select archived orders: Inbox")
     public void tabArchivedOrdersInbox() {
-        $("app-my-orders-page").$("ion-segment-button", 2).click();
+        $("app-inbox-page").$("ion-segment-button", 2).click();
     }
 
     @Step("Select current orders: Outbox")
@@ -64,7 +59,7 @@ public class Orders extends setup.TestBase {
 //        $("app-received-order-list-item").$("app-service-title").shouldHave(text(serviceName));
 //        $("app-received-order-list-item").$("app-price").shouldHave(text(servicePrice));
 //        $("app-received-order-list-item").$("app-duration-viewer").shouldHave(text(serviceTotalDuration));
-        $("app-my-orders-page").shouldHave(
+        $("app-inbox-page").shouldHave(
                 text(userFirstName),
                 text(servicePrice),
                 text(serviceTotalDuration)
@@ -82,7 +77,7 @@ public class Orders extends setup.TestBase {
 //        $("app-sent-order-list-item").$("app-service-title").shouldHave(text(serviceName));
 //        $("app-sent-order-list-item").$("app-price").shouldHave(text(servicePrice));
 //        $("app-sent-order-list-item").$("app-duration-viewer").shouldHave(text(serviceTotalDuration));
-        $("app-my-orders-page").shouldHave(
+        $("app-outbox-page").shouldHave(
                 text(userFirstName),
                 text(serviceName),
                 text(servicePrice),

@@ -9,7 +9,7 @@ public class Messages {
 
     @Step("Open the chat from Order details menu")
     public void openChatFromOrderDetails() {
-        $("app-sent-order-page").$("app-chat-button").click();
+        $("app-sent-order-page").$("app-chat-button").$("ion-button").click();
     }
 
     @Step("Open the chat from top bar")

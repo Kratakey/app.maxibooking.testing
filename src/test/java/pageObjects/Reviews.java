@@ -16,12 +16,12 @@ public class Reviews {
 
     @Step("Select current orders")
     public void tabCurrentOrdersOutbox() {
-        $("app-my-orders-page").$("ion-segment-button", 0).click();
+        $("app-outbox-page").$("ion-segment-button", 0).click();
     }
 
     @Step("Select archived orders")
     public void tabArchivedOrdersOutbox() {
-        $("app-my-orders-page").$("ion-segment-button", 1).click();
+        $("app-outbox-page").$("ion-segment-button", 1).click();
     }
 
     @Step("Click master")
@@ -51,7 +51,7 @@ public class Reviews {
 
     @Step("Click review/rating button")
     public void clickReviews() {
-        $("app-my-orders-page").$("app-rating").$("a").click();
+        $("app-outbox-page").$("app-rating").$("a").click();
     }
 
     @Step("Click send review button")
