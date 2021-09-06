@@ -4,7 +4,8 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class Reviews {
 
@@ -26,17 +27,17 @@ public class Reviews {
 
     @Step("Click master")
     public void clickMaster1() {
-        $("app-outbox").$("app-professional-card",0).$("a").click();
+        $("app-outbox").$("app-professional-card", 0).$("a").click();
     }
 
     @Step("Click master")
     public void clickMaster2() {
-        $("app-outbox").$("app-professional-card",1).$("a").click();
+        $("app-outbox").$("app-professional-card", 1).$("a").click();
     }
 
     @Step("Click master")
     public void clickMaster3() {
-        $("app-outbox").$("app-professional-card",2).$("a").click();
+        $("app-outbox").$("app-professional-card", 2).$("a").click();
     }
 
     @Step("Open reviews tab")
@@ -62,21 +63,21 @@ public class Reviews {
     @Step("Choose rating 1 stars")
     public void choseRating1() {
         sleep(200);
-        $("app-edit-review").$("app-rating-picker").$("ion-item",0).click();
+        $("app-edit-review").$("app-rating-picker").$("ion-item", 0).click();
         sleep(200);
     }
 
     @Step("Choose rating 4 stars")
     public void choseRating4() {
         sleep(200);
-        $("app-edit-review").$("app-rating-picker").$("ion-item",3).click();
+        $("app-edit-review").$("app-rating-picker").$("ion-item", 3).click();
         sleep(200);
     }
 
     @Step("Choose rating 5 stars")
     public void choseRating5() {
         sleep(200);
-        $("app-edit-review").$("app-rating-picker").$("ion-item",4).click();
+        $("app-edit-review").$("app-rating-picker").$("ion-item", 4).click();
         sleep(200);
     }
 
@@ -94,7 +95,7 @@ public class Reviews {
     }
 
     public void scrollDown() {
-        $("app-edit-review").$("ion-row").$("ion-button",1).scrollIntoView(false);
+        $("app-edit-review").$("ion-row").$("ion-button", 1).scrollIntoView(false);
     }
 
     public void scrollDown2() {
@@ -104,7 +105,7 @@ public class Reviews {
     @Step("Send review")
     public void pressSend() {
         sleep(200);
-        $("app-edit-review").$("ion-row").$("ion-button",1).click();
+        $("app-edit-review").$("ion-row").$("ion-button", 1).click();
         sleep(3000);
     }
 
@@ -115,7 +116,7 @@ public class Reviews {
     }
 
     @Step("Open side menu")
-    public void clickSideMenu(){
+    public void clickMenuMain() {
         sleep(300);
         $("app-reviews-list").$("ion-menu-toggle").$("ion-button").click();
         sleep(300);
@@ -132,9 +133,8 @@ public class Reviews {
         $("app-bookmarks-list-page").$("app-rating").shouldHave(text("5.00"));
     }
 
-
     @Step("Click menu button")
-    public void clickMenu() {
+    public void clickMenuProfile() {
         sleep(300);
         $("app-profile").$("ion-menu-toggle").$("ion-button").click();
         sleep(300);

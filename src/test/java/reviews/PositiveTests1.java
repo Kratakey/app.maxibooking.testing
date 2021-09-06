@@ -81,8 +81,8 @@ public class PositiveTests1 extends setup.TestBase {
         act.pressSend();
         act.verifyReview(user5FirstName, reviewText3+" "+reviewText4);
 
-        act.clickSideMenu();
+        act.clickMenuMain();
         act.openBookmarksMenu();
-        act.verifyBookmark(user2FirstName);
+        act.verifyBookmark(user2FirstName+" "+user2LastName);
     }
 }

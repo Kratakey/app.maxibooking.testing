@@ -21,7 +21,7 @@ public class PositiveTests2 extends setup.TestBase {
         log.popupSkip();
         log.account2();
 
-        act.clickMenu();
+        act.clickMenuProfile();
         act.openMasterProfile();
         act.clickMasterReviews();
         act.postMasterComment(masterComment);
