@@ -17,7 +17,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Order check")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Check orders from user side")
-    void UserOrderCheckTest() {
+    void t001() {
         log.popupSkip();
         log.account5();
 
@@ -34,7 +34,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Order check")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Master completes order: online")
-    void master1OrderCompleteTest() {
+    void t002() {
         log.popupSkip();
         log.account1();
 
@@ -50,7 +50,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Order check")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Master completes order: client's place")
-    void master2OrderCompleteTest() {
+    void t003() {
         log.popupSkip();
         log.account2();
 
@@ -66,7 +66,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Order check")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Master completes order: master's place")
-    void master3OrderCompleteTest() {
+    void t004() {
         log.popupSkip();
         log.account3();
 
@@ -75,4 +75,20 @@ public class PositiveTests extends setup.TestBase {
         act.checkOrderInbox(user5FirstName, service3Price, service3TotalDuration);
         act.completeOrder();
     }
+
+//    @Test
+//    @Feature("Orders")
+//    @Owner("Egor Khlebnikov")
+//    @Story("Order cancel")
+//    @Severity(SeverityLevel.BLOCKER)
+//    @DisplayName("Client side order cancel")
+//    void t5ClientOrderCancel() {
+//        log.popupSkip();
+//        log.account3();
+//
+//        act.openOrderPageTopEN();
+//        act.tabCurrentOrdersInbox();
+//        act.checkOrderInbox(user5FirstName, service3Price, service3TotalDuration);
+//        act.completeOrder();
+//    }
 }

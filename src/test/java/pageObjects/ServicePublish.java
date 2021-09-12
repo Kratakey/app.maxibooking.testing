@@ -15,6 +15,7 @@ public class ServicePublish {
 
     @Step("Open the page")
     public void openPageEN() {
+        sleep(200);
         $("app-main-menu").$(byText("Publish new service")).click();
         sleep(300);
     }

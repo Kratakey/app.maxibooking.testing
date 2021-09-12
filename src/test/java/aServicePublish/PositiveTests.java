@@ -19,7 +19,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic positive service publishing, service location: Online")
-    void basicPositiveServicePublishingOnline() {
+    void t001() {
 
         log.popupSkip();
         log.account1();
@@ -64,7 +64,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic positive service publishing, service location: Client's place")
-    void basicPositiveServicePublishingClient() {
+    void t002() {
 
         log.popupSkip();
         log.account2();
@@ -111,7 +111,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic positive service publishing, service location: Professional's place")
-    void basicPositiveServicePublishingMaster() {
+    void t003() {
 
         log.popupSkip();
         log.account3();
@@ -157,7 +157,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic positive service publishing with no account, service location: Online")
-    void basicPositiveServicePublishingWithoutAccount() {
+    void t004() {
 
         log.popupSkip();
         log.clickSideMenu();

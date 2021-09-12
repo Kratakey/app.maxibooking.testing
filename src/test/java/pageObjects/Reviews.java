@@ -152,8 +152,10 @@ public class Reviews {
 
     @Step("Post master's comment")
     public void postMasterComment(String masterComment) {
+        $("app-reviews-list").$("app-review-card").$("ion-button").scrollIntoView(true);
         $("app-reviews-list").$("app-review-card").$("ion-button").click();
         sleep(200);
+        $("app-edit-review-comment").$("ion-row").$("ion-button").scrollIntoView(true);
         $("app-edit-review-comment").$("textarea").sendKeys(masterComment);
         sleep(200);
         $("app-edit-review-comment").$("ion-row").$("ion-button").click();

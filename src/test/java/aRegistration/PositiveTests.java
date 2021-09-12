@@ -17,7 +17,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal registration")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
-    public void fullPositiveUserRegistration1() {
+    public void t001() {
         setTestData();
         log.popupSkip();
         log.clickSideMenu();
@@ -39,7 +39,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal registration")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
-    public void fullPositiveUserRegistration2() {
+    public void t002() {
         log.popupSkip();
         log.clickSideMenu();
         act.openPageEN();
@@ -60,7 +60,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal registration")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
-    public void fullPositiveUserRegistration3() {
+    public void t003() {
         log.popupSkip();
         log.clickSideMenu();
         act.openPageEN();
@@ -81,7 +81,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("Minimal registration")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Basic Positive User Registration")
-    public void basicPositiveUserRegistration() {
+    public void t004() {
         log.popupSkip();
         log.clickSideMenu();
         act.openPageEN();

@@ -96,7 +96,7 @@ public class Booking {
 
     @Step("Select the next day")
     public void clickNextDay() {
-        $("app-calendar-component").$("ion-item").$("ion-icon", 1).click();
+        $("app-calendar-component").$("ion-item",1).$("ion-button", 1).click();
     }
 
     @Step("Scroll down")
@@ -107,8 +107,8 @@ public class Booking {
 
     @Step("Pick booking time")
     public void bookTime() {
-        $("app-calendar-component").$(byText("11:00")).scrollIntoView(true);
-        $("app-calendar-component").$(byText("11:00")).click();
+        $("app-calendar-component").$(byText("11:00 AM")).scrollIntoView(true);
+        $("app-calendar-component").$(byText("11:00 AM")).click();
     }
 
     @Step("Click the Forward button")

@@ -22,7 +22,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("2 users chatting tests")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Conversation test: step 1 out of 3")
-    void basicConversationTest1() {
+    void t001() {
         log.popupSkip();
         log.account5();
 
@@ -40,7 +40,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("2 users chatting tests")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Conversation test: step 2 out of 3")
-    void basicConversationTest2() {
+    void t002() {
         log.popupSkip();
         log.account3();
 
@@ -58,7 +58,7 @@ public class PositiveTests extends setup.TestBase {
     @Story("2 users chatting tests")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Conversation test: step 3 out of 3")
-    void basicConversationTest3() {
+    void t003() {
         log.popupSkip();
         log.account5();
 

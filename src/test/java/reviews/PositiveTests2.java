@@ -17,10 +17,9 @@ public class PositiveTests2 extends setup.TestBase {
     @Story("Review master answers")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Review answer")
-    void MasterReviewAnswerTest() {
+    void t001() {
         log.popupSkip();
         log.account2();
-
         act.clickMenuProfile();
         act.openMasterProfile();
         act.clickMasterReviews();

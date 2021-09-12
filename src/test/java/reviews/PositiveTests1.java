@@ -17,7 +17,7 @@ public class PositiveTests1 extends setup.TestBase {
     @Story("Review check")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Post and check review with 10 words")
-    void UserReviewCheckTest() {
+    void t001() {
         log.popupSkip();
         log.account5();
 
@@ -40,7 +40,7 @@ public class PositiveTests1 extends setup.TestBase {
     @Story("Review check")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Post and check review with a lot of characters")
-    void LongUserReviewCheckTest() {
+    void t002() {
         log.popupSkip();
         log.account5();
 
@@ -64,7 +64,7 @@ public class PositiveTests1 extends setup.TestBase {
     @Story("Review check")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Post and check review add to favorites in the process")
-    void ComplexUserReviewCheckTest() {
+    void t003() {
         log.popupSkip();
         log.account5();
 
@@ -83,6 +83,6 @@ public class PositiveTests1 extends setup.TestBase {
 
         act.clickMenuMain();
         act.openBookmarksMenu();
-        act.verifyBookmark(user2FirstName+" "+user2LastName);
+        act.verifyBookmark(user1FirstName+" "+user1LastName);
     }
 }
