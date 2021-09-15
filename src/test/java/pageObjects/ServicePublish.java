@@ -49,8 +49,11 @@ public class ServicePublish {
     }
 
     @Step("Enter a service name")
+//    public void enterServiceName(String serviceName) {
+//        $(".native-input[type='text']").val(serviceName);
+//    }
     public void enterServiceName(String serviceName) {
-        $(".native-input[type='text']").val(serviceName);
+        $("app-service-publish-wrapper").$("app-service-publish-step-two").$("input").val(serviceName);
     }
 
     @Step("Enter a service description")
@@ -102,10 +105,12 @@ public class ServicePublish {
         $("app-service-publish-step-three").$("ion-button[type='submit']").click();
     }
 
+    @Step("Fill email")
     public void fillEmail(String serviceEmail) {
         $("app-service-publish-step-four").$("input",0).val(serviceEmail);
     }
 
+    @Step("Fill user info")
     public void fillUserInfo(String userFirstName, String userLastName, String userPassword, String userCountry, String userCity) {
         sleep(200);
         $("app-service-publish-step-four").$("input",1).val(userFirstName);
@@ -129,7 +134,7 @@ public class ServicePublish {
 
     public void clickFourthStep() {
         $("app-service-publish-step-four").$("ion-button[type='submit']").click();
-        sleep(200);
+        sleep(3000);
     }
 
     public void clickFifthStep() {
@@ -241,7 +246,7 @@ public class ServicePublish {
     @Step("Publish a service")
     public void publishService() {
         $("app-service-publish-final-step").$("ion-content").$("ion-button", 1).click();
-        sleep(3000);
+        sleep(5000);
     }
 
 

@@ -21,11 +21,15 @@ public class TestBase {
             testUser3,
             testUser4,
             testUser5,
+            testUser6,
+            testUser7,
             testPassword1,
             testPassword2,
             testPassword3,
             testPassword4,
             testPassword5,
+            testPassword6,
+            testPassword7,
             user1FirstName,
             user1LastName,
             user1PhoneNumber,
@@ -51,6 +55,16 @@ public class TestBase {
             user5PhoneNumber,
             user5Country,
             user5City,
+            user6FirstName,
+            user6LastName,
+            user6PhoneNumber,
+            user6Country,
+            user6City,
+            user7FirstName,
+            user7LastName,
+            user7PhoneNumber,
+            user7Country,
+            user7City,
             service1Name,
             service1Description,
             service1DurationDays,
@@ -99,6 +113,18 @@ public class TestBase {
             service4City,
             service4Address,
             service4Distance,
+            service7Name,
+            service7Description,
+            service7DurationDays,
+            service7DurationHours,
+            service7DurationMinutes,
+            service7TotalDuration,
+            service7Price,
+            service7Specialization,
+            service7Country,
+            service7City,
+            service7Address,
+            service7Distance,
             reviewText1,
             reviewText2,
             reviewText3,
@@ -123,11 +149,15 @@ public class TestBase {
         testUser3 = generate.name().username() + "@uu.dd";
         testUser4 = generate.name().username() + "@uu.dd";
         testUser5 = generate.name().username() + "@uu.dd";
+        testUser6 = generate.name().username() + "@cc.aa";
+        testUser7 = generate.name().username() + "@tt.jj";
         testPassword1 = generate.internet().password();
         testPassword2 = generate.internet().password();
         testPassword3 = generate.internet().password();
         testPassword4 = generate.internet().password();
         testPassword5 = generate.internet().password();
+        testPassword6 = generate.internet().password();
+        testPassword7 = generate.internet().password();
 
         user1FirstName = generate.name().firstName() + generate.name().suffix();
         user1LastName = generate.name().lastName();
@@ -158,6 +188,18 @@ public class TestBase {
         user5PhoneNumber = "911" + generate.number().digits(7);
         user5Country = "Russia";
         user5City = "Moscow";
+
+        user6FirstName = generate.name().firstName() + generate.name().suffix();
+        user6LastName = generate.name().lastName();
+        user6PhoneNumber = "613" + generate.number().digits(7);
+        user6Country = "Canada";
+        user6City = "Toronto";
+
+        user7FirstName = generate.name().firstName() + generate.name().suffix();
+        user7LastName = generate.name().lastName();
+        user7PhoneNumber = "457" + generate.number().digits(7);
+        user7Country = "Finland";
+        user7City = "Helsinki";
 
         service1Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
         service1Description = generate.lorem().characters(20, 2000);
@@ -197,7 +239,7 @@ public class TestBase {
 
         service4Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
         service4Description = generate.lorem().characters(20, 2000);
-        service4DurationDays = String.valueOf(generate.number().numberBetween(0, 9));
+        service4DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service4DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service4DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service4Price = String.valueOf(generate.number().numberBetween(1, 999));
@@ -206,6 +248,18 @@ public class TestBase {
         service4City = "Moscow";
         service4Address = generate.address().fullAddress();
         service4Distance = String.valueOf(generate.number().numberBetween(0, 9999));
+
+        service7Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
+        service7Description = generate.rickAndMorty().quote()+" "+generate.dune().quote();
+        service7DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
+        service7DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
+        service7DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
+        service7Price = String.valueOf(generate.number().numberBetween(1, 999));
+        service7Specialization = generate.job().title();
+        service7Country = "Finland";
+        service7City = "Helsinki";
+        service7Address = generate.address().fullAddress();
+        service7Distance = String.valueOf(generate.number().numberBetween(0, 9999));
 
         reviewText1 = generate.lorem().sentence(10);
         reviewText2 = generate.lorem().characters(2000,2500);
@@ -243,6 +297,13 @@ public class TestBase {
                 service4TotalDurationLong = service4DurationDaysLong * 24 * 60 + service4DurationHoursLong * 60 + service4DurationMinutesLong;
 
         service4TotalDuration = Long.toString(service4TotalDurationLong);
+
+        long service7DurationDaysLong = parseLong(service7DurationDays),
+                service7DurationHoursLong = parseLong(service7DurationHours),
+                service7DurationMinutesLong = parseLong(service7DurationMinutes),
+                service7TotalDurationLong = service7DurationDaysLong * 24 * 60 + service7DurationHoursLong * 60 + service7DurationMinutesLong;
+
+        service7TotalDuration = Long.toString(service7TotalDurationLong);
     }
 
     @BeforeEach

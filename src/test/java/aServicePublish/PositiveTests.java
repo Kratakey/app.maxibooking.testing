@@ -197,4 +197,49 @@ public class PositiveTests extends setup.TestBase {
         act.checkPublishFormOnline(service4Name, service4Price, service4TotalDuration, service4Description);
         act.publishService();
     }
+
+    @Test
+    @Feature("Service Publish")
+    @Owner("Egor Khlebnikov")
+    @Story("Minimal service publication")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Basic positive service publishing, service location: Online(2)")
+    void t005() {
+
+        log.popupSkip();
+        log.account7();
+
+        log.clickLogoFromProfile();
+        log.clickSideMenu();
+        act.openPageEN();
+
+        act.chooseCategory();
+        act.chooseSubcategory();
+        act.clickFirstStep();
+
+        act.enterServiceName(service7Name);
+        act.enterServiceDescription(service7Description);
+        act.setDuration(service7DurationDays, service7DurationHours, service7DurationMinutes);
+        act.setPrice(service7Price);
+        act.scrollDown();
+        act.selectServiceLocationOnline();
+        act.clickSecondStep();
+
+        act.clickThirdStep();
+
+        act.clickFifthStep();
+
+        act.fillSpecialization(service7Specialization);
+        act.clickSixthStep();
+
+        act.fillScheduleLite();
+        act.confirmInstantBooking();
+        act.scrollDown2();
+        act.selectPaymentByCash();
+        act.selectOnlinePayment();
+        act.clickSeventhStep();
+
+        act.checkPublishFormOnline(service7Name, service7Price, service7TotalDuration, service7Description);
+        act.publishService();
+    }
 }

@@ -14,7 +14,7 @@ public class PositiveTests extends setup.TestBase {
     @Test
     @Feature("User Registration")
     @Owner("Egor Khlebnikov")
-    @Story("Minimal registration")
+    @Story("Full registration")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
     public void t001() {
@@ -36,7 +36,7 @@ public class PositiveTests extends setup.TestBase {
     @Test
     @Feature("User Registration")
     @Owner("Egor Khlebnikov")
-    @Story("Minimal registration")
+    @Story("Full registration")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
     public void t002() {
@@ -57,7 +57,7 @@ public class PositiveTests extends setup.TestBase {
     @Test
     @Feature("User Registration")
     @Owner("Egor Khlebnikov")
-    @Story("Minimal registration")
+    @Story("Full registration")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
     public void t003() {
@@ -92,5 +92,47 @@ public class PositiveTests extends setup.TestBase {
         act.selectCity(user5City);
         act.confirm();
         act.verifyRegistrationDataBasic(user5FirstName, testUser5, user5Country, user5City);
+    }
+
+    @Test
+    @Feature("User Registration")
+    @Owner("Egor Khlebnikov")
+    @Story("Full registration")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Full Positive User Registration")
+    public void t005() {
+        log.popupSkip();
+        log.clickSideMenu();
+        act.openPageEN();
+        act.fillUserFirstName(user6FirstName);
+        act.fillUserLastName(user6LastName);
+        act.fillEmail(testUser6);
+        act.choosePassword(testPassword6);
+        act.fillPhoneNumber(user6PhoneNumber, user6Country);
+        act.selectCountry(user6Country);
+        act.selectCity(user6City);
+        act.confirm();
+        act.verifyRegistrationDataFull(user6FirstName, user6LastName, testUser6, user6PhoneNumber, user6Country, user6City);
+    }
+
+    @Test
+    @Feature("User Registration")
+    @Owner("Egor Khlebnikov")
+    @Story("Full registration")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Full Positive User Registration")
+    public void t006() {
+        log.popupSkip();
+        log.clickSideMenu();
+        act.openPageEN();
+        act.fillUserFirstName(user7FirstName);
+        act.fillUserLastName(user7LastName);
+        act.fillEmail(testUser7);
+        act.choosePassword(testPassword7);
+        act.fillPhoneNumber(user7PhoneNumber, user7Country);
+        act.selectCountry(user7Country);
+        act.selectCity(user7City);
+        act.confirm();
+        act.verifyRegistrationDataFull(user7FirstName, user7LastName, testUser7, user7PhoneNumber, user7Country, user7City);
     }
 }

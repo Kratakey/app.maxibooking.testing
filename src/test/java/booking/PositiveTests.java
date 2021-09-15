@@ -113,4 +113,69 @@ public class PositiveTests extends setup.TestBase {
         act.placeOrder();
         act.verifyOrderDetails();
     }
+
+    @Test
+    @Feature("Booking")
+    @Owner("Egor Khlebnikov")
+    @Story("Service booking")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Basic booking online(3)")
+    void t004() {
+        log.popupSkip();
+        log.account6();
+
+        log.clickSideMenuFromProfile();
+        act.clickSearchEN();
+
+        act.closeFilters();
+        act.findService(service7Name);
+        act.verifyServiceSearch(user7FirstName, user7LastName, service7Specialization, service7Name, service7Price);
+        act.chooseService();
+        act.verifyServiceBase(service7Name, service7Price, service7TotalDuration, user7FirstName, user7LastName, service7Specialization, service7Description);
+        act.verifyServiceLocation("Online");
+        act.verifyServicePaymentCash();
+        act.verifyServicePaymentOnline();
+        act.verifyInstantBooking();
+        act.clickDate();
+        act.clickNextDay();
+        act.clickNextDay();
+        act.scrollDown();
+        act.bookTime();
+        act.clickForward();
+        act.bookForMe();
+        act.placeOrder();
+        act.verifyOrderDetails();
+    }
+
+    @Test
+    @Feature("Booking")
+    @Owner("Egor Khlebnikov")
+    @Story("Service booking")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Basic booking online(2)")
+    void t005() {
+        log.popupSkip();
+        log.account6();
+
+        log.clickSideMenuFromProfile();
+        act.clickSearchEN();
+
+        act.closeFilters();
+        act.findService(service4Name);
+        act.verifyServiceSearch(user4FirstName, user4LastName, service4Specialization, service4Name, service4Price);
+        act.chooseService();
+        act.verifyServiceBase(service4Name, service4Price, service4TotalDuration, user4FirstName, user4LastName, service4Specialization, service4Description);
+        act.verifyServiceLocation("Online");
+        act.verifyServicePaymentCash();
+        act.verifyServicePaymentOnline();
+        act.verifyInstantBooking();
+        act.clickDate();
+        act.clickNextDay();
+        act.scrollDown();
+        act.bookTime();
+        act.clickForward();
+        act.bookForMe();
+        act.placeOrder();
+        act.verifyOrderDetails();
+    }
 }

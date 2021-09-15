@@ -101,6 +101,49 @@ public class Orders extends setup.TestBase {
         sleep(500);
     }
 
+    @Step("Discard the order: client")
+    public void discardOrderClient(String DiscardComment) {
+        $("app-sent-order-list-item").$("ion-card").$("ion-button",2).click();
+        sleep(200);
+        $("ion-popover").$("app-cancel-confirmation-popover").$("ion-item",0).click();
+        sleep(200);
+        $("ion-alert").$("button",1).click();
+        $("ion-alert").$(byText("OK")).click();
+        sleep(200);
+        $("ion-popover").$("app-cancel-confirmation-popover").$("ion-item",1).sendKeys(DiscardComment);
+        $("ion-popover").$("app-cancel-confirmation-popover").$("ion-button").click();
+        sleep(500);
+    }
+
+    @Step("Simple order check inbox")
+    public void checkDiscardOrderInbox(
+            String userFirstName,
+            String servicePrice,
+            String serviceTotalDuration
+    ) {
+        $("app-inbox-page").shouldNotHave(
+                text(userFirstName),
+                text(servicePrice),
+                text(serviceTotalDuration)
+        );
+    }
+
+
+    @Step("Simple order check outbox")
+    public void checkDiscardOrderOutbox(
+            String userFirstName,
+            String serviceName,
+            String servicePrice,
+            String serviceTotalDuration
+    ) {
+        $("app-outbox-page").shouldNotHave(
+                text(userFirstName),
+                text(serviceName),
+                text(servicePrice),
+                text(serviceTotalDuration)
+        );
+    }
+
     @Step("Accept the order")
     public void acceptOrder() {
         $("app-received-order-list-item").$("ion-card").$("ion-button",2).click();

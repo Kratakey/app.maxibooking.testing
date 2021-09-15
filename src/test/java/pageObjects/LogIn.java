@@ -83,6 +83,26 @@ public class LogIn extends setup.TestBase {
         sleep(1000);
     }
 
+    public void account6() {
+        $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();
+        sleep(500);
+        $("app-main-menu").$(byText("Log in")).click();
+        $("app-login").$("input", 0).setValue(testUser6);
+        $("app-login").$("input", 1).setValue(testPassword6);
+        $("app-login-form").$("ion-button[type='submit']").click();
+        sleep(1000);
+    }
+
+    public void account7() {
+        $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();
+        sleep(500);
+        $("app-main-menu").$(byText("Log in")).click();
+        $("app-login").$("input", 0).setValue(testUser7);
+        $("app-login").$("input", 1).setValue(testPassword7);
+        $("app-login-form").$("ion-button[type='submit']").click();
+        sleep(1000);
+    }
+
     public void langRU() {
         $("app-profile").$("ion-item").click();
         $("app-country-flag").$(byClassName("flag-icon")).click();
@@ -127,5 +147,9 @@ public class LogIn extends setup.TestBase {
         sleep(300);
         $("app-profile").$("ion-menu-toggle").$("ion-button").click();
         sleep(300);
+    }
+
+    public void clickLogoFromProfile() {
+        $("app-profile").$("ion-item").click();
     }
 }

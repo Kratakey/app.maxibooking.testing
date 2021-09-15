@@ -69,7 +69,7 @@ public class Registration {
         $("app-city-selector").$("button").click();
         sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(userCity);
-        sleep(500);
+        sleep(1000);
         $("ionic-selectable-modal").$("ion-label", 0).click();
     }
 

@@ -3,12 +3,16 @@ package orders;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import pageObjects.Booking;
 import pageObjects.LogIn;
 import pageObjects.Orders;
+import pageObjects.ServicePublish;
 
 public class PositiveTests extends setup.TestBase {
 
     Orders act = new Orders();
+    ServicePublish srv = new ServicePublish();
+    Booking bkn = new Booking();
     LogIn log = new LogIn();
 
     @Test
@@ -76,19 +80,36 @@ public class PositiveTests extends setup.TestBase {
         act.completeOrder();
     }
 
-//    @Test
-//    @Feature("Orders")
-//    @Owner("Egor Khlebnikov")
-//    @Story("Order cancel")
-//    @Severity(SeverityLevel.BLOCKER)
-//    @DisplayName("Client side order cancel")
-//    void t5ClientOrderCancel() {
-//        log.popupSkip();
-//        log.account3();
-//
-//        act.openOrderPageTopEN();
-//        act.tabCurrentOrdersInbox();
-//        act.checkOrderInbox(user5FirstName, service3Price, service3TotalDuration);
-//        act.completeOrder();
-//    }
+    @Test
+    @Feature("Orders")
+    @Owner("Egor Khlebnikov")
+    @Story("Order cancel")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Client side order cancel")
+    void t005() {
+        log.popupSkip();
+        log.account6();
+
+        act.openOrderPageTopEN();
+        act.checkOrderOutbox(user4FirstName, service4Name, service4Price, service4TotalDuration);
+        act.discardOrderClient("I don't like the service");
+        act.checkDiscardOrderOutbox(user4FirstName, service4Name, service4Price, service4TotalDuration);
+    }
+
+    @Test
+    @Feature("Orders")
+    @Owner("Egor Khlebnikov")
+    @Story("Order cancel")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Master side order cancel")
+    void t006() {
+        log.popupSkip();
+        log.account7();
+
+        act.openOrderPageTopEN();
+        act.tabCurrentOrdersInbox();
+        act.checkOrderInbox(user6FirstName, service7Price, service7TotalDuration);
+        act.discardOrder();
+        act.checkDiscardOrderInbox(user6FirstName, service7Price, service7TotalDuration);
+    }
 }
