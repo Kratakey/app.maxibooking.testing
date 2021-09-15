@@ -6,9 +6,6 @@ import org.junit.jupiter.api.Test;
 import pageObjects.Booking;
 import pageObjects.LogIn;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class PositiveTests extends setup.TestBase {
     Booking act = new Booking();
     LogIn log = new LogIn();

@@ -1,8 +1,5 @@
 package pageObjects;
 
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-
 import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -107,7 +104,7 @@ public class LogIn extends setup.TestBase {
         $("app-profile").$("ion-item").click();
         $("app-country-flag").$(byClassName("flag-icon")).click();
         $("app-flag-menu").$("ion-select").click();
-        $("ion-alert").$("button",1).click();
+        $("ion-alert").$("button", 1).click();
         $(byText("OK")).click();
     }
 
@@ -115,12 +112,12 @@ public class LogIn extends setup.TestBase {
         $("app-profile").$("ion-item").click();
         $("app-country-flag").$(byClassName("flag-icon")).click();
         $("app-flag-menu").$("ion-select").click();
-        $("ion-alert").$("button",0).click();
+        $("ion-alert").$("button", 0).click();
         $(byText("OK")).click();
     }
 
     public void popupSelect() {
-        $("ion-alert").$("button",1).click();
+        $("ion-alert").$("button", 1).click();
 
         $("app-on-map-popover").$("app-country-selector").$("ion-item").click();
         sleep(1000);
@@ -143,6 +140,7 @@ public class LogIn extends setup.TestBase {
         $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();
         sleep(300);
     }
+
     public void clickSideMenuFromProfile() {
         sleep(300);
         $("app-profile").$("ion-menu-toggle").$("ion-button").click();

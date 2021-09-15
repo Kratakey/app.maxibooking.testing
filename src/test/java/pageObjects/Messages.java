@@ -14,7 +14,7 @@ public class Messages {
 
     @Step("Open the chat from top bar")
     public void openChatFromTopBar() {
-        $("app-profile").$("ion-toolbar").$("ion-buttons",1).$("ion-button").click();
+        $("app-profile").$("ion-toolbar").$("ion-buttons", 1).$("ion-button").click();
     }
 
     @Step("Find the messenger")

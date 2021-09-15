@@ -96,7 +96,7 @@ public class Booking {
 
     @Step("Select the next day")
     public void clickNextDay() {
-        $("app-calendar-component").$("ion-item",1).$("ion-button", 1).click();
+        $("app-calendar-component").$("ion-item", 1).$("ion-button", 1).click();
     }
 
     @Step("Scroll down")

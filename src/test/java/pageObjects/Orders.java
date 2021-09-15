@@ -87,30 +87,30 @@ public class Orders extends setup.TestBase {
 
     @Step("Click view details")
     public void viewDetails() {
-        $("app-received-order-list-item").$("ion-card").$("ion-button",0).click();
+        $("app-received-order-list-item").$("ion-card").$("ion-button", 0).click();
     }
 
     @Step("Click view details: Outbox")
     public void viewDetailsOutbox() {
-        $("app-outbox").$("ion-card").$("ion-button",1).click();
+        $("app-outbox").$("ion-card").$("ion-button", 1).click();
     }
 
     @Step("Discard the order")
     public void discardOrder() {
-        $("app-received-order-list-item").$("ion-card").$("ion-button",1).click();
+        $("app-received-order-list-item").$("ion-card").$("ion-button", 1).click();
         sleep(500);
     }
 
     @Step("Discard the order: client")
     public void discardOrderClient(String DiscardComment) {
-        $("app-sent-order-list-item").$("ion-card").$("ion-button",2).click();
+        $("app-sent-order-list-item").$("ion-card").$("ion-button", 2).click();
         sleep(200);
-        $("ion-popover").$("app-cancel-confirmation-popover").$("ion-item",0).click();
+        $("ion-popover").$("app-cancel-confirmation-popover").$("ion-item", 0).click();
         sleep(200);
-        $("ion-alert").$("button",1).click();
+        $("ion-alert").$("button", 1).click();
         $("ion-alert").$(byText("OK")).click();
         sleep(200);
-        $("ion-popover").$("app-cancel-confirmation-popover").$("ion-item",1).sendKeys(DiscardComment);
+        $("ion-popover").$("app-cancel-confirmation-popover").$("ion-item", 1).sendKeys(DiscardComment);
         $("ion-popover").$("app-cancel-confirmation-popover").$("ion-button").click();
         sleep(500);
     }
@@ -146,13 +146,13 @@ public class Orders extends setup.TestBase {
 
     @Step("Accept the order")
     public void acceptOrder() {
-        $("app-received-order-list-item").$("ion-card").$("ion-button",2).click();
+        $("app-received-order-list-item").$("ion-card").$("ion-button", 2).click();
         sleep(500);
     }
 
     @Step("Complete the order")
     public void completeOrder() {
-        $("app-received-order-list-item").$("ion-card").$("ion-button",1).click();
+        $("app-received-order-list-item").$("ion-card").$("ion-button", 1).click();
         sleep(500);
     }
 

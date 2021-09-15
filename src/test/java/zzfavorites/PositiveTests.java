@@ -24,10 +24,10 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickMenuProfile();
         act.openBookmarksMenuEN();
-        act.verifyBookmarkOnline(user1FirstName+" "+user1LastName, service1Specialization);
+        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName, service1Specialization);
 
         act.removeBookmark();
-        act.verifyDelBookmark(user1FirstName+" "+user1LastName);
+        act.verifyDelBookmark(user1FirstName + " " + user1LastName);
     }
 
     @Test
@@ -48,7 +48,7 @@ public class PositiveTests extends setup.TestBase {
         act.clickFavSearch();
         act.clickMenuSearch();
         act.openBookmarksMenuEN();
-        act.verifyBookmarkOnline(user1FirstName+" "+user1LastName, service1Specialization);
+        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName, service1Specialization);
     }
 
     @Test
@@ -70,8 +70,8 @@ public class PositiveTests extends setup.TestBase {
         act.clickFavMasterProfile();
         act.clickMenuMasterProfile();
         act.openBookmarksMenuEN();
-        act.verifyBookmark(user2FirstName+" "+user2LastName, service2Specialization, user2City);
-        act.verifyBookmarkOnline(user1FirstName+" "+user1LastName, service1Specialization);
+        act.verifyBookmark(user2FirstName + " " + user2LastName, service2Specialization, user2City);
+        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName, service1Specialization);
     }
 
     @Test
@@ -93,8 +93,8 @@ public class PositiveTests extends setup.TestBase {
         act.clickFavServiceInfo();
         act.clickMenuServiceInfo();
         act.openBookmarksMenuEN();
-        act.verifyBookmark(user3FirstName+" "+user3LastName, service3Specialization, user3City);
-        act.verifyBookmark(user2FirstName+" "+user2LastName, service2Specialization, user2City);
-        act.verifyBookmark(user1FirstName+" "+user1LastName, service1Specialization, user1City);
+        act.verifyBookmark(user3FirstName + " " + user3LastName, service3Specialization, user3City);
+        act.verifyBookmark(user2FirstName + " " + user2LastName, service2Specialization, user2City);
+        act.verifyBookmark(user1FirstName + " " + user1LastName, service1Specialization, user1City);
     }
 }

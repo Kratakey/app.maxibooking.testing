@@ -55,7 +55,7 @@ public class Favorites {
                 text(masterName),
                 text(masterSpecialization),
                 text(masterCity)
-                );
+        );
     }
 
     @Step("Verify online bookmarks")
@@ -78,17 +78,17 @@ public class Favorites {
 
     @Step("Remove first bookmark")
     public void removeBookmark1() {
-        $("app-professional-card",0).$("app-saved-professional-toggle").$("ion-button").click();
+        $("app-professional-card", 0).$("app-saved-professional-toggle").$("ion-button").click();
     }
 
     @Step("Remove second bookmark")
     public void removeBookmark2() {
-        $("app-professional-card",1).$("app-saved-professional-toggle").$("ion-button").click();
+        $("app-professional-card", 1).$("app-saved-professional-toggle").$("ion-button").click();
     }
 
     @Step("Remove third bookmark")
     public void removeBookmark3() {
-        $("app-professional-card",2).$("app-saved-professional-toggle").$("ion-button").click();
+        $("app-professional-card", 2).$("app-saved-professional-toggle").$("ion-button").click();
     }
 
     @Step("Click Search button")

@@ -4,13 +4,11 @@ import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import pageObjects.LogIn;
 
 import java.util.Locale;
 
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+import static com.codeborne.selenide.Selenide.open;
 import static java.lang.Long.parseLong;
 
 public class TestBase {
@@ -250,7 +248,7 @@ public class TestBase {
         service4Distance = String.valueOf(generate.number().numberBetween(0, 9999));
 
         service7Name = generate.name().title() + " (" + generate.lorem().characters(6, 12) + ")";
-        service7Description = generate.rickAndMorty().quote()+" "+generate.dune().quote();
+        service7Description = generate.rickAndMorty().quote() + " " + generate.dune().quote();
         service7DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service7DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service7DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
@@ -262,13 +260,13 @@ public class TestBase {
         service7Distance = String.valueOf(generate.number().numberBetween(0, 9999));
 
         reviewText1 = generate.lorem().sentence(10);
-        reviewText2 = generate.lorem().characters(2000,2500);
+        reviewText2 = generate.lorem().characters(2000, 2500);
         reviewText3 = generate.rickAndMorty().quote();
         reviewText4 = generate.chuckNorris().fact();
         masterComment = generate.backToTheFuture().quote();
 
-        testMessage1 = generate.dragonBall().character()+" > "+generate.dragonBall().character();
-        testMessage2 = generate.friends().quote()+" (c) "+generate.dragonBall().character();
+        testMessage1 = generate.dragonBall().character() + " > " + generate.dragonBall().character();
+        testMessage2 = generate.friends().quote() + " (c) " + generate.dragonBall().character();
 
         long service1DurationDaysLong = parseLong(service1DurationDays),
                 service1DurationHoursLong = parseLong(service1DurationHours),

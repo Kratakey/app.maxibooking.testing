@@ -77,12 +77,12 @@ public class PositiveTests1 extends setup.TestBase {
         act.clickSendReviewButton();
         act.addToFavorite();
         act.choseRating5();
-        act.sendReviewText(reviewText3+" "+reviewText4);
+        act.sendReviewText(reviewText3 + " " + reviewText4);
         act.pressSend();
-        act.verifyReview(user5FirstName, reviewText3+" "+reviewText4);
+        act.verifyReview(user5FirstName, reviewText3 + " " + reviewText4);
 
         act.clickMenuMain();
         act.openBookmarksMenu();
-        act.verifyBookmark(user1FirstName+" "+user1LastName);
+        act.verifyBookmark(user1FirstName + " " + user1LastName);
     }
 }

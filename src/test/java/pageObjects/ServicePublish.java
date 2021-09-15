@@ -78,6 +78,7 @@ public class ServicePublish {
     public void scrollDown() {
         $("textarea").scrollIntoView(true);
     }
+
     public void scrollDown2() {
         $("app-service-publish-step-seven").$("ion-button[type='submit']").scrollIntoView(false);
     }
@@ -107,16 +108,16 @@ public class ServicePublish {
 
     @Step("Fill email")
     public void fillEmail(String serviceEmail) {
-        $("app-service-publish-step-four").$("input",0).val(serviceEmail);
+        $("app-service-publish-step-four").$("input", 0).val(serviceEmail);
     }
 
     @Step("Fill user info")
     public void fillUserInfo(String userFirstName, String userLastName, String userPassword, String userCountry, String userCity) {
         sleep(200);
-        $("app-service-publish-step-four").$("input",1).val(userFirstName);
-        $("app-service-publish-step-four").$("input",2).val(userLastName);
-        $("app-service-publish-step-four").$("input",3).val(userPassword);
-        $("app-service-publish-step-four").$("input",4).val(userPassword);
+        $("app-service-publish-step-four").$("input", 1).val(userFirstName);
+        $("app-service-publish-step-four").$("input", 2).val(userLastName);
+        $("app-service-publish-step-four").$("input", 3).val(userPassword);
+        $("app-service-publish-step-four").$("input", 4).val(userPassword);
 
         $("app-service-publish-step-four").$("app-country-selector").$("button").click();
         sleep(300);
@@ -189,7 +190,7 @@ public class ServicePublish {
 
     @Step("Confirm Instant Booking")
     public void confirmInstantBooking() {
-        $("app-service-publish-step-seven").$("form").$("ion-item",9).click();
+        $("app-service-publish-step-seven").$("form").$("ion-item", 9).click();
     }
 
     @Step("Fill a service geography")
@@ -208,6 +209,7 @@ public class ServicePublish {
 
         $("app-service-publish-step-seven").$("form").$("textarea").setValue(serviceAddress);
     }
+
     @Step("Fill a service distance")
     public void fillServiceDistance(String serviceDistance) {
         $("app-service-publish-step-seven").$("form").$("ion-input").$("input").setValue(serviceDistance);
@@ -240,7 +242,7 @@ public class ServicePublish {
         $("app-price").shouldHave(Condition.text(servicePrice));
         $("app-duration-viewer").shouldHave(Condition.text(serviceTotalDuration));
         $("app-service-publish-final-step").$("ion-content").$("ion-item", 2).shouldHave(Condition.textCaseSensitive(serviceDescription));
-        $("app-service-location").shouldHave(Condition.text(serviceCountry +", "+ serviceCity +", "+ serviceAddress));
+        $("app-service-location").shouldHave(Condition.text(serviceCountry + ", " + serviceCity + ", " + serviceAddress));
     }
 
     @Step("Publish a service")

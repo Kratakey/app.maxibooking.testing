@@ -7,8 +7,6 @@ import pageObjects.LogIn;
 import pageObjects.Messages;
 import pageObjects.Orders;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class PositiveTests extends setup.TestBase {
 
 
