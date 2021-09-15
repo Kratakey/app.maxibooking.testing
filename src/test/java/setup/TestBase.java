@@ -191,7 +191,7 @@ public class TestBase {
 
         user6FirstName = generate.name().firstName() + generate.name().suffix();
         user6LastName = generate.name().lastName();
-        user6PhoneNumber = "613" + generate.number().digits(7);
+        user6PhoneNumber = "416" + generate.number().digits(7);
         user6Country = "Canada";
         user6City = "Toronto";
 

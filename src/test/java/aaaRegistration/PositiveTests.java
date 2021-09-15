@@ -1,4 +1,4 @@
-package aRegistration;
+package aaaRegistration;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
