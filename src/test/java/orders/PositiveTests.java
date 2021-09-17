@@ -93,7 +93,7 @@ public class PositiveTests extends setup.TestBase {
         act.openOrderPageTopEN();
         act.checkOrderOutbox(user4FirstName, service4Name, service4Price, service4TotalDuration);
         act.discardOrderClient("I don't like the service");
-        act.checkDiscardOrderOutbox(user4FirstName, service4Name, service4Price, service4TotalDuration);
+        act.checkDiscardOrderOutbox(user4FirstName, service4Name);
     }
 
     @Test

@@ -1,7 +1,10 @@
 package setup;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import helpers.Attach;
 import com.github.javafaker.Faker;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -306,13 +309,19 @@ public class TestBase {
 
     @BeforeEach
     public void setupConfig() {
-        Configuration.browser = "chrome";
-        Configuration.startMaximized = true;
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        Configuration.headless = true;
+        Configuration.browserSize = "1920x1080";
+//        Configuration.browser = "chrome";
+//        Configuration.startMaximized = true;
         open(urlBase);
     }
 
     @AfterEach
     public void refresh() {
+        Attach.screenshotAs("Screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
         closeWebDriver();
     }
 

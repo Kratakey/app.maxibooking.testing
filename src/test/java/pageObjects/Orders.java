@@ -132,15 +132,11 @@ public class Orders extends setup.TestBase {
     @Step("Simple order check outbox")
     public void checkDiscardOrderOutbox(
             String userFirstName,
-            String serviceName,
-            String servicePrice,
-            String serviceTotalDuration
+            String serviceName
     ) {
         $("app-outbox-page").shouldNotHave(
                 text(userFirstName),
-                text(serviceName),
-                text(servicePrice),
-                text(serviceTotalDuration)
+                text(serviceName)
         );
     }
 
