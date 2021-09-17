@@ -24,7 +24,7 @@ public class PositiveTests extends setup.TestBase {
 
         act.clickMenuProfile();
         act.openBookmarksMenuEN();
-        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName, service1Specialization);
+        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName);
 
         act.removeBookmark();
         act.verifyDelBookmark(user1FirstName + " " + user1LastName);
@@ -44,11 +44,11 @@ public class PositiveTests extends setup.TestBase {
         act.clickSearchEN();
         act.closeFilters();
         act.findService(service1Name);
-        act.verifyServiceSearch(user1FirstName, user1LastName, service1Specialization, service1Name, service1Price);
+        act.verifyServiceSearch(user1FirstName, user1LastName, service1Name, service1Price);
         act.clickFavSearch();
         act.clickMenuSearch();
         act.openBookmarksMenuEN();
-        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName, service1Specialization);
+        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName);
     }
 
     @Test
@@ -65,13 +65,13 @@ public class PositiveTests extends setup.TestBase {
         act.clickSearchEN();
         act.closeFilters();
         act.findService(service2Name);
-        act.verifyServiceSearch(user2FirstName, user2LastName, service2Specialization, service2Name, service2Price);
+        act.verifyServiceSearch(user2FirstName, user2LastName, service2Name, service2Price);
         act.selectMasterSearch();
         act.clickFavMasterProfile();
         act.clickMenuMasterProfile();
         act.openBookmarksMenuEN();
-        act.verifyBookmark(user2FirstName + " " + user2LastName, service2Specialization, user2City);
-        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName, service1Specialization);
+        act.verifyBookmark(user2FirstName + " " + user2LastName, user2City);
+        act.verifyBookmarkOnline(user1FirstName + " " + user1LastName);
     }
 
     @Test
@@ -88,13 +88,13 @@ public class PositiveTests extends setup.TestBase {
         act.clickSearchEN();
         act.closeFilters();
         act.findService(service3Name);
-        act.verifyServiceSearch(user3FirstName, user3LastName, service3Specialization, service3Name, service3Price);
+        act.verifyServiceSearch(user3FirstName, user3LastName, service3Name, service3Price);
         act.selectServiceSearch();
         act.clickFavServiceInfo();
         act.clickMenuServiceInfo();
         act.openBookmarksMenuEN();
-        act.verifyBookmark(user3FirstName + " " + user3LastName, service3Specialization, user3City);
-        act.verifyBookmark(user2FirstName + " " + user2LastName, service2Specialization, user2City);
-        act.verifyBookmark(user1FirstName + " " + user1LastName, service1Specialization, user1City);
+        act.verifyBookmark(user3FirstName + " " + user3LastName, user3City);
+        act.verifyBookmark(user2FirstName + " " + user2LastName, user2City);
+        act.verifyBookmark(user1FirstName + " " + user1LastName, user1City);
     }
 }

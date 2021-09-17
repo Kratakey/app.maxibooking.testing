@@ -26,9 +26,9 @@ public class PositiveTests extends setup.TestBase {
 
         act.closeFilters();
         act.findService(service1Name);
-        act.verifyServiceSearch(user1FirstName, user1LastName, service1Specialization, service1Name, service1Price);
+        act.verifyServiceSearch(user1FirstName, user1LastName, service1Name, service1Price);
         act.chooseService();
-        act.verifyServiceBase(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName, service1Specialization, service1Description);
+        act.verifyServiceBase(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName, service1Description);
         act.verifyServiceLocation("Online");
         act.verifyServicePaymentCash();
         act.verifyServicePaymentOnline();
@@ -58,9 +58,9 @@ public class PositiveTests extends setup.TestBase {
 
         act.closeFilters();
         act.findService(service2Name);
-        act.verifyServiceSearch(user2FirstName, user2LastName, service2Specialization, service2Name, service2Price);
+        act.verifyServiceSearch(user2FirstName, user2LastName, service2Name, service2Price);
         act.chooseService();
-        act.verifyServiceBase(service2Name, service2Price, service2TotalDuration, user2FirstName, user2LastName, service2Specialization, service2Description);
+        act.verifyServiceBase(service2Name, service2Price, service2TotalDuration, user2FirstName, user2LastName, service2Description);
         act.verifyServiceLocation("Client's place");
         act.verifyServiceGeo(service2Country, service2City, service2Address);
         act.verifyServicePaymentCash();
@@ -92,9 +92,9 @@ public class PositiveTests extends setup.TestBase {
 
         act.closeFilters();
         act.findService(service3Name);
-        act.verifyServiceSearch(user3FirstName, user3LastName, service3Specialization, service3Name, service3Price);
+        act.verifyServiceSearch(user3FirstName, user3LastName, service3Name, service3Price);
         act.chooseService();
-        act.verifyServiceBase(service3Name, service3Price, service3TotalDuration, user3FirstName, user3LastName, service3Specialization, service3Description);
+        act.verifyServiceBase(service3Name, service3Price, service3TotalDuration, user3FirstName, user3LastName, service3Description);
         act.verifyServiceLocation("Professional's place");
         act.verifyServiceGeo(service3Country, service3City, service3Address);
         act.verifyServicePaymentCash();
@@ -126,9 +126,9 @@ public class PositiveTests extends setup.TestBase {
 
         act.closeFilters();
         act.findService(service7Name);
-        act.verifyServiceSearch(user7FirstName, user7LastName, service7Specialization, service7Name, service7Price);
+        act.verifyServiceSearch(user7FirstName, user7LastName, service7Name, service7Price);
         act.chooseService();
-        act.verifyServiceBase(service7Name, service7Price, service7TotalDuration, user7FirstName, user7LastName, service7Specialization, service7Description);
+        act.verifyServiceBase(service7Name, service7Price, service7TotalDuration, user7FirstName, user7LastName, service7Description);
         act.verifyServiceLocation("Online");
         act.verifyServicePaymentCash();
         act.verifyServicePaymentOnline();
@@ -159,9 +159,9 @@ public class PositiveTests extends setup.TestBase {
 
         act.closeFilters();
         act.findService(service4Name);
-        act.verifyServiceSearch(user4FirstName, user4LastName, service4Specialization, service4Name, service4Price);
+        act.verifyServiceSearch(user4FirstName, user4LastName, service4Name, service4Price);
         act.chooseService();
-        act.verifyServiceBase(service4Name, service4Price, service4TotalDuration, user4FirstName, user4LastName, service4Specialization, service4Description);
+        act.verifyServiceBase(service4Name, service4Price, service4TotalDuration, user4FirstName, user4LastName, service4Description);
         act.verifyServiceLocation("Online");
         act.verifyServicePaymentCash();
         act.verifyServicePaymentOnline();

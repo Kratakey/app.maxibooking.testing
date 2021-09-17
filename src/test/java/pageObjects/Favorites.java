@@ -50,19 +50,17 @@ public class Favorites {
     }
 
     @Step("Verify bookmarks")
-    public void verifyBookmark(String masterName, String masterSpecialization, String masterCity) {
+    public void verifyBookmark(String masterName, String masterCity) {
         $("app-bookmarks-list-page").$("main").shouldHave(
                 text(masterName),
-                text(masterSpecialization),
                 text(masterCity)
         );
     }
 
     @Step("Verify online bookmarks")
-    public void verifyBookmarkOnline(String masterName, String masterSpecialization) {
+    public void verifyBookmarkOnline(String masterName) {
         $("app-bookmarks-list-page").$("main").shouldHave(
-                text(masterName),
-                text(masterSpecialization)
+                text(masterName)
         );
     }
 
@@ -114,11 +112,10 @@ public class Favorites {
     public void verifyServiceSearch(
             String FirstName,
             String LastName,
-            String Specialization,
             String ServiceName,
             String ServicePrice) {
         $("app-search-result").$("ion-card-content").$("app-professional-card")
-                .shouldHave(text(FirstName), text(LastName), text(Specialization));
+                .shouldHave(text(FirstName), text(LastName));
         $("app-search-result").$("ion-card-content").$("app-service-link").shouldHave(text(ServiceName));
         $("app-search-result").$("ion-card-content").$("app-price").shouldHave(text(ServicePrice));
     }

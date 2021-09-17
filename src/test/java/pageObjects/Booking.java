@@ -32,11 +32,10 @@ public class Booking {
     public void verifyServiceSearch(
             String FirstName,
             String LastName,
-            String Specialization,
             String ServiceName,
             String ServicePrice) {
         $("app-search-result").$("ion-card-content").$("app-professional-card")
-                .shouldHave(text(FirstName), text(LastName), text(Specialization));
+                .shouldHave(text(FirstName), text(LastName));
         $("app-search-result").$("ion-card-content").$("app-service-link").shouldHave(text(ServiceName));
         $("app-search-result").$("ion-card-content").$("app-price").shouldHave(text(ServicePrice));
     }
@@ -53,13 +52,12 @@ public class Booking {
             String ServiceDuration,
             String FirstName,
             String LastName,
-            String Specialization,
             String ServiceDescription) {
         $("app-service-widget").$("app-service-title").shouldHave(text(ServiceName));
         $("app-service-widget").$("app-price").shouldHave(text(ServicePrice));
         $("app-service-widget").$("app-duration-viewer").shouldHave(text(ServiceDuration));
         $("app-service-widget").$("app-professional-card")
-                .shouldHave(text(FirstName), text(LastName), text(Specialization));
+                .shouldHave(text(FirstName), text(LastName));
         $("app-service-widget").shouldHave(text(ServiceDescription));
     }
 
@@ -91,7 +89,7 @@ public class Booking {
 
     @Step("Click the 'Date' button to book")
     public void clickDate() {
-        $(byText("Date")).click();
+        $(byText("Order")).click();
     }
 
     @Step("Select the next day")

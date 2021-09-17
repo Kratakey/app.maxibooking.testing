@@ -15,15 +15,15 @@ tasks.withType(JavaCompile) {
 
 dependencies {
     testImplementation(
-            'com.codeborne:selenide:5.21.0',
+            'com.codeborne:selenide:5.24.2',
             'io.qameta.allure:allure-selenide:2.14.0',
             'com.github.javafaker:javafaker:1.0.2',
-            'org.junit.jupiter:junit-jupiter-api:5.7.1',
-            'org.slf4j:slf4j-api:1.7.30',
-            'org.slf4j:slf4j-simple:1.7.30'
+            'org.junit.jupiter:junit-jupiter-api:5.7.2',
+            'org.slf4j:slf4j-api:1.7.32',
+            'org.slf4j:slf4j-simple:1.7.32'
     )
     testRuntimeOnly(
-            'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+            'org.junit.jupiter:junit-jupiter-engine:5.7.2'
     )
 }
 
@@ -37,6 +37,14 @@ allure {
     }
 }
 
-test {
-    useJUnitPlatform{}
+tasks.withType(Test) {
+    useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+//            events "started", "failed"
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
 }
