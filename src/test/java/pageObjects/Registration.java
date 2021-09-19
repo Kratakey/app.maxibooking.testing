@@ -70,7 +70,7 @@ public class Registration {
         sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(userCity);
         sleep(1000);
-        $("ionic-selectable-modal").$("ion-label", 0).click();
+        $("ionic-selectable-modal").$("ion-item", 0).click();
     }
 
     @Step("Confirm")

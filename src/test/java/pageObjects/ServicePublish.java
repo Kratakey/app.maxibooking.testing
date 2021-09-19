@@ -129,7 +129,7 @@ public class ServicePublish {
         sleep(300);
         $("ionic-selectable-modal").$("input").sendKeys(userCity);
         sleep(300);
-        $("ionic-selectable-modal").$("ion-label", 0).click();
+        $("ionic-selectable-modal").$("ion-item", 0).click();
         sleep(300);
     }
 
@@ -205,7 +205,7 @@ public class ServicePublish {
         sleep(1000);
         $("ionic-selectable-modal").$("input").sendKeys(serviceCity);
         sleep(500);
-        $("ionic-selectable-modal").$("ion-label", 0).click();
+        $("ionic-selectable-modal").$("ion-item", 0).click();
 
         $("app-service-publish-step-seven").$("form").$("textarea").setValue(serviceAddress);
     }
