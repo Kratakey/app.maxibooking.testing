@@ -192,7 +192,7 @@ public class TestBase {
 
         user6FirstName = generate.name().firstName() + generate.name().suffix();
         user6LastName = generate.name().lastName();
-        user6PhoneNumber = "416" + generate.number().digits(7);
+        user6PhoneNumber = "613" + generate.number().digits(7);
         user6Country = "Canada";
         user6City = "Toronto";
 
@@ -309,11 +309,11 @@ public class TestBase {
 
     @BeforeEach
     public void setupConfig() {
+//        Configuration.browser = "chrome";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.headless = true;
-        Configuration.browserSize = "1920x1080";
-//        Configuration.browser = "chrome";
 //        Configuration.startMaximized = true;
+        Configuration.browserSize = "1920x1080";
         open(urlBase);
     }
 

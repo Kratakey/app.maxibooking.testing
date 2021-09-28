@@ -75,6 +75,7 @@ public class Registration {
 
     @Step("Confirm")
     public void confirm() {
+        sleep(200);
         $("app-registration-form").$("ion-button[type='submit']").click();
     }
 

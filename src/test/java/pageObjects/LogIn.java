@@ -1,6 +1,5 @@
 package pageObjects;
 
-import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -102,7 +101,7 @@ public class LogIn extends setup.TestBase {
 
     public void langRU() {
         $("app-profile").$("ion-item").click();
-        $("app-country-flag").$(byClassName("flag-icon")).click();
+        $("[menu='flag-menu']").click();
         $("app-flag-menu").$("ion-select").click();
         $("ion-alert").$("button", 1).click();
         $(byText("OK")).click();
@@ -110,7 +109,7 @@ public class LogIn extends setup.TestBase {
 
     public void langEN() {
         $("app-profile").$("ion-item").click();
-        $("app-country-flag").$(byClassName("flag-icon")).click();
+        $("[menu='flag-menu']").click();
         $("app-flag-menu").$("ion-select").click();
         $("ion-alert").$("button", 0).click();
         $(byText("OK")).click();
