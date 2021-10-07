@@ -1,9 +1,15 @@
 package pageObjects;
 
+import com.codeborne.selenide.Selenide;
+
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class LogIn extends setup.TestBase {
+
+    public void refreshPage() {
+        Selenide.refresh();
+    }
 
     public void presetAcc1User() {
         $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();

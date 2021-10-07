@@ -28,6 +28,14 @@ public class Booking {
         $("app-search").$("form").$("input").pressEnter();
     }
 
+    @Step("Main page, input search text and press Enter")
+    public void findServiceMainPage(String serviceName) {
+        $("ion-searchbar").$("input").setValue("\"" + serviceName + "\"");
+        sleep(1000);
+        $("ion-searchbar").$("input").pressEnter();
+    }
+
+
     @Step("Verify that the search result is correct")
     public void verifyServiceSearch(
             String FirstName,
@@ -120,6 +128,28 @@ public class Booking {
         $("app-client-details-step").$(byText("Forward")).click();
     }
 
+    @Step("Fill E-Mail")
+    public void fillEmail(String Email) {
+        $("app-order").$("app-client-identification").$("input").sendKeys(Email);
+        $("app-order").$("app-client-identification").$("ion-button[type='submit']").click();
+    }
+
+    @Step("Fill the form")
+    public void fillFrom(String Password, String Country, String FirstName, String LastName) {
+        $("app-order").$("app-client-identification").$("input[type='password']",0).sendKeys(Password);
+        $("app-order").$("app-client-identification").$("input[type='password']",1).sendKeys(Password);
+
+        $("app-country-selector").$("button").click();
+        sleep(1000);
+        $("ionic-selectable-modal").$("input").sendKeys(Country);
+        sleep(500);
+        $("ionic-selectable-modal").$("ion-label", 0).click();
+
+        $("app-order").$("app-client-identification").$("form").$("input[type='text']",0).sendKeys(FirstName);
+        $("app-order").$("app-client-identification").$("form").$("input[type='text']",1).sendKeys(LastName);
+        $("app-order").$("app-client-identification").$("ion-button[type='submit']").click();
+    }
+
     @Step("Select service location")
     public void chooseServiceLocation() {
         sleep(200);
@@ -136,7 +166,15 @@ public class Booking {
     }
 
     @Step("Verify the order details")
-    public void verifyOrderDetails() {
+    public void verifyOrderDetails(String ServiceName, String Price, String Duration, String FirstName, String LastName) {
+        $("app-sent-order-page").$("main").$("app-service-title").shouldHave(text(ServiceName));
+        $("app-sent-order-page").$("main").$("app-price").shouldHave(text(Price));
+        $("app-sent-order-page").$("main").$("app-duration-viewer").shouldHave(text(Duration));
+        $("app-sent-order-page").$("main").shouldHave(text(FirstName+" "+LastName));
+    }
 
+    @Step("Click Orders button")
+    public void clickOrders() {
+        $("app-sent-order-page").$("ion-toolbar").$("ion-item",2).click();
     }
 }

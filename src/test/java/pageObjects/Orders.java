@@ -55,10 +55,6 @@ public class Orders extends setup.TestBase {
             String servicePrice,
             String serviceTotalDuration
     ) {
-//        $("app-received-order-list-item").$("app-client-widget").shouldHave(text(userFirstName));
-//        $("app-received-order-list-item").$("app-service-title").shouldHave(text(serviceName));
-//        $("app-received-order-list-item").$("app-price").shouldHave(text(servicePrice));
-//        $("app-received-order-list-item").$("app-duration-viewer").shouldHave(text(serviceTotalDuration));
         $("app-inbox-page").shouldHave(
                 text(userFirstName),
                 text(servicePrice),
@@ -73,10 +69,6 @@ public class Orders extends setup.TestBase {
             String servicePrice,
             String serviceTotalDuration
     ) {
-//        $("app-sent-order-list-item").$("app-professional-card").shouldHave(text(userFirstName));
-//        $("app-sent-order-list-item").$("app-service-title").shouldHave(text(serviceName));
-//        $("app-sent-order-list-item").$("app-price").shouldHave(text(servicePrice));
-//        $("app-sent-order-list-item").$("app-duration-viewer").shouldHave(text(serviceTotalDuration));
         $("app-outbox-page").shouldHave(
                 text(userFirstName),
                 text(serviceName),
