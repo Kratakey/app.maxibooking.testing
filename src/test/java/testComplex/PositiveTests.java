@@ -14,6 +14,7 @@ public class PositiveTests extends setup.TestBase {
     Messages msg = new Messages();
     Favorites fav = new Favorites();
     Reviews rev = new Reviews();
+    Search sch = new Search();
     LogIn log = new LogIn();
 
     @Test
@@ -918,7 +919,6 @@ public class PositiveTests extends setup.TestBase {
     void t00701() {
         log.popupSkip();
 
-
         log.clickSideMenu();
         bkn.clickSearchEN();
 
@@ -945,6 +945,105 @@ public class PositiveTests extends setup.TestBase {
         bkn.verifyOrderDetails(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName);
         bkn.clickOrders();
         ord.checkOrderOutbox(user1FirstName, service1Name, service1Price, service1TotalDuration);
+    }
+
+    @Test
+    @Feature("Search")
+    @Owner("Egor Khlebnikov")
+    @Story("Search from the main page")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Main page search: professional name")
+    void t00800() {
+        log.popupSkip();
+
+        sch.searchMain(user1FirstName+" "+user1LastName);
+        bkn.verifyServiceSearch(user1FirstName, user1LastName, service1Name, service1Price);
+        bkn.chooseService();
+        bkn.verifyServiceBase(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName, service1Description);
+    }
+
+    @Test
+    @Feature("Search")
+    @Owner("Egor Khlebnikov")
+    @Story("Search from the main page")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Main page search: service name")
+    void t00801() {
+        log.popupSkip();
+
+        bkn.findServiceMainPage(service2Name);
+        bkn.verifyServiceSearch(user2FirstName, user2LastName, service2Name, service2Price);
+        bkn.chooseService();
+        bkn.verifyServiceBase(service2Name, service2Price, service2TotalDuration, user2FirstName, user2LastName, service2Description);
+    }
+
+    @Test
+    @Feature("Search")
+    @Owner("Egor Khlebnikov")
+    @Story("Search from the main page")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Main page search: speciality")
+    void t00802() {
+        log.popupSkip();
+
+        bkn.findServiceMainPage(service3Specialization);
+        bkn.verifyServiceSearch(user3FirstName, user3LastName, service3Name, service3Price);
+        bkn.chooseService();
+        bkn.verifyServiceBase(service3Name, service3Price, service3TotalDuration, user3FirstName, user3LastName, service3Description);
+    }
+
+    @Test
+    @Feature("Search")
+    @Owner("Egor Khlebnikov")
+    @Story("Search from the search page")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Search page search: professional name")
+    void t00803() {
+        log.popupSkip();
+
+        log.clickSideMenu();
+        bkn.clickSearchEN();
+
+        sch.search(user1FirstName+" "+user1LastName);
+        bkn.verifyServiceSearch(user1FirstName, user1LastName, service1Name, service1Price);
+        bkn.chooseService();
+        bkn.verifyServiceBase(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName, service1Description);
+    }
+
+    @Test
+    @Feature("Search")
+    @Owner("Egor Khlebnikov")
+    @Story("Search from the search page")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Search page search: service name")
+    void t00804() {
+        log.popupSkip();
+
+        log.clickSideMenu();
+        bkn.clickSearchEN();
+
+        bkn.findService(service2Name);
+        bkn.verifyServiceSearch(user2FirstName, user2LastName, service2Name, service2Price);
+        bkn.chooseService();
+        bkn.verifyServiceBase(service2Name, service2Price, service2TotalDuration, user2FirstName, user2LastName, service2Description);
+    }
+
+    @Test
+    @Feature("Search")
+    @Owner("Egor Khlebnikov")
+    @Story("Search from the search page")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Search page search: speciality")
+    void t00805() {
+        log.popupSkip();
+
+        log.clickSideMenu();
+        bkn.clickSearchEN();
+
+        bkn.findService(service3Specialization);
+        bkn.verifyServiceSearch(user3FirstName, user3LastName, service3Name, service3Price);
+        bkn.chooseService();
+        bkn.verifyServiceBase(service3Name, service3Price, service3TotalDuration, user3FirstName, user3LastName, service3Description);
     }
 }
 

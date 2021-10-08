@@ -1,5 +1,6 @@
 package pageObjects;
 
+import helpers.Attach;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
@@ -22,17 +23,19 @@ public class Booking {
     }
 
     @Step("Input search text and press Enter")
-    public void findService(String serviceName) {
-        $("app-search").$("form").$("input").setValue("\"" + serviceName + "\"");
+    public void findService(String searchQuery) {
+        $("app-search").$("form").$("input").setValue("\"" + searchQuery + "\"");
         sleep(1000);
         $("app-search").$("form").$("input").pressEnter();
+        Attach.screenshotAs("Screenshot");
     }
 
     @Step("Main page, input search text and press Enter")
-    public void findServiceMainPage(String serviceName) {
-        $("ion-searchbar").$("input").setValue("\"" + serviceName + "\"");
+    public void findServiceMainPage(String searchQuery) {
+        $("ion-searchbar").$("input").setValue("\"" + searchQuery + "\"");
         sleep(1000);
         $("ion-searchbar").$("input").pressEnter();
+        Attach.screenshotAs("Screenshot");
     }
 
 
@@ -160,7 +163,7 @@ public class Booking {
 
     @Step("Place the order")
     public void placeOrder() {
-        sleep(500);
+        sleep(1000);
         $("app-summary-step").$(byText("Place order")).click();
         sleep(2000);
     }

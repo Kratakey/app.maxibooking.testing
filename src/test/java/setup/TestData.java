@@ -161,55 +161,55 @@ public class TestData {
         testPassword9 = generate.internet().password();
 
         user1FirstName = generate.name().firstName() + generate.name().suffix();
-        user1LastName = generate.name().lastName();
+        user1LastName = generate.name().lastName() + generate.name().suffix();
         user1PhoneNumber = "911" + generate.number().digits(7);
         user1Country = "Russia";
         user1City = "Moscow";
 
         user2FirstName = generate.name().firstName() + generate.name().suffix();
-        user2LastName = generate.name().lastName();
+        user2LastName = generate.name().lastName() + generate.name().suffix();
         user2PhoneNumber = "911" + generate.number().digits(7);
         user2Country = "Russia";
         user2City = "Moscow";
 
         user3FirstName = generate.name().firstName() + generate.name().suffix();
-        user3LastName = generate.name().lastName();
+        user3LastName = generate.name().lastName() + generate.name().suffix();
         user3PhoneNumber = "911" + generate.number().digits(7);
         user3Country = "Russia";
         user3City = "Moscow";
 
         user4FirstName = generate.name().firstName() + generate.name().suffix();
-        user4LastName = generate.name().lastName();
+        user4LastName = generate.name().lastName() + generate.name().suffix();
         user4PhoneNumber = "911" + generate.number().digits(7);
         user4Country = "Russia";
         user4City = "Moscow";
 
         user5FirstName = generate.name().firstName() + generate.name().suffix();
-        user5LastName = generate.name().lastName();
+        user5LastName = generate.name().lastName() + generate.name().suffix();
         user5PhoneNumber = "911" + generate.number().digits(7);
         user5Country = "Russia";
         user5City = "Moscow";
 
         user6FirstName = generate.name().firstName() + generate.name().suffix();
-        user6LastName = generate.name().lastName();
+        user6LastName = generate.name().lastName() + generate.name().suffix();
         user6PhoneNumber = "613" + generate.number().digits(7);
         user6Country = "Canada";
         user6City = "Toronto";
 
         user7FirstName = generate.name().firstName() + generate.name().suffix();
-        user7LastName = generate.name().lastName();
+        user7LastName = generate.name().lastName() + generate.name().suffix();
         user7PhoneNumber = "457" + generate.number().digits(7);
         user7Country = "Finland";
         user7City = "Helsinki";
 
         user8FirstName = generate.name().firstName() + generate.name().suffix();
-        user8LastName = generate.name().lastName();
+        user8LastName = generate.name().lastName() + generate.name().suffix();
         user8PhoneNumber = "590" + generate.number().digits(7);
         user8Country = "France";
         user8City = "Paris";
 
         user9FirstName = generate.name().firstName() + generate.name().suffix();
-        user9LastName = generate.name().lastName();
+        user9LastName = generate.name().lastName() + generate.name().suffix();
         user9PhoneNumber = "159" + generate.number().digits(7);
         user9Country = "Germany";
         user9City = "Berlin";
@@ -220,7 +220,7 @@ public class TestData {
         service1DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service1DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service1Price = String.valueOf(generate.number().numberBetween(1, 999));
-        service1Specialization = generate.job().title();
+        service1Specialization = generate.job().title() + " " + generate.ancient().god();
         service1Country = "Russia";
         service1City = "Moscow";
         service1Address = generate.address().fullAddress();
@@ -232,7 +232,7 @@ public class TestData {
         service2DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service2DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service2Price = String.valueOf(generate.number().numberBetween(1, 999));
-        service2Specialization = generate.job().title();
+        service2Specialization = generate.job().title() + " " + generate.ancient().hero();
         service2Country = "Russia";
         service2City = "Moscow";
         service2Address = generate.address().fullAddress();
@@ -244,7 +244,7 @@ public class TestData {
         service3DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service3DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service3Price = String.valueOf(generate.number().numberBetween(1, 999));
-        service3Specialization = generate.job().title();
+        service3Specialization = generate.job().title() + " " + generate.ancient().titan();
         service3Country = "Russia";
         service3City = "Moscow";
         service3Address = generate.address().fullAddress();
@@ -256,7 +256,7 @@ public class TestData {
         service4DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service4DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service4Price = String.valueOf(generate.number().numberBetween(1, 999));
-        service4Specialization = generate.job().title();
+        service4Specialization = generate.job().title() + " " + generate.ancient().primordial();
         service4Country = "Russia";
         service4City = "Moscow";
         service4Address = generate.address().fullAddress();
@@ -268,7 +268,7 @@ public class TestData {
         service7DurationHours = String.valueOf(generate.number().numberBetween(0, 6));
         service7DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
         service7Price = String.valueOf(generate.number().numberBetween(1, 999));
-        service7Specialization = generate.job().title();
+        service7Specialization = generate.job().title() + " " + generate.name().suffix();
         service7Country = "Finland";
         service7City = "Helsinki";
         service7Address = generate.address().fullAddress();
