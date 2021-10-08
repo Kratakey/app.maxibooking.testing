@@ -484,7 +484,7 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Service booking")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic booking online(3)")
+    @DisplayName("Basic booking online(2)")
     void t00203() {
         log.popupSkip();
         log.account6();
@@ -519,7 +519,7 @@ public class PositiveTests extends setup.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Service booking")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic booking online(2)")
+    @DisplayName("Basic booking online(3)")
     void t00204() {
         log.popupSkip();
         log.account6();
