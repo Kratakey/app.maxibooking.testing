@@ -192,7 +192,7 @@ public class TestData {
 
         user6FirstName = generate.name().firstName() + generate.name().suffix();
         user6LastName = generate.name().lastName() + generate.name().suffix();
-        user6PhoneNumber = "613" + generate.number().digits(7);
+        user6PhoneNumber = "6135" + generate.number().digits(6);
         user6Country = "Canada";
         user6City = "Toronto";
 
