@@ -13,7 +13,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class TestBase extends TestData{
     public String
             urlBase = "https://app.maxibooking.ru/",
-//            urlBase = "https://d8base.com/",
             urlLogin = urlBase + "/auth/login",
             urlLogOut = urlBase + "/auth/login?logout=",
             urlServicePublish = urlBase + "/service/publish",
