@@ -21,7 +21,7 @@ public class TestBase extends TestData{
             urlOrders = urlBase + "/my-orders/inbox",
             urlUserRegistration = urlBase + "/auth/registration";
     @BeforeAll
-    public static void main(String[] args) {
+    public static void init() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
