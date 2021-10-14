@@ -31,7 +31,7 @@ public class TestBase extends TestData{
     }
 
     @AfterEach
-    public void refresh() {
+    public void tearDown() {
         Attach.screenshotAs("Screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
