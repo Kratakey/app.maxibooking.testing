@@ -222,12 +222,12 @@ public class ServicePublish {
 
     @Step("Select online payment")
     public void selectOnlinePayment() {
-        sleep(200);
+        sleep(400);
         $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 1).click();
     }
 
     public void clickSeventhStep() {
-        sleep(300);
+        sleep(400);
         $("app-service-publish-step-seven").$("ion-button[type='submit']").click();
     }
 
