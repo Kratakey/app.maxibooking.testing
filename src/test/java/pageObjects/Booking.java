@@ -116,13 +116,12 @@ public class Booking {
 
     @Step("Pick booking time")
     public void bookTime() {
-        $("app-calendar-component").$(byText("11:00 AM")).scrollIntoView(true);
-        $("app-calendar-component").$(byText("11:00 AM")).click();
+        $("app-calendar-component").$(byText("11:00 AM")).scrollIntoView(true).click();
     }
 
     @Step("Click the Forward button")
     public void clickForward() {
-        $("app-date-time-step").$(byText("Forward")).click();
+        $("app-date-time-step").$(byText("Forward")).scrollIntoView(true).click();
     }
 
     @Step("Select 'Book this for me' option")
