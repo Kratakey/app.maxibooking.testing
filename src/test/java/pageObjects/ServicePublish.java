@@ -1,6 +1,7 @@
 package pageObjects;
 
 import com.codeborne.selenide.Condition;
+import helpers.Attach;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -225,6 +226,7 @@ public class ServicePublish {
     public void selectOnlinePayment() {
         $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 1).click();
         sleep(400);
+        Attach.screenshotAs("Screenshot");
     }
 
     public void clickSeventhStep() {
