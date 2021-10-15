@@ -226,10 +226,11 @@ public class ServicePublish {
     }
 
     public void clickSeventhStep() {
+        sleep(200);
         $("app-service-publish-step-seven").$("ion-button[type='submit']").click();
     }
 
-    @Step("Verify that the data all correct")
+    @Step("Verify data")
     public void checkPublishFormOnline(String serviceName, String servicePrice, String serviceTotalDuration, String serviceDescription) {
         $("h2").shouldHave(Condition.textCaseSensitive(serviceName));
         $("app-price").shouldHave(Condition.text(servicePrice));
