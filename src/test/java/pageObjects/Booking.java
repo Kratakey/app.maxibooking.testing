@@ -91,6 +91,7 @@ public class Booking {
 
     @Step("Check if payment online")
     public void verifyServicePaymentOnline() {
+        sleep(400);
         $("app-service-widget").$("app-payment-method-viewer").shouldHave(text("Online payment"));
     }
 
