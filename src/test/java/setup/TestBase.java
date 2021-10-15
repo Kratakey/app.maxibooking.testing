@@ -31,7 +31,7 @@ public class TestBase extends TestData{
 //        Configuration.browser = "chrome";
 //        Configuration.startMaximized = true;
         Configuration.browserSize = "1920x1080";
-        Configuration.timeout=8000;
+        Configuration.timeout = 10000;
         Configuration.headless = true;
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";

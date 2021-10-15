@@ -5,6 +5,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -116,7 +117,7 @@ public class Booking {
 
     @Step("Pick booking time")
     public void bookTime() {
-        $("app-calendar-component").$(byText("11:00 AM")).scrollIntoView(true).click();
+        $("app-calendar-component").$(withText("11:00")).scrollIntoView(true).click();
     }
 
     @Step("Click the Forward button")
