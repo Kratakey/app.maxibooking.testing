@@ -34,7 +34,7 @@ public class TestBase extends TestData{
         Configuration.timeout=8000;
         Configuration.headless = true;
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
     }
 
 
