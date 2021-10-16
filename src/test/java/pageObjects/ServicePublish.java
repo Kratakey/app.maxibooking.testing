@@ -219,19 +219,19 @@ public class ServicePublish {
     @Step("Select payment by cash")
     public void selectPaymentByCash() {
         $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 0).click();
-        sleep(400);
+        sleep(1000);
     }
 
     @Step("Select online payment")
     public void selectOnlinePayment() {
         $("app-service-publish-step-seven").$("form").$("ion-list").$("ion-item", 1).click();
-        sleep(400);
+        sleep(1000);
         Attach.screenshotAs("Screenshot");
     }
 
     public void clickSeventhStep() {
         $("app-service-publish-step-seven").$("ion-button[type='submit']").click();
-        sleep(400);
+        sleep(1000);
     }
 
     @Step("Verify data")
