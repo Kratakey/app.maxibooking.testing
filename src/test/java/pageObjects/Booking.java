@@ -107,13 +107,9 @@ public class Booking {
 
     @Step("Select the next day")
     public void clickNextDay() {
-        $("app-calendar-component").$("ion-item", 1).$("ion-button", 1).click();
-    }
-
-    @Step("Scroll down")
-    public void scrollDown() {
-        sleep(100);
-        $(byText("Forward")).scrollIntoView(true);
+        sleep(200);
+        $("app-calendar-component").$("ion-item").$("[slot=end]").click();
+        sleep(200);
     }
 
     @Step("Pick booking time")
@@ -121,15 +117,26 @@ public class Booking {
         $("app-calendar-component").$(withText("11:00")).scrollIntoView(true).click();
     }
 
-    @Step("Click the Forward button")
+    @Step("Click the 'Accept and continue' button")
     public void clickForward() {
-        $("app-date-time-step").$(byText("Forward")).scrollIntoView(true).click();
+        $("app-date-time-step").$(byText("Accept and continue")).scrollIntoView(true).click();
+    }
+
+    @Step("Click the 'Accept and continue' button")
+    public void clickAccept() {
+        $("app-confirmation-step").$(byText("Accept and continue")).scrollIntoView(true).click();
+    }
+
+    @Step("Select address")
+    public void selectAddress() {
+        sleep(200);
+        $("app-client-details-step").$("ion-radio-group").$("ion-item").click();
     }
 
     @Step("Select 'Book this for me' option")
     public void bookForMe() {
         $("app-client-details-step").$("ion-checkbox").click();
-        $("app-client-details-step").$(byText("Forward")).click();
+        $("app-client-details-step").$(byText("Accept and continue")).click();
     }
 
     @Step("Fill E-Mail")
@@ -165,7 +172,7 @@ public class Booking {
     @Step("Place the order")
     public void placeOrder() {
         sleep(1000);
-        $("app-summary-step").$(byText("Place order")).click();
+        $("app-order").$(byText("Place order")).click();
         sleep(2000);
     }
 
