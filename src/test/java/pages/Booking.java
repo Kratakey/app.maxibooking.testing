@@ -102,7 +102,9 @@ public class Booking {
 
     @Step("Click the 'Date' button to book")
     public void clickDate() {
+        sleep(500);
         $(byText("Order")).click();
+        sleep(500);
     }
 
     @Step("Select the next day")
