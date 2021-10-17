@@ -114,17 +114,21 @@ public class Booking {
 
     @Step("Pick booking time")
     public void bookTime() {
+        sleep(500);
         $("app-calendar-component").$(withText("11:00")).scrollIntoView(true).click();
+        sleep(500);
     }
 
     @Step("Click the 'Accept and continue' button")
     public void clickForward() {
         $("app-date-time-step").$(byText("Accept and continue")).scrollIntoView(true).click();
+        sleep(500);
     }
 
     @Step("Click the 'Accept and continue' button")
     public void clickAccept() {
         $("app-confirmation-step").$(byText("Accept and continue")).scrollIntoView(true).click();
+        sleep(500);
     }
 
     @Step("Select address")
