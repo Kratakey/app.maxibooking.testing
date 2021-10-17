@@ -121,12 +121,14 @@ public class Booking {
 
     @Step("Click the 'Accept and continue' button")
     public void clickForward() {
+        sleep(500);
         $("app-date-time-step").$(byText("Accept and continue")).scrollIntoView(true).click();
         sleep(500);
     }
 
     @Step("Click the 'Accept and continue' button")
     public void clickAccept() {
+        sleep(500);
         $("app-confirmation-step").$(byText("Accept and continue")).scrollIntoView(true).click();
         sleep(500);
     }
