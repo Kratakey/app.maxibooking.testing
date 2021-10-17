@@ -1,4 +1,4 @@
-package pageObjects;
+package pages;
 
 import helpers.Attach;
 import io.qameta.allure.Step;
@@ -137,6 +137,11 @@ public class Booking {
     public void bookForMe() {
         $("app-client-details-step").$("ion-checkbox").click();
         $("app-client-details-step").$(byText("Accept and continue")).click();
+    }
+
+    @Step("app-order")
+    public void selectNewUser() {
+        $("app-order").$("section").$("ion-item",1).click();
     }
 
     @Step("Fill E-Mail")

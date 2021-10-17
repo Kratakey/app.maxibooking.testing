@@ -1,11 +1,11 @@
-package pageObjects;
+package pages;
 
 import com.codeborne.selenide.Selenide;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class LogIn extends setup.TestBase {
+public class LogIn extends config.TestBase {
 
     public void refreshPage() {
         Selenide.refresh();

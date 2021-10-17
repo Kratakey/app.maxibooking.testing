@@ -1,4 +1,4 @@
-package pageObjects;
+package pages;
 
 import io.qameta.allure.Step;
 

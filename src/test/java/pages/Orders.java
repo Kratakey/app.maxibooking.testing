@@ -1,4 +1,4 @@
-package pageObjects;
+package pages;
 
 import io.qameta.allure.Step;
 
@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class Orders extends setup.TestBase {
+public class Orders extends config.TestBase {
 
     @Step("Open the page by url")
     public void openPageUrl(String urlOrders) {

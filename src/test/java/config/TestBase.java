@@ -1,4 +1,4 @@
-package setup;
+package config;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -28,13 +28,12 @@ public class TestBase extends TestData{
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
-//        Configuration.browser = "chrome";
-//        Configuration.startMaximized = true;
-        Configuration.browserSize = "1920x1080";
-        Configuration.timeout = 10000;
-        Configuration.headless = true;
         Configuration.browserCapabilities = capabilities;
+        Configuration.startMaximized = true;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+
+        Configuration.timeout = 10000;
+//        Configuration.headless = true;
     }
 
 

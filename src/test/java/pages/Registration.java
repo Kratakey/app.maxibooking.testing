@@ -1,4 +1,4 @@
-package pageObjects;
+package pages;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
@@ -75,8 +75,8 @@ public class Registration {
 
     @Step("Confirm")
     public void confirm() {
-        sleep(200);
-        $("app-registration-form").$("ion-button[type='submit']").click();
+        sleep(400);
+        $("app-registration").$("ion-button[type='submit']").click();
     }
 
     @Step("Verify basic registration data")

@@ -3,9 +3,9 @@ package testComplex;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pageObjects.*;
+import pages.*;
 
-public class PositiveTests extends setup.TestBase {
+public class PositiveTests extends config.TestBase {
 
     Registration reg = new Registration();
     ServicePublish pbl = new ServicePublish();
@@ -890,14 +890,26 @@ public class PositiveTests extends setup.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
-        log.refreshPage();
-        log.popupSkip();
         bkn.clickNextDay();
         bkn.clickNextDay();
         bkn.bookTime();
         bkn.clickForward();
-        bkn.fillEmail(testUser8);
-        bkn.fillFrom(testPassword8, user8Country, user8FirstName, user8LastName);
+
+        log.refreshPage();
+        log.popupSkip();
+
+        bkn.selectNewUser();
+        bkn.clickAccept();
+
+        reg.fillUserFirstName(user8FirstName);
+        reg.fillUserLastName(user8LastName);
+        reg.fillEmail(testUser8);
+        reg.choosePassword(testPassword8);
+
+        reg.selectCountry(user8Country);
+        reg.selectCity(user8City);
+        reg.confirm();
+
         bkn.placeOrder();
         bkn.verifyOrderDetails(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName);
         bkn.clickOrders();
@@ -925,15 +937,27 @@ public class PositiveTests extends setup.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
-        log.refreshPage();
-        log.popupSkip();
         bkn.clickNextDay();
         bkn.clickNextDay();
         bkn.clickNextDay();
         bkn.bookTime();
         bkn.clickForward();
-        bkn.fillEmail(testUser9);
-        bkn.fillFrom(testPassword9, user9Country, user9FirstName, user9LastName);
+
+        log.refreshPage();
+        log.popupSkip();
+
+        bkn.selectNewUser();
+        bkn.clickAccept();
+
+        reg.fillUserFirstName(user9FirstName);
+        reg.fillUserLastName(user9LastName);
+        reg.fillEmail(testUser9);
+        reg.choosePassword(testPassword9);
+
+        reg.selectCountry(user9Country);
+        reg.selectCity(user9City);
+        reg.confirm();
+
         bkn.placeOrder();
         bkn.verifyOrderDetails(service1Name, service1Price, service1TotalDuration, user1FirstName, user1LastName);
         bkn.clickOrders();

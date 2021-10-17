@@ -1,4 +1,4 @@
-package pageObjects;
+package pages;
 
 import com.codeborne.selenide.Condition;
 import helpers.Attach;
@@ -192,6 +192,8 @@ public class ServicePublish {
     @Step("Confirm Instant Booking")
     public void confirmInstantBooking() {
         $("app-service-publish-step-seven").$("form").$("ion-item", 9).click();
+        sleep(1000);
+        Attach.screenshotAs("Screenshot");
     }
 
     @Step("Fill a service geography")
