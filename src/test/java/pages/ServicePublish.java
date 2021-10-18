@@ -175,8 +175,9 @@ public class ServicePublish {
 
     @Step("Set a schedule")
     public void fillScheduleLite() {
-        $("app-service-publish-step-seven").$("form").$("ion-icon").click();
         sleep(300);
+        $("app-service-publish-step-seven").$("form").$("ion-icon").click();
+        sleep(500);
         $("app-add-button").$("ion-label").click();
         sleep(300);
         $("app-timetable-add-time-popover").$("ion-label", 5).click();
