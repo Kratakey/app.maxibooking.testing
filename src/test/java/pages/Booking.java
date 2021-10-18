@@ -195,6 +195,7 @@ public class Booking {
 
     @Step("Verify the order details")
     public void verifyOrderDetails(String ServiceName, String Price, String Duration, String FirstName, String LastName) {
+        sleep(1000);
         $("app-sent-order-page").$("main").$("app-service-title").shouldHave(text(ServiceName));
         $("app-sent-order-page").$("main").$("app-price").shouldHave(text(Price));
         $("app-sent-order-page").$("main").$("app-duration-viewer").shouldHave(text(Duration));
