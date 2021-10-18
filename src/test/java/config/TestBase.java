@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase extends TestData{
     public String
-            urlBase = "https://app.maxibooking.ru/",
+            urlBase = System.getProperty("url", "https://app.maxibooking.ru/"),
             urlLogin = urlBase + "/auth/login",
             urlLogOut = urlBase + "/auth/login?logout=",
             urlServicePublish = urlBase + "/service/publish",

@@ -16,6 +16,7 @@ public class UserProfileTests extends config.TestBase {
     Reviews rev = new Reviews();
     Search sch = new Search();
     LogIn log = new LogIn();
+    UserProfile usr = new UserProfile();
 
     @Test
     @Feature("User Registration")
@@ -37,5 +38,29 @@ public class UserProfileTests extends config.TestBase {
         reg.confirm();
         reg.verifyRegistrationDataFull(user10FirstName, user10LastName, testUser10, user10PhoneNumber, user10Country, user10City);
     }
+
+    @Test
+    @Feature("Profile verification")
+    @Owner("Egor Khlebnikov")
+    @Story("Full registration")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Profile verification")
+    void t00001() {
+        log.popupSkip();
+        log.account10();
+        log.langEN();
+
+        log.clickSideMenu();
+        usr.openUserProfile();
+        usr.verifyProfile(user10FirstName, user10LastName,testUser10,user10Country, user10City);
+        usr.openUserProfileMain();
+//        usr.verifyProfileMain(user10FirstName, user10LastName,testUser10);
+        usr.clickBackMain();
+        usr.openUserProfileAddress();
+        usr.verifyProfileAddress(user10Country, user10City);
+        usr.clickBackAddress();
+        usr.verifyProfile(user10FirstName, user10LastName,testUser10,user10Country, user10City);
+    }
+
 
 }

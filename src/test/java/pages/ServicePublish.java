@@ -191,7 +191,7 @@ public class ServicePublish {
 
     @Step("Confirm Instant Booking")
     public void confirmInstantBooking() {
-        sleep(1000);
+        sleep(2000);
         $("app-service-publish-step-seven").$("form").$("ion-item", 9).click();
         Attach.screenshotAs("Screenshot");
     }

@@ -105,6 +105,16 @@ public class LogIn extends config.TestBase {
         sleep(1000);
     }
 
+    public void account10() {
+        $("ion-buttons").$("ion-menu-toggle").$("ion-button").click();
+        sleep(500);
+        $("app-main-menu").$(byText("Log in")).click();
+        $("app-login").$("input", 0).setValue(testUser10);
+        $("app-login").$("input", 1).setValue(testPassword10);
+        $("app-login-form").$("ion-button[type='submit']").click();
+        sleep(1000);
+    }
+
     public void langRU() {
         $("app-profile").$("ion-item").click();
         $("[menu='flag-menu']").click();
