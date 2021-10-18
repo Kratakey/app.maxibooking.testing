@@ -29,11 +29,14 @@ public class TestBase extends TestData{
         capabilities.setCapability("enableVideo", true);
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.startMaximized = true;
+//        Configuration.startMaximized = true;
+        Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 
         Configuration.timeout = 10000;
-//        Configuration.headless = true;
+        Configuration.headless = true;
+
+        setTestData();
     }
 
 

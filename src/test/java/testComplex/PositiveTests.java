@@ -24,7 +24,6 @@ public class PositiveTests extends config.TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Full Positive User Registration")
     void t00000() {
-        setTestData();
         log.popupSkip();
         log.clickSideMenu();
         reg.openPageEN();
