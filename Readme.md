@@ -7,3 +7,6 @@
 или
 
 `gradle clean test -Durl=https://localhost/`
+
+после окончания тестов
+`gradle allureServe` для отчетов
