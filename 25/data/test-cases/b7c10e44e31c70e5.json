@@ -1,0 +1,492 @@
+{
+  "uid" : "b7c10e44e31c70e5",
+  "name" : "Search page search: professional name",
+  "fullName" : "complexTests.PositiveTests.t00803",
+  "historyId" : "8ca8c5c1c11940c9acbed590a57a4cf5",
+  "time" : {
+    "start" : 1635179753278,
+    "stop" : 1635179804055,
+    "duration" : 50777
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1635179753279,
+        "stop" : 1635179766816,
+        "duration" : 13537
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1635179767017,
+        "stop" : 1635179768240,
+        "duration" : 1223
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635179769765,
+        "stop" : 1635179771430,
+        "duration" : 1665
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/ion-item\") click()",
+      "time" : {
+        "start" : 1635179771430,
+        "stop" : 1635179772988,
+        "duration" : 1558
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635179773788,
+        "stop" : 1635179775639,
+        "duration" : 1851
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Search button",
+      "time" : {
+        "start" : 1635179775939,
+        "stop" : 1635179777837,
+        "duration" : 1898
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-main-menu/by text: Search\") click()",
+        "time" : {
+          "start" : 1635179775939,
+          "stop" : 1635179777537,
+          "duration" : 1598
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Search page: Search without 'quotes'",
+      "time" : {
+        "start" : 1635179777838,
+        "stop" : 1635179783886,
+        "duration" : 6048
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search/form/input\") set value(SherrillMDIII MonahanIIPhD)",
+        "time" : {
+          "start" : 1635179777838,
+          "stop" : 1635179780096,
+          "duration" : 2258
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search/form/input\") press enter()",
+        "time" : {
+          "start" : 1635179781096,
+          "stop" : 1635179782914,
+          "duration" : 1818
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "d244802bdeb7f306",
+        "name" : "Screenshot",
+        "source" : "d244802bdeb7f306.png",
+        "type" : "image/png",
+        "size" : 74940
+      } ],
+      "parameters" : [ {
+        "name" : "searchQuery",
+        "value" : "SherrillMDIII MonahanIIPhD"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify that the search result is correct",
+      "time" : {
+        "start" : 1635179783886,
+        "stop" : 1635179790978,
+        "duration" : 7092
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search-result/ion-card-content/app-professional-card\") should have([text 'SherrillMDIII', text 'MonahanIIPhD'])",
+        "time" : {
+          "start" : 1635179783887,
+          "stop" : 1635179787197,
+          "duration" : 3310
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search-result/ion-card-content/app-service-link\") should have(text 'Customer Intranet Agent (mbfkmy18)')",
+        "time" : {
+          "start" : 1635179787197,
+          "stop" : 1635179789351,
+          "duration" : 2154
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search-result/ion-card-content/app-price\") should have(text '159')",
+        "time" : {
+          "start" : 1635179789351,
+          "stop" : 1635179790978,
+          "duration" : 1627
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "FirstName",
+        "value" : "SherrillMDIII"
+      }, {
+        "name" : "LastName",
+        "value" : "MonahanIIPhD"
+      }, {
+        "name" : "ServiceName",
+        "value" : "Customer Intranet Agent (mbfkmy18)"
+      }, {
+        "name" : "ServicePrice",
+        "value" : "159"
+      } ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Select a service",
+      "time" : {
+        "start" : 1635179790979,
+        "stop" : 1635179793193,
+        "duration" : 2214
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search-result/ion-card-content/app-service-link/a\") click()",
+        "time" : {
+          "start" : 1635179790979,
+          "stop" : 1635179793193,
+          "duration" : 2214
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify that the service data is correct",
+      "time" : {
+        "start" : 1635179793193,
+        "stop" : 1635179802059,
+        "duration" : 8866
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-service-widget/app-service-title\") should have(text 'Customer Intranet Agent (mbfkmy18)')",
+        "time" : {
+          "start" : 1635179793193,
+          "stop" : 1635179795847,
+          "duration" : 2654
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-price\") should have(text '159')",
+        "time" : {
+          "start" : 1635179795848,
+          "stop" : 1635179797151,
+          "duration" : 1303
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-duration-viewer\") should have(text '47')",
+        "time" : {
+          "start" : 1635179797151,
+          "stop" : 1635179798454,
+          "duration" : 1303
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-professional-card\") should have([text 'SherrillMDIII', text 'MonahanIIPhD'])",
+        "time" : {
+          "start" : 1635179798454,
+          "stop" : 1635179801061,
+          "duration" : 2607
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget\") should have(text 'nfame38qabtrzfgs8bjdazfgbu7nye9q0i5b64e42mqeqj68jb7r4f3n2z4o4esg2gj46ghbrxku0r2yxrjk34z6qp3ghc3y4onapbz6ac9bgchpyo9u0qzjt9lnk0fn80nvchadfqr8z9m59787h9qmh7ks13v81e24y3yy2x9nzeb7wqs6xitccj19pjg8azh1sccuffjbwr5u1diyp4kdw5x1j6an4yiid4wcl9ygdd37yagdn4ysfov0joorctbchgyx6bceynfq5f0ybcgdi17ayjnmk6mhla54l4r1416ir1xhoed1l8hr4p2cdaly40m31lmty07w0gumux7s4hmncpfq7sfr2mpevycis7nvk8eou6n9av86mk032qod8udeg78ojmmnzci1rcwt5jhoe158aupqxqne60rvahgudhf0qv8fchw9hoc92xo8meuva02vapohtve1pj4kqh5prl69wbbdug49gk2wyx6vhiq8nhcf57ckjgyca4h7mezvskhy3lkqf1m16w3djy1q9uq7qvek1bjt5419glge5648ek2hhftrpej269eab71odgxp9a389jo5f5kcvauo89p8rmpbljxoj727rrcrwh4sicm9dv2z2evi663h62e4eaqdlkgk2vyqrssdr1wlasqrxltr3w6lol64ninm7r0lghik1pcqg65852m0fh66n0b8eow6jzwicw75f8ybpd9oxyui2al0c24qu6g06wh5gczkhvjy0nyw3dl0t2lqzwdgxtf34mvzmdgy6llkhfknmj7mrxfh0mi0yzoogwayezwf0g6m5qmyqn03lwmoz8nommcigsvjyfku9lhuzqpgqqp1iafwwphq7euxa0gr5g302ca6gloir4cbmjyt7fm0tdsjcxbgce2s0d14fqkfy5nhq3imjkcgm5o94233hexnx8e61utclxpjpzg7ipe8p9etnpch4vzk2o63t06d1fm14ycxe5sabyzv1oignppkny3ujsk5q0fju8x89qiou23r64ya1gni7ezlki398g61na4zd21wy36n6hudfh4r0jd3bfy0j3l343la3m7ht5raxnkrr7hyhzdjc6ai3kzx4brjfqiuyy3ub5jzhqa4t4f7srbgzp3j8avble5di46jbsbg8720izcqb6pu9406n9p09dcd3e323s4k0t6r64uc3o7jblnwlz0afk3yld7e15i2qo6pmmj0awtcn6hyb8p4fjesf35taei95815r3ecwikkz1joxl07simrdu6o3s2b5')",
+        "time" : {
+          "start" : 1635179801061,
+          "stop" : 1635179802059,
+          "duration" : 998
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ServiceName",
+        "value" : "Customer Intranet Agent (mbfkmy18)"
+      }, {
+        "name" : "ServicePrice",
+        "value" : "159"
+      }, {
+        "name" : "ServiceDuration",
+        "value" : "47"
+      }, {
+        "name" : "FirstName",
+        "value" : "SherrillMDIII"
+      }, {
+        "name" : "LastName",
+        "value" : "MonahanIIPhD"
+      }, {
+        "name" : "ServiceDescription",
+        "value" : "nfame38qabtrzfgs8bjdazfgbu7nye9q0i5b64e42mqeqj68jb7r4f3n2z4o4esg2gj46ghbrxku0r2yxrjk34z6qp3ghc3y4onapbz6ac9bgchpyo9u0qzjt9lnk0fn80nvchadfqr8z9m59787h9qmh7ks13v81e24y3yy2x9nzeb7wqs6xitccj19pjg8azh1sccuffjbwr5u1diyp4kdw5x1j6an4yiid4wcl9ygdd37yagdn4ysfov0joorctbchgyx6bceynfq5f0ybcgdi17ayjnmk6mhla54l4r1416ir1xhoed1l8hr4p2cdaly40m31lmty07w0gumux7s4hmncpfq7sfr2mpevycis7nvk8eou6n9av86mk032qod8udeg78ojmmnzci1rcwt5jhoe158aupqxqne60rvahgudhf0qv8fchw9hoc92xo8meuva02vapohtve1pj4kqh5prl69wbbdug49gk2wyx6vhiq8nhcf57ckjgyca4h7mezvskhy3lkqf1m16w3djy1q9uq7qvek1bjt5419glge5648ek2hhftrpej269eab71odgxp9a389jo5f5kcvauo89p8rmpbljxoj727rrcrwh4sicm9dv2z2evi663h62e4eaqdlkgk2vyqrssdr1wlasqrxltr3w6lol64ninm7r0lghik1pcqg65852m0fh66n0b8eow6jzwicw75f8ybpd9oxyui2al0c24qu6g06wh5gczkhvjy0nyw3dl0t2lqzwdgxtf34mvzmdgy6llkhfknmj7mrxfh0mi0yzoogwayezwf0g6m5qmyqn03lwmoz8nommcigsvjyfku9lhuzqpgqqp1iafwwphq7euxa0gr5g302ca6gloir4cbmjyt7fm0tdsjcxbgce2s0d14fqkfy5nhq3imjkcgm5o94233hexnx8e61utclxpjpzg7ipe8p9etnpch4vzk2o63t06d1fm14ycxe5sabyzv1oignppkny3ujsk5q0fju8x89qiou23r64ya1gni7ezlki398g61na4zd21wy36n6hudfh4r0jd3bfy0j3l343la3m7ht5raxnkrr7hyhzdjc6ai3kzx4brjfqiuyy3ub5jzhqa4t4f7srbgzp3j8avble5di46jbsbg8720izcqb6pu9406n9p09dcd3e323s4k0t6r64uc3o7jblnwlz0afk3yld7e15i2qo6pmmj0awtcn6hyb8p4fjesf35taei95815r3ecwikkz1joxl07simrdu6o3s2b5"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1635179803682,
+        "stop" : 1635179804055,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "bf9801d6490e89c7",
+      "name" : "Screenshot",
+      "source" : "bf9801d6490e89c7.png",
+      "type" : "image/png",
+      "size" : 64510
+    }, {
+      "uid" : "2e9575c22de5bdd2",
+      "name" : "Page source",
+      "source" : "2e9575c22de5bdd2.html",
+      "type" : "text/plain",
+      "size" : 134651
+    }, {
+      "uid" : "94c71887594e905f",
+      "name" : "Browser console logs",
+      "source" : "94c71887594e905f.txt",
+      "type" : "text/plain",
+      "size" : 1132
+    }, {
+      "uid" : "d34a0fb68f179268",
+      "name" : "Video",
+      "source" : "d34a0fb68f179268.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 23,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:complexTests.PositiveTests]/[method:t00803()]"
+  }, {
+    "name" : "story",
+    "value" : "Search from the search page"
+  }, {
+    "name" : "feature",
+    "value" : "Search"
+  }, {
+    "name" : "owner",
+    "value" : "Egor Khlebnikov"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-107"
+  }, {
+    "name" : "thread",
+    "value" : "3935@fv-az74-107.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00803"
+  }, {
+    "name" : "suite",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "owner" : "Egor Khlebnikov",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b7c10e44e31c70e5.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,909 @@
+{
+  "uid" : "d27b6c093301abb9",
+  "name" : "Profile: main - change all the info and verify",
+  "fullName" : "userProfile.UserProfileTests.t00002",
+  "historyId" : "91f8a531317d771f9dcebd106d369a8e",
+  "time" : {
+    "start" : 1635176503369,
+    "stop" : 1635176590781,
+    "duration" : 87412
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1635176503370,
+        "stop" : 1635176519345,
+        "duration" : 15975
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1635176519545,
+        "stop" : 1635176520778,
+        "duration" : 1233
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635176522301,
+        "stop" : 1635176523947,
+        "duration" : 1646
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/ion-item\") click()",
+      "time" : {
+        "start" : 1635176523948,
+        "stop" : 1635176525510,
+        "duration" : 1562
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635176526010,
+        "stop" : 1635176527853,
+        "duration" : 1843
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main-menu/by text: Log in\") click()",
+      "time" : {
+        "start" : 1635176528353,
+        "stop" : 1635176529903,
+        "duration" : 1550
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input\") set value(millicent.swaniawski@ll.tt)",
+      "time" : {
+        "start" : 1635176529903,
+        "stop" : 1635176531773,
+        "duration" : 1870
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input[1]\") set value(3entbyuttfirxy)",
+      "time" : {
+        "start" : 1635176531773,
+        "stop" : 1635176533642,
+        "duration" : 1869
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login-form/ion-button[type='submit']\") click()",
+      "time" : {
+        "start" : 1635176533642,
+        "stop" : 1635176535156,
+        "duration" : 1514
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635176537479,
+        "stop" : 1635176539127,
+        "duration" : 1648
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/ion-item\") click()",
+      "time" : {
+        "start" : 1635176539127,
+        "stop" : 1635176540692,
+        "duration" : 1565
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635176541493,
+        "stop" : 1635176543874,
+        "duration" : 2381
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open the page",
+      "time" : {
+        "start" : 1635176544174,
+        "stop" : 1635176546216,
+        "duration" : 2042
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-main-menu/by text: Profile\") click()",
+        "time" : {
+          "start" : 1635176544374,
+          "stop" : 1635176545916,
+          "duration" : 1542
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Open Profile: Main",
+      "time" : {
+        "start" : 1635176546216,
+        "stop" : 1635176548252,
+        "duration" : 2036
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/ion-button[routerlink='edit/']\") click()",
+        "time" : {
+          "start" : 1635176546216,
+          "stop" : 1635176547752,
+          "duration" : 1536
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Change First name",
+      "time" : {
+        "start" : 1635176548252,
+        "stop" : 1635176550100,
+        "duration" : 1848
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/input[name='first_name']\") set value(DanNew)",
+        "time" : {
+          "start" : 1635176548252,
+          "stop" : 1635176550100,
+          "duration" : 1848
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstName",
+        "value" : "DanNew"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Change Last name",
+      "time" : {
+        "start" : 1635176550100,
+        "stop" : 1635176551950,
+        "duration" : 1850
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/input[name='last_name']\") set value(StromanNew)",
+        "time" : {
+          "start" : 1635176550101,
+          "stop" : 1635176551950,
+          "duration" : 1849
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastName",
+        "value" : "StromanNew"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Change Patronymic",
+      "time" : {
+        "start" : 1635176551950,
+        "stop" : 1635176553820,
+        "duration" : 1870
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/input[name='patronymic']\") set value(Genie Powlowski Rosenbaum VNew)",
+        "time" : {
+          "start" : 1635176551950,
+          "stop" : 1635176553820,
+          "duration" : 1870
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "patronymic",
+        "value" : "Genie Powlowski Rosenbaum VNew"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Select gender: male",
+      "time" : {
+        "start" : 1635176553820,
+        "stop" : 1635176555656,
+        "duration" : 1836
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/app-gender-selector/ion-segment-button\") click()",
+        "time" : {
+          "start" : 1635176553820,
+          "stop" : 1635176555656,
+          "duration" : 1836
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill a phone number",
+      "time" : {
+        "start" : 1635176555656,
+        "stop" : 1635176563001,
+        "duration" : 7345
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-phone-editor/input\") set value(9643788531)",
+        "time" : {
+          "start" : 1635176555656,
+          "stop" : 1635176557514,
+          "duration" : 1858
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-phone-editor/button[type='button']\") click()",
+        "time" : {
+          "start" : 1635176557514,
+          "stop" : 1635176559007,
+          "duration" : 1493
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ionic-selectable-modal/input\") send keys(Russia)",
+        "time" : {
+          "start" : 1635176560007,
+          "stop" : 1635176561005,
+          "duration" : 998
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ionic-selectable-modal/ion-item\") click()",
+        "time" : {
+          "start" : 1635176561506,
+          "stop" : 1635176563001,
+          "duration" : 1495
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userPhoneNumber",
+        "value" : "9643788531"
+      }, {
+        "name" : "userCountry",
+        "value" : "Russia"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Change E-mail",
+      "time" : {
+        "start" : 1635176563001,
+        "stop" : 1635176565304,
+        "duration" : 2303
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/input[name='email']\") set value(li.hartmann@new.kk)",
+        "time" : {
+          "start" : 1635176563001,
+          "stop" : 1635176565304,
+          "duration" : 2303
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "li.hartmann@new.kk"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click Save: Main",
+      "time" : {
+        "start" : 1635176565304,
+        "stop" : 1635176569791,
+        "duration" : 4487
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/ion-button[type='submit']\") click()",
+        "time" : {
+          "start" : 1635176565305,
+          "stop" : 1635176566791,
+          "duration" : 1486
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify profile data",
+      "time" : {
+        "start" : 1635176569792,
+        "stop" : 1635176575063,
+        "duration" : 5271
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile\") should have([text 'DanNew', text 'StromanNew', text 'li.hartmann@new.kk', text 'Russia', text 'Moscow'])",
+        "time" : {
+          "start" : 1635176570092,
+          "stop" : 1635176575063,
+          "duration" : 4971
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstName",
+        "value" : "DanNew"
+      }, {
+        "name" : "lastName",
+        "value" : "StromanNew"
+      }, {
+        "name" : "email",
+        "value" : "li.hartmann@new.kk"
+      }, {
+        "name" : "country",
+        "value" : "Russia"
+      }, {
+        "name" : "city",
+        "value" : "Moscow"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check that verification E-mail sent",
+      "time" : {
+        "start" : 1635176575064,
+        "stop" : 1635176576353,
+        "duration" : 1289
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-info-row\") should have(text 'li.hartmann@new.kk')",
+        "time" : {
+          "start" : 1635176575064,
+          "stop" : 1635176576353,
+          "duration" : 1289
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "li.hartmann@new.kk"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Open Profile: Main",
+      "time" : {
+        "start" : 1635176576354,
+        "stop" : 1635176578414,
+        "duration" : 2060
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/ion-button[routerlink='edit/']\") click()",
+        "time" : {
+          "start" : 1635176576354,
+          "stop" : 1635176577914,
+          "duration" : 1560
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify Profile: Main - Gender: Male",
+      "time" : {
+        "start" : 1635176578415,
+        "stop" : 1635176582784,
+        "duration" : 4369
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/app-gender-selector/ion-segment-button\") should(css class 'segment-button-checked')",
+        "time" : {
+          "start" : 1635176578915,
+          "stop" : 1635176580212,
+          "duration" : 1297
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-user-edit/app-gender-selector/ion-segment-button[1]\") should not(css class 'segment-button-checked')",
+        "time" : {
+          "start" : 1635176580213,
+          "stop" : 1635176581500,
+          "duration" : 1287
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-user-edit/app-gender-selector/ion-segment-button[2]\") should not(css class 'segment-button-checked')",
+        "time" : {
+          "start" : 1635176581501,
+          "stop" : 1635176582784,
+          "duration" : 1283
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify Profile: Main - full",
+      "time" : {
+        "start" : 1635176582784,
+        "stop" : 1635176588792,
+        "duration" : 6008
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-edit/input[name='first_name']\") should have(value 'DanNew')",
+        "time" : {
+          "start" : 1635176583085,
+          "stop" : 1635176584048,
+          "duration" : 963
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-user-edit/input[name='last_name']\") should have(value 'StromanNew')",
+        "time" : {
+          "start" : 1635176584049,
+          "stop" : 1635176585014,
+          "duration" : 965
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-user-edit/input[name='patronymic']\") should have(value 'Genie Powlowski Rosenbaum VNew')",
+        "time" : {
+          "start" : 1635176585014,
+          "stop" : 1635176586482,
+          "duration" : 1468
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-user-edit/app-phone-editor/input\") should have(value '9643788531')",
+        "time" : {
+          "start" : 1635176586482,
+          "stop" : 1635176587800,
+          "duration" : 1318
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-user-edit/input[name='email']\") should have(value 'millicent.swaniawski@ll.tt')",
+        "time" : {
+          "start" : 1635176587801,
+          "stop" : 1635176588792,
+          "duration" : 991
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstName",
+        "value" : "DanNew"
+      }, {
+        "name" : "lastName",
+        "value" : "StromanNew"
+      }, {
+        "name" : "patronymic",
+        "value" : "Genie Powlowski Rosenbaum VNew"
+      }, {
+        "name" : "phoneNumber",
+        "value" : "9643788531"
+      }, {
+        "name" : "email",
+        "value" : "millicent.swaniawski@ll.tt"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1635176590406,
+        "stop" : 1635176590781,
+        "duration" : 375
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5e826c04d60e12e7",
+      "name" : "Screenshot",
+      "source" : "5e826c04d60e12e7.png",
+      "type" : "image/png",
+      "size" : 45401
+    }, {
+      "uid" : "2316eb34ef8834a8",
+      "name" : "Page source",
+      "source" : "2316eb34ef8834a8.html",
+      "type" : "text/plain",
+      "size" : 120664
+    }, {
+      "uid" : "7de1d0125835415b",
+      "name" : "Browser console logs",
+      "source" : "7de1d0125835415b.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "695d66901cc647f2",
+      "name" : "Video",
+      "source" : "695d66901cc647f2.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 50,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:userProfile.UserProfileTests]/[method:t00002()]"
+  }, {
+    "name" : "feature",
+    "value" : "Profile verification"
+  }, {
+    "name" : "story",
+    "value" : "User Profile"
+  }, {
+    "name" : "owner",
+    "value" : "Egor Khlebnikov"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-107"
+  }, {
+    "name" : "thread",
+    "value" : "3935@fv-az74-107.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "userProfile.UserProfileTests"
+  }, {
+    "name" : "testClass",
+    "value" : "userProfile.UserProfileTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00002"
+  }, {
+    "name" : "suite",
+    "value" : "userProfile.UserProfileTests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "owner" : "Egor Khlebnikov",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d27b6c093301abb9.json",
+  "parameterValues" : [ ]
+}

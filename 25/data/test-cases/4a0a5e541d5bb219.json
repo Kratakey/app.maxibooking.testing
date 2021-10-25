@@ -1,0 +1,1275 @@
+{
+  "uid" : "4a0a5e541d5bb219",
+  "name" : "Profile: contacts - change info, add new and verify",
+  "fullName" : "userProfile.UserProfileTests.t00003",
+  "historyId" : "19507040c8b9e8d4b068dc2e8dc17e4e",
+  "time" : {
+    "start" : 1635176590787,
+    "stop" : 1635176700313,
+    "duration" : 109526
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1635176590789,
+        "stop" : 1635176608026,
+        "duration" : 17237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1635176608227,
+        "stop" : 1635176609447,
+        "duration" : 1220
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635176610970,
+        "stop" : 1635176612612,
+        "duration" : 1642
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/ion-item\") click()",
+      "time" : {
+        "start" : 1635176612612,
+        "stop" : 1635176614123,
+        "duration" : 1511
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635176614624,
+        "stop" : 1635176616467,
+        "duration" : 1843
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main-menu/by text: Log in\") click()",
+      "time" : {
+        "start" : 1635176616967,
+        "stop" : 1635176618513,
+        "duration" : 1546
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input\") set value(millicent.swaniawski@ll.tt)",
+      "time" : {
+        "start" : 1635176618513,
+        "stop" : 1635176620374,
+        "duration" : 1861
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input[1]\") set value(3entbyuttfirxy)",
+      "time" : {
+        "start" : 1635176620374,
+        "stop" : 1635176622236,
+        "duration" : 1862
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login-form/ion-button[type='submit']\") click()",
+      "time" : {
+        "start" : 1635176622236,
+        "stop" : 1635176623742,
+        "duration" : 1506
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635176626065,
+        "stop" : 1635176627706,
+        "duration" : 1641
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/ion-item\") click()",
+      "time" : {
+        "start" : 1635176627706,
+        "stop" : 1635176629261,
+        "duration" : 1555
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635176630062,
+        "stop" : 1635176632429,
+        "duration" : 2367
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open the page",
+      "time" : {
+        "start" : 1635176632729,
+        "stop" : 1635176634758,
+        "duration" : 2029
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-main-menu/by text: Profile\") click()",
+        "time" : {
+          "start" : 1635176632930,
+          "stop" : 1635176634458,
+          "duration" : 1528
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click edit",
+      "time" : {
+        "start" : 1635176634758,
+        "stop" : 1635176637103,
+        "duration" : 2345
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/ion-button\") click()",
+        "time" : {
+          "start" : 1635176634759,
+          "stop" : 1635176636603,
+          "duration" : 1844
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "0"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify 'Select Contact' is set default",
+      "time" : {
+        "start" : 1635176637103,
+        "stop" : 1635176638583,
+        "duration" : 1480
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/ion-select[class='ion-untouched']\") exists()",
+        "time" : {
+          "start" : 1635176637603,
+          "stop" : 1635176638583,
+          "duration" : 980
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify 'Enter your contact'",
+      "time" : {
+        "start" : 1635176638583,
+        "stop" : 1635176640435,
+        "duration" : 1852
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/input\") should have(value ' ')",
+        "time" : {
+          "start" : 1635176639084,
+          "stop" : 1635176640435,
+          "duration" : 1351
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : " "
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click back",
+      "time" : {
+        "start" : 1635176640435,
+        "stop" : 1635176642768,
+        "duration" : 2333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/main/ion-button\") click()",
+        "time" : {
+          "start" : 1635176640435,
+          "stop" : 1635176642268,
+          "duration" : 1833
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click 'Add new contact'",
+      "time" : {
+        "start" : 1635176642768,
+        "stop" : 1635176645439,
+        "duration" : 2671
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/app-add-button/ion-item\") click()",
+        "time" : {
+          "start" : 1635176642768,
+          "stop" : 1635176644939,
+          "duration" : 2171
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify 'Select Contact' is set default",
+      "time" : {
+        "start" : 1635176645439,
+        "stop" : 1635176646918,
+        "duration" : 1479
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/ion-select[class='ion-untouched']\") exists()",
+        "time" : {
+          "start" : 1635176645940,
+          "stop" : 1635176646918,
+          "duration" : 978
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify 'Enter your contact'",
+      "time" : {
+        "start" : 1635176646918,
+        "stop" : 1635176648775,
+        "duration" : 1857
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/input\") should have(value ' ')",
+        "time" : {
+          "start" : 1635176647419,
+          "stop" : 1635176648775,
+          "duration" : 1356
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : " "
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click back",
+      "time" : {
+        "start" : 1635176648775,
+        "stop" : 1635176651108,
+        "duration" : 2333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/main/ion-button\") click()",
+        "time" : {
+          "start" : 1635176648775,
+          "stop" : 1635176650608,
+          "duration" : 1833
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click edit",
+      "time" : {
+        "start" : 1635176651109,
+        "stop" : 1635176653437,
+        "duration" : 2328
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/ion-button\") click()",
+        "time" : {
+          "start" : 1635176651109,
+          "stop" : 1635176652937,
+          "duration" : 1828
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "0"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - contacts: enter value",
+      "time" : {
+        "start" : 1635176653437,
+        "stop" : 1635176656096,
+        "duration" : 2659
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/input[name='contact-value']\") set value(9643788531)",
+        "time" : {
+          "start" : 1635176653437,
+          "stop" : 1635176656096,
+          "duration" : 2659
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "9643788531"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - save contact",
+      "time" : {
+        "start" : 1635176656096,
+        "stop" : 1635176658433,
+        "duration" : 2337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/ion-button[type='submit']\") click()",
+        "time" : {
+          "start" : 1635176656096,
+          "stop" : 1635176657933,
+          "duration" : 1837
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact exists",
+      "time" : {
+        "start" : 1635176658434,
+        "stop" : 1635176660248,
+        "duration" : 1814
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should have(text '9643788531')",
+        "time" : {
+          "start" : 1635176658934,
+          "stop" : 1635176660248,
+          "duration" : 1314
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "9643788531"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click 'Add new contact'",
+      "time" : {
+        "start" : 1635176660248,
+        "stop" : 1635176662956,
+        "duration" : 2708
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/app-add-button/ion-item\") click()",
+        "time" : {
+          "start" : 1635176660248,
+          "stop" : 1635176662456,
+          "duration" : 2208
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - contacts: select contact",
+      "time" : {
+        "start" : 1635176662957,
+        "stop" : 1635176667167,
+        "duration" : 4210
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/ion-select\") click()",
+        "time" : {
+          "start" : 1635176662957,
+          "stop" : 1635176664794,
+          "duration" : 1837
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ion-popover/ion-select-popover/with text: E-mail/By.xpath: ancestor::ion-item[1]\") click()",
+        "time" : {
+          "start" : 1635176664995,
+          "stop" : 1635176667167,
+          "duration" : 2172
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "E-mail"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - contacts: enter value",
+      "time" : {
+        "start" : 1635176667167,
+        "stop" : 1635176669358,
+        "duration" : 2191
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/input[name='contact-value']\") set value(li.hartmann@new.kk)",
+        "time" : {
+          "start" : 1635176667167,
+          "stop" : 1635176669358,
+          "duration" : 2191
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "li.hartmann@new.kk"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - save contact",
+      "time" : {
+        "start" : 1635176669359,
+        "stop" : 1635176671691,
+        "duration" : 2332
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/ion-button[type='submit']\") click()",
+        "time" : {
+          "start" : 1635176669359,
+          "stop" : 1635176671191,
+          "duration" : 1832
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact exists",
+      "time" : {
+        "start" : 1635176671691,
+        "stop" : 1635176673710,
+        "duration" : 2019
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should have(text '9643788531')",
+        "time" : {
+          "start" : 1635176672192,
+          "stop" : 1635176673710,
+          "duration" : 1518
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "9643788531"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact exists",
+      "time" : {
+        "start" : 1635176673711,
+        "stop" : 1635176675527,
+        "duration" : 1816
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should have(text 'li.hartmann@new.kk')",
+        "time" : {
+          "start" : 1635176674211,
+          "stop" : 1635176675527,
+          "duration" : 1316
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "li.hartmann@new.kk"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click edit",
+      "time" : {
+        "start" : 1635176675527,
+        "stop" : 1635176678519,
+        "duration" : 2992
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/ion-button[1]\") click()",
+        "time" : {
+          "start" : 1635176675527,
+          "stop" : 1635176678018,
+          "duration" : 2491
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "1"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - contacts: enter value",
+      "time" : {
+        "start" : 1635176678519,
+        "stop" : 1635176680723,
+        "duration" : 2204
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/input[name='contact-value']\") set value(millicent.swaniawski@ll.tt)",
+        "time" : {
+          "start" : 1635176678519,
+          "stop" : 1635176680723,
+          "duration" : 2204
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "millicent.swaniawski@ll.tt"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - save contact",
+      "time" : {
+        "start" : 1635176680723,
+        "stop" : 1635176683070,
+        "duration" : 2347
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/ion-button[type='submit']\") click()",
+        "time" : {
+          "start" : 1635176680723,
+          "stop" : 1635176682570,
+          "duration" : 1847
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact exists",
+      "time" : {
+        "start" : 1635176683071,
+        "stop" : 1635176684889,
+        "duration" : 1818
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should have(text '9643788531')",
+        "time" : {
+          "start" : 1635176683571,
+          "stop" : 1635176684889,
+          "duration" : 1318
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "9643788531"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact removed",
+      "time" : {
+        "start" : 1635176684889,
+        "stop" : 1635176686203,
+        "duration" : 1314
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should not have(text 'li.hartmann@new.kk')",
+        "time" : {
+          "start" : 1635176684889,
+          "stop" : 1635176686203,
+          "duration" : 1314
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "li.hartmann@new.kk"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact exists",
+      "time" : {
+        "start" : 1635176686203,
+        "stop" : 1635176688022,
+        "duration" : 1819
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should have(text 'millicent.swaniawski@ll.tt')",
+        "time" : {
+          "start" : 1635176686703,
+          "stop" : 1635176688022,
+          "duration" : 1319
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "millicent.swaniawski@ll.tt"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - click edit",
+      "time" : {
+        "start" : 1635176688022,
+        "stop" : 1635176690725,
+        "duration" : 2703
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit/ion-button[1]\") click()",
+        "time" : {
+          "start" : 1635176688022,
+          "stop" : 1635176690225,
+          "duration" : 2203
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "1"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Profile: Contacts - remove contact",
+      "time" : {
+        "start" : 1635176690725,
+        "stop" : 1635176693406,
+        "duration" : 2681
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-user-contact-edit/app-contact-edit/ion-row/ion-button\") click()",
+        "time" : {
+          "start" : 1635176690725,
+          "stop" : 1635176692906,
+          "duration" : 2181
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact exists",
+      "time" : {
+        "start" : 1635176693406,
+        "stop" : 1635176695215,
+        "duration" : 1809
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should have(text '9643788531')",
+        "time" : {
+          "start" : 1635176693906,
+          "stop" : 1635176695215,
+          "duration" : 1309
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "9643788531"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact removed",
+      "time" : {
+        "start" : 1635176695215,
+        "stop" : 1635176696525,
+        "duration" : 1310
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should not have(text 'li.hartmann@new.kk')",
+        "time" : {
+          "start" : 1635176695215,
+          "stop" : 1635176696525,
+          "duration" : 1310
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "li.hartmann@new.kk"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify contact removed",
+      "time" : {
+        "start" : 1635176696525,
+        "stop" : 1635176698314,
+        "duration" : 1789
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-profile/app-contacts-edit\") should not have(text 'millicent.swaniawski@ll.tt')",
+        "time" : {
+          "start" : 1635176696525,
+          "stop" : 1635176698314,
+          "duration" : 1789
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "millicent.swaniawski@ll.tt"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1635176699938,
+        "stop" : 1635176700312,
+        "duration" : 374
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e8b524d8353314c4",
+      "name" : "Screenshot",
+      "source" : "e8b524d8353314c4.png",
+      "type" : "image/png",
+      "size" : 68910
+    }, {
+      "uid" : "ffa5671ea60ee848",
+      "name" : "Page source",
+      "source" : "ffa5671ea60ee848.html",
+      "type" : "text/plain",
+      "size" : 102328
+    }, {
+      "uid" : "79579df6fc683586",
+      "name" : "Browser console logs",
+      "source" : "79579df6fc683586.txt",
+      "type" : "text/plain",
+      "size" : 141
+    }, {
+      "uid" : "64254d695704319d",
+      "name" : "Video",
+      "source" : "64254d695704319d.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 74,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:userProfile.UserProfileTests]/[method:t00003()]"
+  }, {
+    "name" : "feature",
+    "value" : "Profile verification"
+  }, {
+    "name" : "story",
+    "value" : "User Profile"
+  }, {
+    "name" : "owner",
+    "value" : "Egor Khlebnikov"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-107"
+  }, {
+    "name" : "thread",
+    "value" : "3935@fv-az74-107.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "userProfile.UserProfileTests"
+  }, {
+    "name" : "testClass",
+    "value" : "userProfile.UserProfileTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00003"
+  }, {
+    "name" : "suite",
+    "value" : "userProfile.UserProfileTests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "owner" : "Egor Khlebnikov",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4a0a5e541d5bb219.json",
+  "parameterValues" : [ ]
+}

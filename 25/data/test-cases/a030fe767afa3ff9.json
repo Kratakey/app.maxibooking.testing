@@ -1,0 +1,504 @@
+{
+  "uid" : "a030fe767afa3ff9",
+  "name" : "Client side order cancel",
+  "fullName" : "complexTests.PositiveTests.t00304",
+  "historyId" : "662bf04cf3b8ccb15fd8cc2e810dc6b3",
+  "time" : {
+    "start" : 1635178648197,
+    "stop" : 1635178706406,
+    "duration" : 58209
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1635178648198,
+        "stop" : 1635178662864,
+        "duration" : 14666
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1635178663064,
+        "stop" : 1635178664252,
+        "duration" : 1188
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635178665779,
+        "stop" : 1635178667439,
+        "duration" : 1660
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/ion-item\") click()",
+      "time" : {
+        "start" : 1635178667439,
+        "stop" : 1635178668959,
+        "duration" : 1520
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635178669460,
+        "stop" : 1635178671313,
+        "duration" : 1853
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main-menu/by text: Log in\") click()",
+      "time" : {
+        "start" : 1635178671813,
+        "stop" : 1635178673378,
+        "duration" : 1565
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input\") set value(dario.blick@cc.aa)",
+      "time" : {
+        "start" : 1635178673379,
+        "stop" : 1635178675255,
+        "duration" : 1876
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input[1]\") set value(1tf1dq6g)",
+      "time" : {
+        "start" : 1635178675255,
+        "stop" : 1635178677123,
+        "duration" : 1868
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login-form/ion-button[type='submit']\") click()",
+      "time" : {
+        "start" : 1635178677123,
+        "stop" : 1635178678642,
+        "duration" : 1519
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635178680967,
+        "stop" : 1635178682623,
+        "duration" : 1656
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/ion-item\") click()",
+      "time" : {
+        "start" : 1635178682623,
+        "stop" : 1635178684189,
+        "duration" : 1566
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open the page (top bar)",
+      "time" : {
+        "start" : 1635178684689,
+        "stop" : 1635178687012,
+        "duration" : 2323
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-main/ion-toolbar/by text: My orders\") click()",
+        "time" : {
+          "start" : 1635178684689,
+          "stop" : 1635178687012,
+          "duration" : 2323
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Simple order check outbox",
+      "time" : {
+        "start" : 1635178687012,
+        "stop" : 1635178691082,
+        "duration" : 4070
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-outbox-page\") should have([text 'StantonIIIDVM', text 'District Functionality Strategist (8eiki52)', text '50', text '35'])",
+        "time" : {
+          "start" : 1635178687012,
+          "stop" : 1635178691082,
+          "duration" : 4070
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userFirstName",
+        "value" : "StantonIIIDVM"
+      }, {
+        "name" : "serviceName",
+        "value" : "District Functionality Strategist (8eiki52)"
+      }, {
+        "name" : "servicePrice",
+        "value" : "50"
+      }, {
+        "name" : "serviceTotalDuration",
+        "value" : "35"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Discard the order: client",
+      "time" : {
+        "start" : 1635178691083,
+        "stop" : 1635178701968,
+        "duration" : 10885
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-sent-order-list-item/ion-card/ion-button[2]\") click()",
+        "time" : {
+          "start" : 1635178691083,
+          "stop" : 1635178692907,
+          "duration" : 1824
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ion-popover/app-cancel-confirmation-popover/ion-item\") click()",
+        "time" : {
+          "start" : 1635178693107,
+          "stop" : 1635178694923,
+          "duration" : 1816
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ion-alert/button[1]\") click()",
+        "time" : {
+          "start" : 1635178695123,
+          "stop" : 1635178696614,
+          "duration" : 1491
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ion-alert/by text: OK\") click()",
+        "time" : {
+          "start" : 1635178696614,
+          "stop" : 1635178698103,
+          "duration" : 1489
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ion-popover/app-cancel-confirmation-popover/ion-item[1]\") send keys(I don't like the service)",
+        "time" : {
+          "start" : 1635178698304,
+          "stop" : 1635178699649,
+          "duration" : 1345
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"ion-popover/app-cancel-confirmation-popover/ion-button\") click()",
+        "time" : {
+          "start" : 1635178699649,
+          "stop" : 1635178701468,
+          "duration" : 1819
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "DiscardComment",
+        "value" : "I don't like the service"
+      } ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Simple order check outbox",
+      "time" : {
+        "start" : 1635178701968,
+        "stop" : 1635178703953,
+        "duration" : 1985
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-outbox-page\") should not have([text 'StantonIIIDVM', text 'District Functionality Strategist (8eiki52)'])",
+        "time" : {
+          "start" : 1635178701968,
+          "stop" : 1635178703953,
+          "duration" : 1985
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userFirstName",
+        "value" : "StantonIIIDVM"
+      }, {
+        "name" : "serviceName",
+        "value" : "District Functionality Strategist (8eiki52)"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1635178706035,
+        "stop" : 1635178706405,
+        "duration" : 370
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9d5c3404dbff22ba",
+      "name" : "Screenshot",
+      "source" : "9d5c3404dbff22ba.png",
+      "type" : "image/png",
+      "size" : 51116
+    }, {
+      "uid" : "b33d8d0bde5f03c8",
+      "name" : "Page source",
+      "source" : "b33d8d0bde5f03c8.html",
+      "type" : "text/plain",
+      "size" : 105776
+    }, {
+      "uid" : "70a2054d5a997f00",
+      "name" : "Browser console logs",
+      "source" : "70a2054d5a997f00.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "36f79c9c6fadfb79",
+      "name" : "Video",
+      "source" : "36f79c9c6fadfb79.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 25,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:complexTests.PositiveTests]/[method:t00304()]"
+  }, {
+    "name" : "feature",
+    "value" : "Orders"
+  }, {
+    "name" : "story",
+    "value" : "Order cancel"
+  }, {
+    "name" : "owner",
+    "value" : "Egor Khlebnikov"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-107"
+  }, {
+    "name" : "thread",
+    "value" : "3935@fv-az74-107.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00304"
+  }, {
+    "name" : "suite",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "owner" : "Egor Khlebnikov",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a030fe767afa3ff9.json",
+  "parameterValues" : [ ]
+}

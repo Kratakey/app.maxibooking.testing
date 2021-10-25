@@ -1,0 +1,657 @@
+{
+  "uid" : "195b81f28be10bdc",
+  "name" : "Post and check review with a lot of characters",
+  "fullName" : "complexTests.PositiveTests.t00401",
+  "historyId" : "1249c5d00058b8974df28c1692f32bc5",
+  "time" : {
+    "start" : 1635178817982,
+    "stop" : 1635178886804,
+    "duration" : 68822
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1635178817982,
+        "stop" : 1635178831674,
+        "duration" : 13692
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1635178831874,
+        "stop" : 1635178833084,
+        "duration" : 1210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635178834607,
+        "stop" : 1635178836248,
+        "duration" : 1641
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/ion-item\") click()",
+      "time" : {
+        "start" : 1635178836248,
+        "stop" : 1635178837785,
+        "duration" : 1537
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635178838286,
+        "stop" : 1635178840120,
+        "duration" : 1834
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main-menu/by text: Log in\") click()",
+      "time" : {
+        "start" : 1635178840621,
+        "stop" : 1635178842151,
+        "duration" : 1530
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input\") set value(darla.herzog@uu.dd)",
+      "time" : {
+        "start" : 1635178842152,
+        "stop" : 1635178844018,
+        "duration" : 1866
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input[1]\") set value(wcghjdbpnu4ircr)",
+      "time" : {
+        "start" : 1635178844018,
+        "stop" : 1635178846483,
+        "duration" : 2465
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login-form/ion-button[type='submit']\") click()",
+      "time" : {
+        "start" : 1635178846483,
+        "stop" : 1635178847994,
+        "duration" : 1511
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635178850317,
+        "stop" : 1635178851957,
+        "duration" : 1640
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/ion-item\") click()",
+      "time" : {
+        "start" : 1635178851957,
+        "stop" : 1635178853514,
+        "duration" : 1557
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635178854314,
+        "stop" : 1635178856585,
+        "duration" : 2271
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Outbox button",
+      "time" : {
+        "start" : 1635178856885,
+        "stop" : 1635178858696,
+        "duration" : 1811
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-main-menu/by text: Sent orders\") click()",
+        "time" : {
+          "start" : 1635178856885,
+          "stop" : 1635178858396,
+          "duration" : 1511
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Select archived orders",
+      "time" : {
+        "start" : 1635178858696,
+        "stop" : 1635178860177,
+        "duration" : 1481
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-outbox-page/ion-segment-button[1]\") click()",
+        "time" : {
+          "start" : 1635178858696,
+          "stop" : 1635178860177,
+          "duration" : 1481
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click master",
+      "time" : {
+        "start" : 1635178860177,
+        "stop" : 1635178863961,
+        "duration" : 3784
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-outbox/app-professional-card[1]/a\") click()",
+        "time" : {
+          "start" : 1635178860177,
+          "stop" : 1635178863961,
+          "duration" : 3784
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Open reviews tab",
+      "time" : {
+        "start" : 1635178863961,
+        "stop" : 1635178865439,
+        "duration" : 1478
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-professional-page/by text: Reviews\") click()",
+        "time" : {
+          "start" : 1635178863961,
+          "stop" : 1635178865439,
+          "duration" : 1478
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click all reviews link",
+      "time" : {
+        "start" : 1635178865439,
+        "stop" : 1635178866940,
+        "duration" : 1501
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-professional-page/by text: All reviews\") click()",
+        "time" : {
+          "start" : 1635178865440,
+          "stop" : 1635178866940,
+          "duration" : 1500
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click send review button",
+      "time" : {
+        "start" : 1635178866940,
+        "stop" : 1635178868457,
+        "duration" : 1517
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-reviews-list/by text: Send review\") click()",
+        "time" : {
+          "start" : 1635178866940,
+          "stop" : 1635178868457,
+          "duration" : 1517
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Choose rating 1 stars",
+      "time" : {
+        "start" : 1635178868457,
+        "stop" : 1635178870671,
+        "duration" : 2214
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-edit-review/app-rating-picker/ion-item\") click()",
+        "time" : {
+          "start" : 1635178868657,
+          "stop" : 1635178870471,
+          "duration" : 1814
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Type review text",
+      "time" : {
+        "start" : 1635178870671,
+        "stop" : 1635178874933,
+        "duration" : 4262
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-edit-review/textarea\") send keys(4q2ms1qerbimda3758ea0ehaqc3bxh5fnkts9ldre15fkhdr0lyatygp3evm7gq4m58bkc5nas1qfj2ik79ivy4bnit7rcpeswv9hf5yyh6o9m3oy9ppcv761fiksq5aeq6kc0mmjfom6xw6tkf5690lid1yiyfi43sstw6dtb3dmbgzunrswp5xih8xtwax2infd4dmw43opqfjlv9fi96l03us9dakrohrzmyxbonq35hbhstyx3zp1a656jg9bk4iz897v3xelwjqng74j1ltlz6mlrnrc6aih87nbuf1ajtkb2ruitk2bdcwhqkmc0gzlwfloc771mm9d0s9s9fa41peaemzszyrbihmqar7khaew64mr7mk4u1245p031k040m1so4fv4mu0p94alptahkuz92gyu2b64eijdadsbxhz51iqltvbxarzw88x6ocj8zl7h9ece34fxifxii1i73dxwsmn7yfavrffl1545lu4edsl3nzhafb8bt9d0zn3cmq0ph87oi78rmhc20u2ra370b5jzptq5v9ys31d3nzt8d9sat4phjr9e7esoqlk5mdpfex2q3zjbq2k30n7tokvn8xxk0n7o0gw994qh6yspx2gh2zw3buuaztmjtytig1fj5d1shcmwqil7l7sma8a6brmwyc93bw403qok8e140ltjcj26vf49hle33nnacywh11azhi219pi8sv287j76gpl9wczpzyi50niuu65dbcq68byo6snl0exu9eunhc0p4geifu274fnxgoohga4225cdmzeops3lt36p7005qu8dhhxg10m0hl2vzdl8kjngfeowyu83q1qan70k5nm91u8bjt2ftkrih3t8l0qawvzwssyqjvi0n0ye83pesj8gxaifr0dacxlzeq7hp085no834qiza9i6xh2rk0miive4xkm21afk75hbc0lnads7375ixbcee9s1cnw4d0b19nathj6idz3zdz3qy90j8eej3mlozf8ddqi6xsi8qfan0ugiybeh3scmfdpegvq6izalhr89lyubtrt5h8qf5pb27sjo8gu9w1i79j86n7va6copvgfywupc4gjt7djusw20152tvu9dofr15zextqkqdonvxfo1ltlf85mz2kjf61x03i21dbb9e8xqee3qsf8o8nctjcud2ea07go1yny6kw93aunyse6konpx6etyn2ac0lwuhjlzud1qozxrdi03v4ktci5vowmwni5f2bs6cmuuqore8sys7jtfdxq0zac7y6o1kag1b3vk6ejocvj8q0cxvygva6qnlplc5q3unhejmlgbef8u1vtxc5ejz0ffizrfkpjzzbso4dh1dl17gf8pw24uw2z7sdfi4gzy3hpytxhgxw5qfmeja208e2u7oypynqj5bjc6d69hnk9s221dasw6pyw3oaxbv9r6gii7kouxy1lcx43u1hp0dfyfoiqomjb42tzimb1370snkz79unyhmcq7bpklep4248eq3joipgz0uxhopckmkkif1f5rsndyq4sw2ftkxxm8l8t6jrvi6qp0zo76k8irhk0zhk3rlsw2vls2odmmezboclelem35wo7obmu50ku32gsyb9y5uz8wslvxmf807gx33t3lbdcv0071cnn789tooou5f8t7jd2bag4j9j99uacvfvkiuvs4zvnmjp243ql09p7mnnihcfr0pyis1bf1u0hzw58egrbcmy3kr4r5mog8qj1hlmpl4t11ot211xrgi08kwm3ic0ojo2sq64uh6ufw1doxie6uxymazxbyiilhqnoaggyynxerop6uswsinalav62p851ipfl2rr5q7wj2idk07rw33eps14yelibabxau250brfxy5wbrx5f277rw34danpvt4tkdf2lbe4ir2n53c81qlpem80j00l93ykmzpum0057csychkw64nv2mmytp93howhplf8ik6db9pd3n431n7i7wtxn0r4jovk9nqyhpow4vk4yuknicrq18tip24t40dlq0bq49s7nmpalah7vjl34ef8mjtxn2qd754oxu9tz1f0036vevup1izbvm2bon5jtxmmezs2ehniwucg3cqzy4z3r77urben7lpaxbjqlxirjx2xovlftwq5zzbzk7tmbgdxkc9yz2it7hsan3jfh)",
+        "time" : {
+          "start" : 1635178870671,
+          "stop" : 1635178874732,
+          "duration" : 4061
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "reviewText",
+        "value" : "4q2ms1qerbimda3758ea0ehaqc3bxh5fnkts9ldre15fkhdr0lyatygp3evm7gq4m58bkc5nas1qfj2ik79ivy4bnit7rcpeswv9hf5yyh6o9m3oy9ppcv761fiksq5aeq6kc0mmjfom6xw6tkf5690lid1yiyfi43sstw6dtb3dmbgzunrswp5xih8xtwax2infd4dmw43opqfjlv9fi96l03us9dakrohrzmyxbonq35hbhstyx3zp1a656jg9bk4iz897v3xelwjqng74j1ltlz6mlrnrc6aih87nbuf1ajtkb2ruitk2bdcwhqkmc0gzlwfloc771mm9d0s9s9fa41peaemzszyrbihmqar7khaew64mr7mk4u1245p031k040m1so4fv4mu0p94alptahkuz92gyu2b64eijdadsbxhz51iqltvbxarzw88x6ocj8zl7h9ece34fxifxii1i73dxwsmn7yfavrffl1545lu4edsl3nzhafb8bt9d0zn3cmq0ph87oi78rmhc20u2ra370b5jzptq5v9ys31d3nzt8d9sat4phjr9e7esoqlk5mdpfex2q3zjbq2k30n7tokvn8xxk0n7o0gw994qh6yspx2gh2zw3buuaztmjtytig1fj5d1shcmwqil7l7sma8a6brmwyc93bw403qok8e140ltjcj26vf49hle33nnacywh11azhi219pi8sv287j76gpl9wczpzyi50niuu65dbcq68byo6snl0exu9eunhc0p4geifu274fnxgoohga4225cdmzeops3lt36p7005qu8dhhxg10m0hl2vzdl8kjngfeowyu83q1qan70k5nm91u8bjt2ftkrih3t8l0qawvzwssyqjvi0n0ye83pesj8gxaifr0dacxlzeq7hp085no834qiza9i6xh2rk0miive4xkm21afk75hbc0lnads7375ixbcee9s1cnw4d0b19nathj6idz3zdz3qy90j8eej3mlozf8ddqi6xsi8qfan0ugiybeh3scmfdpegvq6izalhr89lyubtrt5h8qf5pb27sjo8gu9w1i79j86n7va6copvgfywupc4gjt7djusw20152tvu9dofr15zextqkqdonvxfo1ltlf85mz2kjf61x03i21dbb9e8xqee3qsf8o8nctjcud2ea07go1yny6kw93aunyse6konpx6etyn2ac0lwuhjlzud1qozxrdi03v4ktci5vowmwni5f2bs6cmuuqore8sys7jtfdxq0zac7y6o1kag1b3vk6ejocvj8q0cxvygva6qnlplc5q3unhejmlgbef8u1vtxc5ejz0ffizrfkpjzzbso4dh1dl17gf8pw24uw2z7sdfi4gzy3hpytxhgxw5qfmeja208e2u7oypynqj5bjc6d69hnk9s221dasw6pyw3oaxbv9r6gii7kouxy1lcx43u1hp0dfyfoiqomjb42tzimb1370snkz79unyhmcq7bpklep4248eq3joipgz0uxhopckmkkif1f5rsndyq4sw2ftkxxm8l8t6jrvi6qp0zo76k8irhk0zhk3rlsw2vls2odmmezboclelem35wo7obmu50ku32gsyb9y5uz8wslvxmf807gx33t3lbdcv0071cnn789tooou5f8t7jd2bag4j9j99uacvfvkiuvs4zvnmjp243ql09p7mnnihcfr0pyis1bf1u0hzw58egrbcmy3kr4r5mog8qj1hlmpl4t11ot211xrgi08kwm3ic0ojo2sq64uh6ufw1doxie6uxymazxbyiilhqnoaggyynxerop6uswsinalav62p851ipfl2rr5q7wj2idk07rw33eps14yelibabxau250brfxy5wbrx5f277rw34danpvt4tkdf2lbe4ir2n53c81qlpem80j00l93ykmzpum0057csychkw64nv2mmytp93howhplf8ik6db9pd3n431n7i7wtxn0r4jovk9nqyhpow4vk4yuknicrq18tip24t40dlq0bq49s7nmpalah7vjl34ef8mjtxn2qd754oxu9tz1f0036vevup1izbvm2bon5jtxmmezs2ehniwucg3cqzy4z3r77urben7lpaxbjqlxirjx2xovlftwq5zzbzk7tmbgdxkc9yz2it7hsan3jfh"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"app-edit-review/ion-row/ion-button[1]\") scroll into view(false)",
+      "time" : {
+        "start" : 1635178874933,
+        "stop" : 1635178876227,
+        "duration" : 1294
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-edit-review/ion-row/ion-button[1]\") get wrapped element()",
+        "time" : {
+          "start" : 1635178874933,
+          "stop" : 1635178875904,
+          "duration" : 971
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Send review",
+      "time" : {
+        "start" : 1635178876227,
+        "stop" : 1635178881584,
+        "duration" : 5357
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-edit-review/ion-row/ion-button[1]\") click()",
+        "time" : {
+          "start" : 1635178876427,
+          "stop" : 1635178878584,
+          "duration" : 2157
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify review",
+      "time" : {
+        "start" : 1635178881585,
+        "stop" : 1635178884486,
+        "duration" : 2901
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-reviews-list/ion-card/ion-label\") should have(text 'AltaIVMD')",
+        "time" : {
+          "start" : 1635178881585,
+          "stop" : 1635178883198,
+          "duration" : 1613
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-reviews-list/ion-card\") should have(text '4q2ms1qerbimda3758ea0ehaqc3bxh5fnkts9ldre15fkhdr0lyatygp3evm7gq4m58bkc5nas1qfj2ik79ivy4bnit7rcpeswv9hf5yyh6o9m3oy9ppcv761fiksq5aeq6kc0mmjfom6xw6tkf5690lid1yiyfi43sstw6dtb3dmbgzunrswp5xih8xtwax2infd4dmw43opqfjlv9fi96l03us9dakrohrzmyxbonq35hbhstyx3zp1a656jg9bk4iz897v3xelwjqng74j1ltlz6mlrnrc6aih87nbuf1ajtkb2ruitk2bdcwhqkmc0gzlwfloc771mm9d0s9s9fa41peaemzszyrbihmqar7khaew64mr7mk4u1245p031k040m1so4fv4mu0p94alptahkuz92gyu2b64eijdadsbxhz51iqltvbxarzw88x6ocj8zl7h9ece34fxifxii1i73dxwsmn7yfavrffl1545lu4edsl3nzhafb8bt9d0zn3cmq0ph87oi78rmhc20u2ra370b5jzptq5v9ys31d3nzt8d9sat4phjr9e7esoqlk5mdpfex2q3zjbq2k30n7tokvn8xxk0n7o0gw994qh6yspx2gh2zw3buuaztmjtytig1fj5d1shcmwqil7l7sma8a6brmwyc93bw403qok8e140ltjcj26vf49hle33nnacywh11azhi219pi8sv287j76gpl9wczpzyi50niuu65dbcq68byo6snl0exu9eunhc0p4geifu274fnxgoohga4225cdmzeops3lt36p7005qu8dhhxg10m0hl2vzdl8kjngfeowyu83q1qan70k5nm91u8bjt2ftkrih3t8l0qawvzwssyqjvi0n0ye83pesj8gxaifr0dacxlzeq7hp085no834qiza9i6xh2rk0miive4xkm21afk75hbc0lnads7375ixbcee9s1cnw4d0b19nathj6idz3zdz3qy90j8eej3mlozf8ddqi6xsi8qfan0ugiybeh3scmfdpegvq6izalhr89lyubtrt5h8qf5pb27sjo8gu9w1i79j86n7va6copvgfywupc4gjt7djusw20152tvu9dofr15zextqkqdonvxfo1ltlf85mz2kjf61x03i21dbb9e8xqee3qsf8o8nctjcud2ea07go1yny6kw93aunyse6konpx6etyn2ac0lwuhjlzud1qozxrdi03v4ktci5vowmwni5f2bs6cmuuqore8sys7jtfdxq0zac7y6o1kag1b3vk6ejocvj8q0cxvygva6qnlplc5q3unhejmlgbef8u1vtxc5ejz0ffizrfkpjzzbso4dh1dl17gf8pw24uw2z7sdfi4gzy3hpytxhgxw5qfmeja208e2u7oypynqj5bjc6d69hnk9s221dasw6pyw3oaxbv9r6gii7kouxy1lcx43u1hp0dfyfoiqomjb42tzimb1370snkz79unyhmcq7bpklep4248eq3joipgz0uxhopckmkkif1f5rsndyq4sw2ftkxxm8l8t6jrvi6qp0zo76k8irhk0zhk3rlsw2vls2odmmezboclelem35wo7obmu50ku32gsyb9y5uz8wslvxmf807gx33t3lbdcv0071cnn789tooou5f8t7jd2bag4j9j99uacvfvkiuvs4zvnmjp243ql09p7mnnihcfr0pyis1bf1u0hzw58egrbcmy3kr4r5mog8qj1hlmpl4t11ot211xrgi08kwm3ic0ojo2sq64uh6ufw1doxie6uxymazxbyiilhqnoaggyynxerop6uswsinalav62p851ipfl2rr5q7wj2idk07rw33eps14yelibabxau250brfxy5wbrx5f277rw34danpvt4tkdf2lbe4ir2n53c81qlpem80j00l93ykmzpum0057csychkw64nv2mmytp93howhplf8ik6db9pd3n431n7i7wtxn0r4jovk9nqyhpow4vk4yuknicrq18tip24t40dlq0bq49s7nmpalah7vjl34ef8mjtxn2qd754oxu9tz1f0036vevup1izbvm2bon5jtxmmezs2ehniwucg3cqzy4z3r77urben7lpaxbjqlxirjx2xovlftwq5zzbzk7tmbgdxkc9yz2it7hsan3jfh')",
+        "time" : {
+          "start" : 1635178883198,
+          "stop" : 1635178884486,
+          "duration" : 1288
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userName",
+        "value" : "AltaIVMD"
+      }, {
+        "name" : "reviewText",
+        "value" : "4q2ms1qerbimda3758ea0ehaqc3bxh5fnkts9ldre15fkhdr0lyatygp3evm7gq4m58bkc5nas1qfj2ik79ivy4bnit7rcpeswv9hf5yyh6o9m3oy9ppcv761fiksq5aeq6kc0mmjfom6xw6tkf5690lid1yiyfi43sstw6dtb3dmbgzunrswp5xih8xtwax2infd4dmw43opqfjlv9fi96l03us9dakrohrzmyxbonq35hbhstyx3zp1a656jg9bk4iz897v3xelwjqng74j1ltlz6mlrnrc6aih87nbuf1ajtkb2ruitk2bdcwhqkmc0gzlwfloc771mm9d0s9s9fa41peaemzszyrbihmqar7khaew64mr7mk4u1245p031k040m1so4fv4mu0p94alptahkuz92gyu2b64eijdadsbxhz51iqltvbxarzw88x6ocj8zl7h9ece34fxifxii1i73dxwsmn7yfavrffl1545lu4edsl3nzhafb8bt9d0zn3cmq0ph87oi78rmhc20u2ra370b5jzptq5v9ys31d3nzt8d9sat4phjr9e7esoqlk5mdpfex2q3zjbq2k30n7tokvn8xxk0n7o0gw994qh6yspx2gh2zw3buuaztmjtytig1fj5d1shcmwqil7l7sma8a6brmwyc93bw403qok8e140ltjcj26vf49hle33nnacywh11azhi219pi8sv287j76gpl9wczpzyi50niuu65dbcq68byo6snl0exu9eunhc0p4geifu274fnxgoohga4225cdmzeops3lt36p7005qu8dhhxg10m0hl2vzdl8kjngfeowyu83q1qan70k5nm91u8bjt2ftkrih3t8l0qawvzwssyqjvi0n0ye83pesj8gxaifr0dacxlzeq7hp085no834qiza9i6xh2rk0miive4xkm21afk75hbc0lnads7375ixbcee9s1cnw4d0b19nathj6idz3zdz3qy90j8eej3mlozf8ddqi6xsi8qfan0ugiybeh3scmfdpegvq6izalhr89lyubtrt5h8qf5pb27sjo8gu9w1i79j86n7va6copvgfywupc4gjt7djusw20152tvu9dofr15zextqkqdonvxfo1ltlf85mz2kjf61x03i21dbb9e8xqee3qsf8o8nctjcud2ea07go1yny6kw93aunyse6konpx6etyn2ac0lwuhjlzud1qozxrdi03v4ktci5vowmwni5f2bs6cmuuqore8sys7jtfdxq0zac7y6o1kag1b3vk6ejocvj8q0cxvygva6qnlplc5q3unhejmlgbef8u1vtxc5ejz0ffizrfkpjzzbso4dh1dl17gf8pw24uw2z7sdfi4gzy3hpytxhgxw5qfmeja208e2u7oypynqj5bjc6d69hnk9s221dasw6pyw3oaxbv9r6gii7kouxy1lcx43u1hp0dfyfoiqomjb42tzimb1370snkz79unyhmcq7bpklep4248eq3joipgz0uxhopckmkkif1f5rsndyq4sw2ftkxxm8l8t6jrvi6qp0zo76k8irhk0zhk3rlsw2vls2odmmezboclelem35wo7obmu50ku32gsyb9y5uz8wslvxmf807gx33t3lbdcv0071cnn789tooou5f8t7jd2bag4j9j99uacvfvkiuvs4zvnmjp243ql09p7mnnihcfr0pyis1bf1u0hzw58egrbcmy3kr4r5mog8qj1hlmpl4t11ot211xrgi08kwm3ic0ojo2sq64uh6ufw1doxie6uxymazxbyiilhqnoaggyynxerop6uswsinalav62p851ipfl2rr5q7wj2idk07rw33eps14yelibabxau250brfxy5wbrx5f277rw34danpvt4tkdf2lbe4ir2n53c81qlpem80j00l93ykmzpum0057csychkw64nv2mmytp93howhplf8ik6db9pd3n431n7i7wtxn0r4jovk9nqyhpow4vk4yuknicrq18tip24t40dlq0bq49s7nmpalah7vjl34ef8mjtxn2qd754oxu9tz1f0036vevup1izbvm2bon5jtxmmezs2ehniwucg3cqzy4z3r77urben7lpaxbjqlxirjx2xovlftwq5zzbzk7tmbgdxkc9yz2it7hsan3jfh"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1635178886435,
+        "stop" : 1635178886804,
+        "duration" : 369
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "2bab8b443d0d70be",
+      "name" : "Screenshot",
+      "source" : "2bab8b443d0d70be.png",
+      "type" : "image/png",
+      "size" : 307652
+    }, {
+      "uid" : "7a70e93a571bac7b",
+      "name" : "Page source",
+      "source" : "7a70e93a571bac7b.html",
+      "type" : "text/plain",
+      "size" : 130113
+    }, {
+      "uid" : "d79d3c6e4f5c869a",
+      "name" : "Browser console logs",
+      "source" : "d79d3c6e4f5c869a.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "2defde966f18eb9a",
+      "name" : "Video",
+      "source" : "2defde966f18eb9a.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 36,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:complexTests.PositiveTests]/[method:t00401()]"
+  }, {
+    "name" : "story",
+    "value" : "Review check"
+  }, {
+    "name" : "feature",
+    "value" : "Reviews"
+  }, {
+    "name" : "owner",
+    "value" : "Egor Khlebnikov"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-107"
+  }, {
+    "name" : "thread",
+    "value" : "3935@fv-az74-107.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00401"
+  }, {
+    "name" : "suite",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "owner" : "Egor Khlebnikov",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "195b81f28be10bdc.json",
+  "parameterValues" : [ ]
+}

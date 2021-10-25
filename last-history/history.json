@@ -1,0 +1,950 @@
+{
+  "5abc06ce59dfddc97297cdca49199ed9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c51b40217f280030",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/c51b40217f280030",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179855016,
+        "stop" : 1635179921051,
+        "duration" : 66035
+      }
+    } ]
+  },
+  "fc0144614a666c1d3a7763b0ad565d74" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74af5daa2c7b2b36",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/74af5daa2c7b2b36",
+      "status" : "failed",
+      "statusDetails" : "Element should have text 'AltaIVMD' {app-inbox-page}\nElement: '<app-inbox-page _nghost-nym-c261 class=\"ion-page can-go-back\">My orders\nENG\nReceived orders\nNEW\nCURRENT\nARCHIVED\nThere is no orders</app-inbox-page>'\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178551458.4.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178551458.4.html\nTimeout: 10 s.",
+      "time" : {
+        "start" : 1635178501474,
+        "stop" : 1635178555203,
+        "duration" : 53729
+      }
+    } ]
+  },
+  "a2276074a56263c6baded3fc4228f5e3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da6f688224b40395",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/da6f688224b40395",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178339598,
+        "stop" : 1635178447006,
+        "duration" : 107408
+      }
+    } ]
+  },
+  "3a3d4979f219eb4e3e93d34b0f051c53" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b54104ecae7e878",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/b54104ecae7e878",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635176349749,
+        "stop" : 1635176419590,
+        "duration" : 69841
+      }
+    } ]
+  },
+  "35bff05e33b794eb315348e60408a430" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "28c81919af9f779a",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/28c81919af9f779a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178999460,
+        "stop" : 1635179049984,
+        "duration" : 50524
+      }
+    } ]
+  },
+  "9cd8782a40a5d62c47183bf05a80645f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "64df3e474869f4e7",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/64df3e474869f4e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178555207,
+        "stop" : 1635178602456,
+        "duration" : 47249
+      }
+    } ]
+  },
+  "da5725ba964462260fa486fe4e047857" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4f82085a3f08246f",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/4f82085a3f08246f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179706724,
+        "stop" : 1635179753276,
+        "duration" : 46552
+      }
+    } ]
+  },
+  "9b5ff4e34ef21b7ca4bd8ee8e31bbb12" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98ce52c298452f7f",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/98ce52c298452f7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179660488,
+        "stop" : 1635179706712,
+        "duration" : 46224
+      }
+    } ]
+  },
+  "b5b387d3cf90dac6aace735783f2efdf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e7bd06fed51ad0a5",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/e7bd06fed51ad0a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177699049,
+        "stop" : 1635177826527,
+        "duration" : 127478
+      }
+    } ]
+  },
+  "ef2230b74df022f60897f9a2c49689ab" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5bc75adaa4411faa",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/5bc75adaa4411faa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179804058,
+        "stop" : 1635179855014,
+        "duration" : 50956
+      }
+    } ]
+  },
+  "8ca8c5c1c11940c9acbed590a57a4cf5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b7c10e44e31c70e5",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/b7c10e44e31c70e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179753278,
+        "stop" : 1635179804055,
+        "duration" : 50777
+      }
+    } ]
+  },
+  "b202ba27f02ffea3b6938844cacebcf6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "84e3e3eb84edf395",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/84e3e3eb84edf395",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178706411,
+        "stop" : 1635178754139,
+        "duration" : 47728
+      }
+    } ]
+  },
+  "662bf04cf3b8ccb15fd8cc2e810dc6b3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a030fe767afa3ff9",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/a030fe767afa3ff9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178648197,
+        "stop" : 1635178706406,
+        "duration" : 58209
+      }
+    } ]
+  },
+  "638d098f56450be2d04e1802b3a727f6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fecb2fe98464c67",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/fecb2fe98464c67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177270561,
+        "stop" : 1635177401581,
+        "duration" : 131020
+      }
+    } ]
+  },
+  "47a89a3abad0186bd361226010275ad6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3fe2337e8c9df86b",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/3fe2337e8c9df86b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179099283,
+        "stop" : 1635179144855,
+        "duration" : 45572
+      }
+    } ]
+  },
+  "3659f92e1518833c41f9f06c080c24d3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3b87f8a84e99e158",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/3b87f8a84e99e158",
+      "status" : "failed",
+      "statusDetails" : "Element should have text 'SherrillMDIII' {app-outbox-page}\nElement: '<app-outbox-page _nghost-vsi-c263 class=\"ion-page can-go-back\">List your business\nMy orders\nENG\nSent orders\nCURRENT\nARCHIVED\nOct. 26, 2021\n11:00 — 11:43\nAccepted\nA\nAdolphSr.PhD HaneIIDVM\nEnglish language · Moscow\nDynamic Assurance Strategist (0jjtttqy)\n849 ₽\n43 min\nView details\nCancel\nOct. 26, 2021\n11:00 — 11:01\nAccepted\nS\nSonjaVJr. O'ConnellVIV\nEnglish language · Moscow\nInternal Program Designer (1j7xcc)\n756 ₽\n1 min\nView details\nCancel</app-outbox-page>'\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178497847.3.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178497847.3.html\nTimeout: 10 s.",
+      "time" : {
+        "start" : 1635178447014,
+        "stop" : 1635178501468,
+        "duration" : 54454
+      }
+    } ]
+  },
+  "daa9388428e3587410f4d2b228f6d2fb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19e6de88bb22a9d8",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/19e6de88bb22a9d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177079603,
+        "stop" : 1635177134853,
+        "duration" : 55250
+      }
+    } ]
+  },
+  "7d867feac4d81ab5ad6c29b34cf50076" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d6478e980f1142f6",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/d6478e980f1142f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179495256,
+        "stop" : 1635179614425,
+        "duration" : 119169
+      }
+    } ]
+  },
+  "55bedb5b3b16a7e3eb37d26d5c436734" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "221575f7048a92c4",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/221575f7048a92c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178230978,
+        "stop" : 1635178339595,
+        "duration" : 108617
+      }
+    } ]
+  },
+  "fd1e1fa492e22c5c8cdb2e06903d5c7d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c432281fe3cc847",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/6c432281fe3cc847",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179308881,
+        "stop" : 1635179382953,
+        "duration" : 74072
+      }
+    } ]
+  },
+  "77c11970b3b6be9626ad38f74e7d3085" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "81924a9ec06ac8cc",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/81924a9ec06ac8cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177201494,
+        "stop" : 1635177270557,
+        "duration" : 69063
+      }
+    } ]
+  },
+  "9259533be0ba806d56013f4a789ef604" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f63d7542ceead2c5",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/f63d7542ceead2c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177009696,
+        "stop" : 1635177079599,
+        "duration" : 69903
+      }
+    } ]
+  },
+  "8cfe55cab5f11c980d8f8a208e799b38" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aa0017d5af60418a",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/aa0017d5af60418a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178602460,
+        "stop" : 1635178648189,
+        "duration" : 45729
+      }
+    } ]
+  },
+  "e23757af71fad5ad3793d85424fb15c8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7ae09532ad6c9fcc",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/7ae09532ad6c9fcc",
+      "status" : "failed",
+      "statusDetails" : "Invalid element state: element click intercepted: Element <ion-button _ngcontent-aub-c91=\"\" class=\"md button button-clear in-toolbar button-has-icon-only ion-activatable ion-focusable hydrated\">...</ion-button> is not clickable at point (28, 148). Other element would receive the click: <ion-backdrop class=\"sc-ion-alert-md md hydrated\" tabindex=\"-1\" aria-hidden=\"true\" style=\"\"></ion-backdrop>\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176869259.2.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176869259.2.html\nTimeout: 10 s.\nCaused by: ElementClickInterceptedException: element click intercepted: Element <ion-button _ngcontent-aub-c91=\"\" class=\"md button button-clear in-toolbar button-has-icon-only ion-activatable ion-focusable hydrated\">...</ion-button> is not clickable at point (28, 148). Other element would receive the click: <ion-backdrop class=\"sc-ion-alert-md md hydrated\" tabindex=\"-1\" aria-hidden=\"true\" style=\"\"></ion-backdrop>",
+      "time" : {
+        "start" : 1635176827474,
+        "stop" : 1635176873634,
+        "duration" : 46160
+      }
+    } ]
+  },
+  "c7d9e3fdd1865872cd2dc7ec4fe62989" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "88dd5d56b699375c",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/88dd5d56b699375c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179382956,
+        "stop" : 1635179495253,
+        "duration" : 112297
+      }
+    } ]
+  },
+  "916ca1df76530591fca01f4c3985986c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6550eca6364fe7e4",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/6550eca6364fe7e4",
+      "status" : "failed",
+      "statusDetails" : "Element not found {app-user-location-edit/app-column-header/ion-button}\nExpected: visible or transparent: visible or have css value opacity=0\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176499020.0.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176499020.0.html\nTimeout: 10 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"ion-button\"}",
+      "time" : {
+        "start" : 1635176419680,
+        "stop" : 1635176503348,
+        "duration" : 83668
+      }
+    } ]
+  },
+  "e23c0ca06daa48061d0892fb1f7d2f96" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5a29873244e04f86",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/5a29873244e04f86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179614428,
+        "stop" : 1635179660485,
+        "duration" : 46057
+      }
+    } ]
+  },
+  "f608b326f0a7f36f157f02d7e90c7497" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "53cf4e1bcb32e7b",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/53cf4e1bcb32e7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179239433,
+        "stop" : 1635179308879,
+        "duration" : 69446
+      }
+    } ]
+  },
+  "779affbb9ab65cf7f7134656e78df9ff" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fa163961d8a9fd31",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/fa163961d8a9fd31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177401584,
+        "stop" : 1635177553343,
+        "duration" : 151759
+      }
+    } ]
+  },
+  "3be063f9dd7f7ca59f5fc0e548d5f62e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "977aed7751241961",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/977aed7751241961",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179049987,
+        "stop" : 1635179099280,
+        "duration" : 49293
+      }
+    } ]
+  },
+  "86738249adab5288681129130f8f65bc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e59866f3d3699356",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/e59866f3d3699356",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177134860,
+        "stop" : 1635177201490,
+        "duration" : 66630
+      }
+    } ]
+  },
+  "22779b14fbdfb035d74832e78d7f8d65" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d792f30458f196e1",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/d792f30458f196e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178944481,
+        "stop" : 1635178999457,
+        "duration" : 54976
+      }
+    } ]
+  },
+  "40dabb183b8672ce29845ca9bffa8668" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "136aa99419e29f92",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/136aa99419e29f92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635179175487,
+        "stop" : 1635179239427,
+        "duration" : 63940
+      }
+    } ]
+  },
+  "1733ae0c43906dfeda4a20229bfec7a8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "96e75344bc7a1c17",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/96e75344bc7a1c17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177553348,
+        "stop" : 1635177699045,
+        "duration" : 145697
+      }
+    } ]
+  },
+  "f868bffb41c20bf1856fd38331f4c11f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "209f2acce632c1cb",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/209f2acce632c1cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177826533,
+        "stop" : 1635177942423,
+        "duration" : 115890
+      }
+    } ]
+  },
+  "82d1b71aae9f5a8e558f2554d821fd9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "91f536fecffcb8cf",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/91f536fecffcb8cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178118721,
+        "stop" : 1635178230975,
+        "duration" : 112254
+      }
+    } ]
+  },
+  "19507040c8b9e8d4b068dc2e8dc17e4e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4a0a5e541d5bb219",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/4a0a5e541d5bb219",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635176590787,
+        "stop" : 1635176700313,
+        "duration" : 109526
+      }
+    } ]
+  },
+  "d99f7ff45954b44d8e0135eb59c6245e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f287651a67cb2f3",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/5f287651a67cb2f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178754142,
+        "stop" : 1635178817979,
+        "duration" : 63837
+      }
+    } ]
+  },
+  "4e9afc8a2f098ef8dad5acac454ba4f9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6605f842174a3c5b",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/6605f842174a3c5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635176940617,
+        "stop" : 1635177009693,
+        "duration" : 69076
+      }
+    } ]
+  },
+  "d250b1a34e355b00edf21d7d814e3e2b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e882571db8962c9",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/9e882571db8962c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635177980156,
+        "stop" : 1635178118713,
+        "duration" : 138557
+      }
+    } ]
+  },
+  "8901cb1a754c926863874c4cf6b74103" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5018321af3da5ec0",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/5018321af3da5ec0",
+      "status" : "failed",
+      "statusDetails" : "Element not found {app-outbox/app-professional-card[2]}\nExpected: exist\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178940373.5.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178940373.5.html\nTimeout: 10 s.\nCaused by: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2",
+      "time" : {
+        "start" : 1635178886809,
+        "stop" : 1635178944476,
+        "duration" : 57667
+      }
+    } ]
+  },
+  "b21e0c1e6ce2d3069b0b5633bebd976b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f2220a1f6d0aeb0b",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/f2220a1f6d0aeb0b",
+      "status" : "failed",
+      "statusDetails" : "",
+      "time" : {
+        "start" : 1635179144858,
+        "stop" : 1635179175484,
+        "duration" : 30626
+      }
+    } ]
+  },
+  "1249c5d00058b8974df28c1692f32bc5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "195b81f28be10bdc",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/195b81f28be10bdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635178817982,
+        "stop" : 1635178886804,
+        "duration" : 68822
+      }
+    } ]
+  },
+  "91f8a531317d771f9dcebd106d369a8e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d27b6c093301abb9",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/d27b6c093301abb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635176503369,
+        "stop" : 1635176590781,
+        "duration" : 87412
+      }
+    } ]
+  },
+  "d383d73592b5958f97dd85bdbb16fdea" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "55b2182270a7ade6",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/55b2182270a7ade6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635176874855,
+        "stop" : 1635176940613,
+        "duration" : 65758
+      }
+    } ]
+  },
+  "6151cade9e7dedaddd3f75c8fb7a620b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2c3b484e4ee09492",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/2c3b484e4ee09492",
+      "status" : "failed",
+      "statusDetails" : "Element should have text 'Iceland' {app-profile/main}\nElement: '<main _ngcontent-sfp-c107 id=\"main\" displayed:false>9643788531</main>'\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176822528.1.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176822528.1.html\nTimeout: 10 s.",
+      "time" : {
+        "start" : 1635176700327,
+        "stop" : 1635176826305,
+        "duration" : 125978
+      }
+    } ]
+  },
+  "e8de717ae26ea5a2e0cbf3cbeb2c4c9f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4615e7b777b92e0c",
+      "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25//#testresult/4615e7b777b92e0c",
+      "status" : "failed",
+      "statusDetails" : "",
+      "time" : {
+        "start" : 1635177942425,
+        "stop" : 1635177980153,
+        "duration" : 37728
+      }
+    } ]
+  }
+}

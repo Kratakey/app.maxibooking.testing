@@ -1,0 +1,492 @@
+{
+  "uid" : "5bc75adaa4411faa",
+  "name" : "Search page search: service name",
+  "fullName" : "complexTests.PositiveTests.t00804",
+  "historyId" : "ef2230b74df022f60897f9a2c49689ab",
+  "time" : {
+    "start" : 1635179804058,
+    "stop" : 1635179855014,
+    "duration" : 50956
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1635179804059,
+        "stop" : 1635179816077,
+        "duration" : 12018
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1635179816278,
+        "stop" : 1635179817499,
+        "duration" : 1221
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635179819022,
+        "stop" : 1635179820667,
+        "duration" : 1645
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/ion-item\") click()",
+      "time" : {
+        "start" : 1635179820667,
+        "stop" : 1635179822220,
+        "duration" : 1553
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635179823020,
+        "stop" : 1635179824851,
+        "duration" : 1831
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Search button",
+      "time" : {
+        "start" : 1635179825151,
+        "stop" : 1635179827033,
+        "duration" : 1882
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-main-menu/by text: Search\") click()",
+        "time" : {
+          "start" : 1635179825151,
+          "stop" : 1635179826733,
+          "duration" : 1582
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Input search text and press Enter",
+      "time" : {
+        "start" : 1635179827034,
+        "stop" : 1635179834592,
+        "duration" : 7558
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search/form/input\") set value(\"Internal Program Designer (1j7xcc)\")",
+        "time" : {
+          "start" : 1635179828034,
+          "stop" : 1635179830285,
+          "duration" : 2251
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search/form/input\") press enter()",
+        "time" : {
+          "start" : 1635179831285,
+          "stop" : 1635179833103,
+          "duration" : 1818
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "f61ed7060b1f3846",
+        "name" : "Screenshot",
+        "source" : "f61ed7060b1f3846.png",
+        "type" : "image/png",
+        "size" : 77562
+      } ],
+      "parameters" : [ {
+        "name" : "searchQuery",
+        "value" : "Internal Program Designer (1j7xcc)"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify that the search result is correct",
+      "time" : {
+        "start" : 1635179834592,
+        "stop" : 1635179841794,
+        "duration" : 7202
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search-result/ion-card-content/app-professional-card\") should have([text 'SonjaVJr.', text 'O'ConnellVIV'])",
+        "time" : {
+          "start" : 1635179834592,
+          "stop" : 1635179837891,
+          "duration" : 3299
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search-result/ion-card-content/app-service-link\") should have(text 'Internal Program Designer (1j7xcc)')",
+        "time" : {
+          "start" : 1635179837891,
+          "stop" : 1635179840159,
+          "duration" : 2268
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search-result/ion-card-content/app-price\") should have(text '756')",
+        "time" : {
+          "start" : 1635179840159,
+          "stop" : 1635179841794,
+          "duration" : 1635
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "FirstName",
+        "value" : "SonjaVJr."
+      }, {
+        "name" : "LastName",
+        "value" : "O'ConnellVIV"
+      }, {
+        "name" : "ServiceName",
+        "value" : "Internal Program Designer (1j7xcc)"
+      }, {
+        "name" : "ServicePrice",
+        "value" : "756"
+      } ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Select a service",
+      "time" : {
+        "start" : 1635179841794,
+        "stop" : 1635179843963,
+        "duration" : 2169
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search-result/ion-card-content/app-service-link/a\") click()",
+        "time" : {
+          "start" : 1635179841794,
+          "stop" : 1635179843963,
+          "duration" : 2169
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify that the service data is correct",
+      "time" : {
+        "start" : 1635179843963,
+        "stop" : 1635179852853,
+        "duration" : 8890
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-service-widget/app-service-title\") should have(text 'Internal Program Designer (1j7xcc)')",
+        "time" : {
+          "start" : 1635179843963,
+          "stop" : 1635179846618,
+          "duration" : 2655
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-price\") should have(text '756')",
+        "time" : {
+          "start" : 1635179846618,
+          "stop" : 1635179847922,
+          "duration" : 1304
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-duration-viewer\") should have(text '1')",
+        "time" : {
+          "start" : 1635179847922,
+          "stop" : 1635179849226,
+          "duration" : 1304
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-professional-card\") should have([text 'SonjaVJr.', text 'O'ConnellVIV'])",
+        "time" : {
+          "start" : 1635179849226,
+          "stop" : 1635179851856,
+          "duration" : 2630
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget\") should have(text 'zn9axdkvqkqzvaqhomnp62bp9xli92kpgb5fivaqi32yfwllzxq8fv0qq58ydxy9d1zphcb2jtdcovbyo2kewq1hs9xyp85j4b2t9iqyytfskawnsaycpuve9qirahm9vfki76cd7b0u3atqf6h981qhj68k7pciqb0kl70p5jcfvb6y9t7af4hubbzu8z09zx2wdvvo69giiwme1j299akdsg3omctfkkyhqfk7wu2kbi938sk9e9w5xtg674oxuw9kxqsa8wj0v0lai0jwzml4p6e556w1pytgp2zdx5v6grnhfo22nky5tfes8ru01kbhu48olky3wrh1r6wzi8crxpyb632ulw3kw73v6p5vn8vmt434saqztbbr11vb6dtg3x5mhsao31ok6xa5my5twkic8ilr8zxxkvm5ym34ebh22xlgnjoe7mho0ypdb2wkrc9z9p2b3xh69gvcrawciw6ig0jfnes5qxey17s8i8lzeum63ywkxnfb8ti07wyffuqwjzqjkcp0mgdw2wt1s99hg9qnwu7yxq1evda5wtg351se8gnpuc18lftpeul2ofekt9e562qmbob7ltlz07yi1gsj9ryw5a6f830fj30ywjmrqwnqmhr2jzav4hk46us9u8uwxqdjzu9i6puss06pc6s60w09l9pn5ivn3dr9534ltbqbtw1pm2lcxhr7yfg097adapbk2f7ko7is2ra2o6ep3i0fceiqc6x5497wezi22higb38qucmsmxe43syswj30jmb90m5jrk3t4aewhx3jtl3m7llxzmft2suy1k40v9dwt62drt15lupmov7rfcjo2299mhf838ftl2nzqnt5agyz7gf04jiuh5ngkhmj2wur1y1aagj18rpub0dt8poiqppp28am8qxk97staryz3o62pk2vp9lttxqmu3tkaidjx3cs6xu8a5kk7wuwcnlpfinc6hciqflbgc4ouiooakxq3ocdp7wlzcffjyo3q22i00youeojro0bgfhtomizp6zvwqvwqjsavth4zo51g594fiwagi3nxxysk9agkt9ohvpxo4oq7r8ovddf3lbxk916uvyn2pop0cea6gc6y3xswbqkrui6d1sxr5pysez7ep9obu652boi2p8gc14i06u8z5hkkl6zlzou9jx2j111e6acw2p0i3b5a9ktc6qorg853ya7wwsmnkxplxpkqlsmb8km3xro4i14248mi8loloolgrwvsoxxv6nrxdkmuonjp1cw61gkk51pxuisos58mn3q3rmlrnajcshl1n599pop44gvncd8womuoiov45vffe06m3gvvxa1k4k9kpsdgrackfj25rc7z7pd8c1vake9vyvdjmn3kyuaniaky6uke2vfqx887jxdfa6wdhxye89fmrmjq9yun8ynt42zhmnkdt3plrz6n1x40pagmoanbtrrllpf0p74slfoffcmip')",
+        "time" : {
+          "start" : 1635179851857,
+          "stop" : 1635179852853,
+          "duration" : 996
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ServiceName",
+        "value" : "Internal Program Designer (1j7xcc)"
+      }, {
+        "name" : "ServicePrice",
+        "value" : "756"
+      }, {
+        "name" : "ServiceDuration",
+        "value" : "1"
+      }, {
+        "name" : "FirstName",
+        "value" : "SonjaVJr."
+      }, {
+        "name" : "LastName",
+        "value" : "O'ConnellVIV"
+      }, {
+        "name" : "ServiceDescription",
+        "value" : "zn9axdkvqkqzvaqhomnp62bp9xli92kpgb5fivaqi32yfwllzxq8fv0qq58ydxy9d1zphcb2jtdcovbyo2kewq1hs9xyp85j4b2t9iqyytfskawnsaycpuve9qirahm9vfki76cd7b0u3atqf6h981qhj68k7pciqb0kl70p5jcfvb6y9t7af4hubbzu8z09zx2wdvvo69giiwme1j299akdsg3omctfkkyhqfk7wu2kbi938sk9e9w5xtg674oxuw9kxqsa8wj0v0lai0jwzml4p6e556w1pytgp2zdx5v6grnhfo22nky5tfes8ru01kbhu48olky3wrh1r6wzi8crxpyb632ulw3kw73v6p5vn8vmt434saqztbbr11vb6dtg3x5mhsao31ok6xa5my5twkic8ilr8zxxkvm5ym34ebh22xlgnjoe7mho0ypdb2wkrc9z9p2b3xh69gvcrawciw6ig0jfnes5qxey17s8i8lzeum63ywkxnfb8ti07wyffuqwjzqjkcp0mgdw2wt1s99hg9qnwu7yxq1evda5wtg351se8gnpuc18lftpeul2ofekt9e562qmbob7ltlz07yi1gsj9ryw5a6f830fj30ywjmrqwnqmhr2jzav4hk46us9u8uwxqdjzu9i6puss06pc6s60w09l9pn5ivn3dr9534ltbqbtw1pm2lcxhr7yfg097adapbk2f7ko7is2ra2o6ep3i0fceiqc6x5497wezi22higb38qucmsmxe43syswj30jmb90m5jrk3t4aewhx3jtl3m7llxzmft2suy1k40v9dwt62drt15lupmov7rfcjo2299mhf838ftl2nzqnt5agyz7gf04jiuh5ngkhmj2wur1y1aagj18rpub0dt8poiqppp28am8qxk97staryz3o62pk2vp9lttxqmu3tkaidjx3cs6xu8a5kk7wuwcnlpfinc6hciqflbgc4ouiooakxq3ocdp7wlzcffjyo3q22i00youeojro0bgfhtomizp6zvwqvwqjsavth4zo51g594fiwagi3nxxysk9agkt9ohvpxo4oq7r8ovddf3lbxk916uvyn2pop0cea6gc6y3xswbqkrui6d1sxr5pysez7ep9obu652boi2p8gc14i06u8z5hkkl6zlzou9jx2j111e6acw2p0i3b5a9ktc6qorg853ya7wwsmnkxplxpkqlsmb8km3xro4i14248mi8loloolgrwvsoxxv6nrxdkmuonjp1cw61gkk51pxuisos58mn3q3rmlrnajcshl1n599pop44gvncd8womuoiov45vffe06m3gvvxa1k4k9kpsdgrackfj25rc7z7pd8c1vake9vyvdjmn3kyuaniaky6uke2vfqx887jxdfa6wdhxye89fmrmjq9yun8ynt42zhmnkdt3plrz6n1x40pagmoanbtrrllpf0p74slfoffcmip"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1635179854640,
+        "stop" : 1635179855013,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "166b03d6959134c9",
+      "name" : "Screenshot",
+      "source" : "166b03d6959134c9.png",
+      "type" : "image/png",
+      "size" : 77606
+    }, {
+      "uid" : "76b1ca9a6ba796bc",
+      "name" : "Page source",
+      "source" : "76b1ca9a6ba796bc.html",
+      "type" : "text/plain",
+      "size" : 136298
+    }, {
+      "uid" : "a167ce6976475ac3",
+      "name" : "Browser console logs",
+      "source" : "a167ce6976475ac3.txt",
+      "type" : "text/plain",
+      "size" : 1132
+    }, {
+      "uid" : "3eb9a03bd501dad0",
+      "name" : "Video",
+      "source" : "3eb9a03bd501dad0.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 23,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:complexTests.PositiveTests]/[method:t00804()]"
+  }, {
+    "name" : "story",
+    "value" : "Search from the search page"
+  }, {
+    "name" : "feature",
+    "value" : "Search"
+  }, {
+    "name" : "owner",
+    "value" : "Egor Khlebnikov"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-107"
+  }, {
+    "name" : "thread",
+    "value" : "3935@fv-az74-107.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00804"
+  }, {
+    "name" : "suite",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "owner" : "Egor Khlebnikov",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5bc75adaa4411faa.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,141 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Element not found {app-user-location-edit/app-column-header/ion-button}\nExpected: visible or transparent: visible or have css value opacity=0\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176499020.0.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176499020.0.html\nTimeout: 10 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"ion-button\"}",
+      "children" : [ {
+        "name" : "Profile functionality verification",
+        "uid" : "6550eca6364fe7e4",
+        "parentUid" : "e81148c9a1ec95a04b36fbbb9cc4e7da",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635176419680,
+          "stop" : 1635176503348,
+          "duration" : 83668
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e81148c9a1ec95a04b36fbbb9cc4e7da"
+    }, {
+      "name" : "Element should have text 'Iceland' {app-profile/main}\nElement: '<main _ngcontent-sfp-c107 id=\"main\" displayed:false>9643788531</main>'\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176822528.1.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176822528.1.html\nTimeout: 10 s.",
+      "children" : [ {
+        "name" : "Profile: about - change info and verify",
+        "uid" : "2c3b484e4ee09492",
+        "parentUid" : "f2f0b4ff3af1776cb0e6f64fb72dc2f5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635176700327,
+          "stop" : 1635176826305,
+          "duration" : 125978
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f2f0b4ff3af1776cb0e6f64fb72dc2f5"
+    }, {
+      "name" : "Invalid element state: element click intercepted: Element <ion-button _ngcontent-aub-c91=\"\" class=\"md button button-clear in-toolbar button-has-icon-only ion-activatable ion-focusable hydrated\">...</ion-button> is not clickable at point (28, 148). Other element would receive the click: <ion-backdrop class=\"sc-ion-alert-md md hydrated\" tabindex=\"-1\" aria-hidden=\"true\" style=\"\"></ion-backdrop>\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176869259.2.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635176869259.2.html\nTimeout: 10 s.\nCaused by: ElementClickInterceptedException: element click intercepted: Element <ion-button _ngcontent-aub-c91=\"\" class=\"md button button-clear in-toolbar button-has-icon-only ion-activatable ion-focusable hydrated\">...</ion-button> is not clickable at point (28, 148). Other element would receive the click: <ion-backdrop class=\"sc-ion-alert-md md hydrated\" tabindex=\"-1\" aria-hidden=\"true\" style=\"\"></ion-backdrop>",
+      "children" : [ {
+        "name" : "Language retention after registration",
+        "uid" : "7ae09532ad6c9fcc",
+        "parentUid" : "d0e9ce7ade64c7e491a6e9c222c333e3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635176827474,
+          "stop" : 1635176873634,
+          "duration" : 46160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d0e9ce7ade64c7e491a6e9c222c333e3"
+    }, {
+      "name" : "",
+      "children" : [ {
+        "name" : "Basic booking online",
+        "uid" : "4615e7b777b92e0c",
+        "parentUid" : "ac137dbdc3eb70d55d947f065b65fff1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635177942425,
+          "stop" : 1635177980153,
+          "duration" : 37728
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove master from favorites",
+        "uid" : "f2220a1f6d0aeb0b",
+        "parentUid" : "ac137dbdc3eb70d55d947f065b65fff1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635179144858,
+          "stop" : 1635179175484,
+          "duration" : 30626
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ac137dbdc3eb70d55d947f065b65fff1"
+    }, {
+      "name" : "Element should have text 'SherrillMDIII' {app-outbox-page}\nElement: '<app-outbox-page _nghost-vsi-c263 class=\"ion-page can-go-back\">List your business\nMy orders\nENG\nSent orders\nCURRENT\nARCHIVED\nOct. 26, 2021\n11:00 — 11:43\nAccepted\nA\nAdolphSr.PhD HaneIIDVM\nEnglish language · Moscow\nDynamic Assurance Strategist (0jjtttqy)\n849 ₽\n43 min\nView details\nCancel\nOct. 26, 2021\n11:00 — 11:01\nAccepted\nS\nSonjaVJr. O'ConnellVIV\nEnglish language · Moscow\nInternal Program Designer (1j7xcc)\n756 ₽\n1 min\nView details\nCancel</app-outbox-page>'\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178497847.3.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178497847.3.html\nTimeout: 10 s.",
+      "children" : [ {
+        "name" : "Check orders from user side",
+        "uid" : "3b87f8a84e99e158",
+        "parentUid" : "cad15f76dbd4067d0d560541ee0bc87c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635178447014,
+          "stop" : 1635178501468,
+          "duration" : 54454
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cad15f76dbd4067d0d560541ee0bc87c"
+    }, {
+      "name" : "Element should have text 'AltaIVMD' {app-inbox-page}\nElement: '<app-inbox-page _nghost-nym-c261 class=\"ion-page can-go-back\">My orders\nENG\nReceived orders\nNEW\nCURRENT\nARCHIVED\nThere is no orders</app-inbox-page>'\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178551458.4.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178551458.4.html\nTimeout: 10 s.",
+      "children" : [ {
+        "name" : "Master completes order: online",
+        "uid" : "74af5daa2c7b2b36",
+        "parentUid" : "12e8e8a8b208041cc94fc891f47cc248",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635178501474,
+          "stop" : 1635178555203,
+          "duration" : 53729
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "12e8e8a8b208041cc94fc891f47cc248"
+    }, {
+      "name" : "Element not found {app-outbox/app-professional-card[2]}\nExpected: exist\nScreenshot: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178940373.5.png\nPage source: file:/home/runner/work/app.maxibooking.testing/app.maxibooking.testing/build/reports/tests/1635178940373.5.html\nTimeout: 10 s.\nCaused by: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2",
+      "children" : [ {
+        "name" : "Post and check review add to favorites in the process",
+        "uid" : "5018321af3da5ec0",
+        "parentUid" : "9528da8777602445f3cc983fc93e78a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635178886809,
+          "stop" : 1635178944476,
+          "duration" : 57667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9528da8777602445f3cc983fc93e78a8"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

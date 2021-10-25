@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://Kratakey.github.io/app.maxibooking.testing",
+  "buildOrder" : 25,
+  "buildName" : "GitHub Actions Run #1381818065",
+  "buildUrl" : "https://github.com/Kratakey/app.maxibooking.testing/actions/runs/1381818065",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://Kratakey.github.io/app.maxibooking.testing/25/"
+} ]

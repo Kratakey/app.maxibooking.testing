@@ -1,0 +1,1155 @@
+{
+  "uid" : "da6f688224b40395",
+  "name" : "Basic booking online (3)",
+  "fullName" : "complexTests.PositiveTests.t00204",
+  "historyId" : "a2276074a56263c6baded3fc4228f5e3",
+  "time" : {
+    "start" : 1635178339598,
+    "stop" : 1635178447006,
+    "duration" : 107408
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1635178339599,
+        "stop" : 1635178355176,
+        "duration" : 15577
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1635178355376,
+        "stop" : 1635178356587,
+        "duration" : 1211
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635178358108,
+        "stop" : 1635178359735,
+        "duration" : 1627
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main/ion-item\") click()",
+      "time" : {
+        "start" : 1635178359735,
+        "stop" : 1635178361267,
+        "duration" : 1532
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635178361767,
+        "stop" : 1635178363585,
+        "duration" : 1818
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-main-menu/by text: Log in\") click()",
+      "time" : {
+        "start" : 1635178364085,
+        "stop" : 1635178365604,
+        "duration" : 1519
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input\") set value(dario.blick@cc.aa)",
+      "time" : {
+        "start" : 1635178365604,
+        "stop" : 1635178367442,
+        "duration" : 1838
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login/input[1]\") set value(1tf1dq6g)",
+      "time" : {
+        "start" : 1635178367443,
+        "stop" : 1635178369334,
+        "duration" : 1891
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-login-form/ion-button[type='submit']\") click()",
+      "time" : {
+        "start" : 1635178369334,
+        "stop" : 1635178370828,
+        "duration" : 1494
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/[menu='flag-menu']/ion-label\") get text()",
+      "time" : {
+        "start" : 1635178373149,
+        "stop" : 1635178374781,
+        "duration" : 1632
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"app-profile/ion-item\") click()",
+      "time" : {
+        "start" : 1635178374781,
+        "stop" : 1635178376286,
+        "duration" : 1505
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-buttons/ion-menu-toggle/ion-button\") click()",
+      "time" : {
+        "start" : 1635178377087,
+        "stop" : 1635178379407,
+        "duration" : 2320
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Search button",
+      "time" : {
+        "start" : 1635178379707,
+        "stop" : 1635178381605,
+        "duration" : 1898
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-main-menu/by text: Search\") click()",
+        "time" : {
+          "start" : 1635178379707,
+          "stop" : 1635178381305,
+          "duration" : 1598
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Close default filters",
+      "time" : {
+        "start" : 1635178381606,
+        "stop" : 1635178384115,
+        "duration" : 2509
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-applied-filters/ion-chip\") click()",
+        "time" : {
+          "start" : 1635178381606,
+          "stop" : 1635178383115,
+          "duration" : 1509
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Input search text and press Enter",
+      "time" : {
+        "start" : 1635178384116,
+        "stop" : 1635178391722,
+        "duration" : 7606
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search/form/input\") set value(\"District Functionality Strategist (8eiki52)\")",
+        "time" : {
+          "start" : 1635178385116,
+          "stop" : 1635178387400,
+          "duration" : 2284
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search/form/input\") press enter()",
+        "time" : {
+          "start" : 1635178388400,
+          "stop" : 1635178390226,
+          "duration" : 1826
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "b3bf8ff0dbe97f6a",
+        "name" : "Screenshot",
+        "source" : "b3bf8ff0dbe97f6a.png",
+        "type" : "image/png",
+        "size" : 83240
+      } ],
+      "parameters" : [ {
+        "name" : "searchQuery",
+        "value" : "District Functionality Strategist (8eiki52)"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify that the search result is correct",
+      "time" : {
+        "start" : 1635178391722,
+        "stop" : 1635178398353,
+        "duration" : 6631
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search-result/ion-card-content/app-professional-card\") should have([text 'StantonIIIDVM', text 'FritschVSr.'])",
+        "time" : {
+          "start" : 1635178391722,
+          "stop" : 1635178395042,
+          "duration" : 3320
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search-result/ion-card-content/app-service-link\") should have(text 'District Functionality Strategist (8eiki52)')",
+        "time" : {
+          "start" : 1635178395042,
+          "stop" : 1635178396695,
+          "duration" : 1653
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-search-result/ion-card-content/app-price\") should have(text '50')",
+        "time" : {
+          "start" : 1635178396695,
+          "stop" : 1635178398353,
+          "duration" : 1658
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "FirstName",
+        "value" : "StantonIIIDVM"
+      }, {
+        "name" : "LastName",
+        "value" : "FritschVSr."
+      }, {
+        "name" : "ServiceName",
+        "value" : "District Functionality Strategist (8eiki52)"
+      }, {
+        "name" : "ServicePrice",
+        "value" : "50"
+      } ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Select a service",
+      "time" : {
+        "start" : 1635178398353,
+        "stop" : 1635178401053,
+        "duration" : 2700
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-search-result/ion-card-content/app-service-link/a\") click()",
+        "time" : {
+          "start" : 1635178398353,
+          "stop" : 1635178401053,
+          "duration" : 2700
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify that the service data is correct",
+      "time" : {
+        "start" : 1635178401053,
+        "stop" : 1635178409769,
+        "duration" : 8716
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-service-widget/app-service-title\") should have(text 'District Functionality Strategist (8eiki52)')",
+        "time" : {
+          "start" : 1635178401053,
+          "stop" : 1635178403671,
+          "duration" : 2618
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-price\") should have(text '50')",
+        "time" : {
+          "start" : 1635178403671,
+          "stop" : 1635178404951,
+          "duration" : 1280
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-duration-viewer\") should have(text '35')",
+        "time" : {
+          "start" : 1635178404951,
+          "stop" : 1635178406231,
+          "duration" : 1280
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget/app-professional-card\") should have([text 'StantonIIIDVM', text 'FritschVSr.'])",
+        "time" : {
+          "start" : 1635178406231,
+          "stop" : 1635178408795,
+          "duration" : 2564
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"app-service-widget\") should have(text '9s1polm5cmi9immo3nt89mweaet4u281atsm4rqozarnx0d880tneh403a8dldsicjpcckhoo4ubxx5ro575hdxn5sb6ndsgr4jrj3x2oej6t6hhzfpzm9n5fb7z3njbzeioa9wq9n3mu2fi14r80e4rtzcgyzsbxn3qtmn7lzdpcmxa75ws8bbtwwli78gnratm7lezna63a9w83e4gp9s7q9mgbu8pzroq9ul47wt290hpr4omlfuppwoymqij3h94rrgnxk24hi6xmd7se6byb0al8wzl5qzj0l3ji4aghc8k825asltfmdoggnrxslfc1y2mcn4r6lmlhorys590djbnbo2ehys2t21mdhp04i6ymtdya6fw5qie0enbydrt28jg47wfunrtlmhi2zztse62seglpmrhudqop7dg5btzkotsj4lts42m7jjjgx0f5k0t4mxrwqnflhpmi65hzafm822npmn60ej99wzdp2fravcna5z5b1wao2frb9zaj21yph0hqsfhjhy79wj47hd77o4gfigfet79alr8baguiuk3sv0372vwknz2jdva4fhde1sptkyi40hu6kofgt59kwxhsm466rfks7swc5hwedacdcl9cwf7fjyg72yn7p1kokihgm1mbbqlq9485kup0fe9vnl2sybma0jg466uqdtu43y66yq3gohe82lelq86vwm6xqwx238ag6d9vgm6rn2rarnrh0yjhi3m2h3yc4upicin8zqs0gnmtvn15snjywn18g6fxe8gyoxol0yb0izpac71xrho9o6lziz2ac5yzk2yndbz3udlfbmq5pur6sy82skw9q5vdkkvwcpmkva6qt50klrw92ptnei10s57i5xwefmasm70a0qwa0022w7xzn6o2aszw2w9k0der2eyrul55l5qqsvnd367j8vy7coyaejz80kqtx13792pnohf7zjg8qhwt3yykc63srpqx7yak77crb25dvhgr4uysyv3fgioecleh2h7y4gi58te9yv2aa371y1bppqywebwbktdrjox9dmx5ln8zgffzi5jgaev36d6ivm8j9xvv5qmev4k0enq3yj2z5atyz2ii5xp4ypmgsh5fch3482lk0zxmlzn32phz99bsxyma59jh6gxcjpf4ldhh25evbgqhq7mfyixjq9bwm7aa5ykxww88sjk9x5892yarquxi6ey33b9wvwpz6emwq9rrcd2p82o1harbxa2jm17sd48cu6xbigvm14xvgcngam7mzsdsmvoks9vx237zjr2dg6pu643qqit4w5utlao3ek2d6itjxmqugb26l80woik7ckefjeid43jubw3v8a62aznfr2nm4adxj27lxi4vzxo9c74nk3yo92hy72jjololpyrhicsvtf9aywiwh3vpy08dl35spd53a')",
+        "time" : {
+          "start" : 1635178408795,
+          "stop" : 1635178409769,
+          "duration" : 974
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ServiceName",
+        "value" : "District Functionality Strategist (8eiki52)"
+      }, {
+        "name" : "ServicePrice",
+        "value" : "50"
+      }, {
+        "name" : "ServiceDuration",
+        "value" : "35"
+      }, {
+        "name" : "FirstName",
+        "value" : "StantonIIIDVM"
+      }, {
+        "name" : "LastName",
+        "value" : "FritschVSr."
+      }, {
+        "name" : "ServiceDescription",
+        "value" : "9s1polm5cmi9immo3nt89mweaet4u281atsm4rqozarnx0d880tneh403a8dldsicjpcckhoo4ubxx5ro575hdxn5sb6ndsgr4jrj3x2oej6t6hhzfpzm9n5fb7z3njbzeioa9wq9n3mu2fi14r80e4rtzcgyzsbxn3qtmn7lzdpcmxa75ws8bbtwwli78gnratm7lezna63a9w83e4gp9s7q9mgbu8pzroq9ul47wt290hpr4omlfuppwoymqij3h94rrgnxk24hi6xmd7se6byb0al8wzl5qzj0l3ji4aghc8k825asltfmdoggnrxslfc1y2mcn4r6lmlhorys590djbnbo2ehys2t21mdhp04i6ymtdya6fw5qie0enbydrt28jg47wfunrtlmhi2zztse62seglpmrhudqop7dg5btzkotsj4lts42m7jjjgx0f5k0t4mxrwqnflhpmi65hzafm822npmn60ej99wzdp2fravcna5z5b1wao2frb9zaj21yph0hqsfhjhy79wj47hd77o4gfigfet79alr8baguiuk3sv0372vwknz2jdva4fhde1sptkyi40hu6kofgt59kwxhsm466rfks7swc5hwedacdcl9cwf7fjyg72yn7p1kokihgm1mbbqlq9485kup0fe9vnl2sybma0jg466uqdtu43y66yq3gohe82lelq86vwm6xqwx238ag6d9vgm6rn2rarnrh0yjhi3m2h3yc4upicin8zqs0gnmtvn15snjywn18g6fxe8gyoxol0yb0izpac71xrho9o6lziz2ac5yzk2yndbz3udlfbmq5pur6sy82skw9q5vdkkvwcpmkva6qt50klrw92ptnei10s57i5xwefmasm70a0qwa0022w7xzn6o2aszw2w9k0der2eyrul55l5qqsvnd367j8vy7coyaejz80kqtx13792pnohf7zjg8qhwt3yykc63srpqx7yak77crb25dvhgr4uysyv3fgioecleh2h7y4gi58te9yv2aa371y1bppqywebwbktdrjox9dmx5ln8zgffzi5jgaev36d6ivm8j9xvv5qmev4k0enq3yj2z5atyz2ii5xp4ypmgsh5fch3482lk0zxmlzn32phz99bsxyma59jh6gxcjpf4ldhh25evbgqhq7mfyixjq9bwm7aa5ykxww88sjk9x5892yarquxi6ey33b9wvwpz6emwq9rrcd2p82o1harbxa2jm17sd48cu6xbigvm14xvgcngam7mzsdsmvoks9vx237zjr2dg6pu643qqit4w5utlao3ek2d6itjxmqugb26l80woik7ckefjeid43jubw3v8a62aznfr2nm4adxj27lxi4vzxo9c74nk3yo92hy72jjololpyrhicsvtf9aywiwh3vpy08dl35spd53a"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify service location",
+      "time" : {
+        "start" : 1635178409769,
+        "stop" : 1635178411050,
+        "duration" : 1281
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-service-widget/app-service-location\") should have(text 'Online')",
+        "time" : {
+          "start" : 1635178409769,
+          "stop" : 1635178411050,
+          "duration" : 1281
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ServiceLocation",
+        "value" : "Online"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if payment by cash",
+      "time" : {
+        "start" : 1635178411050,
+        "stop" : 1635178412337,
+        "duration" : 1287
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-service-widget/app-payment-method-viewer\") should have(text 'Cash')",
+        "time" : {
+          "start" : 1635178411050,
+          "stop" : 1635178412337,
+          "duration" : 1287
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if payment online",
+      "time" : {
+        "start" : 1635178412337,
+        "stop" : 1635178414014,
+        "duration" : 1677
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-service-widget/app-payment-method-viewer\") should have(text 'Online payment')",
+        "time" : {
+          "start" : 1635178412738,
+          "stop" : 1635178414014,
+          "duration" : 1276
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check instant booking",
+      "time" : {
+        "start" : 1635178414015,
+        "stop" : 1635178414986,
+        "duration" : 971
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-service-widget\") should have(text 'Ordering of this service will be approved automatically')",
+        "time" : {
+          "start" : 1635178414015,
+          "stop" : 1635178414986,
+          "duration" : 971
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click the 'Date' button to book",
+      "time" : {
+        "start" : 1635178414986,
+        "stop" : 1635178417179,
+        "duration" : 2193
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by text: Order\") click()",
+        "time" : {
+          "start" : 1635178415486,
+          "stop" : 1635178416679,
+          "duration" : 1193
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Select the next day",
+      "time" : {
+        "start" : 1635178417179,
+        "stop" : 1635178419377,
+        "duration" : 2198
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-calendar-component/ion-item/[slot=end]\") click()",
+        "time" : {
+          "start" : 1635178417380,
+          "stop" : 1635178419177,
+          "duration" : 1797
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Pick booking time",
+      "time" : {
+        "start" : 1635178419377,
+        "stop" : 1635178423331,
+        "duration" : 3954
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-calendar-component/with text: 11:00\") scroll into view(true)",
+        "time" : {
+          "start" : 1635178419877,
+          "stop" : 1635178421336,
+          "duration" : 1459
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"app-calendar-component/with text: 11:00\") get wrapped element()",
+          "time" : {
+            "start" : 1635178419877,
+            "stop" : 1635178421008,
+            "duration" : 1131
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"app-calendar-component/with text: 11:00\") click()",
+        "time" : {
+          "start" : 1635178421336,
+          "stop" : 1635178422831,
+          "duration" : 1495
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click the 'Accept and continue' button",
+      "time" : {
+        "start" : 1635178423331,
+        "stop" : 1635178426835,
+        "duration" : 3504
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-date-time-step/by text: Accept and continue\") scroll into view(true)",
+        "time" : {
+          "start" : 1635178423832,
+          "stop" : 1635178424810,
+          "duration" : 978
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"app-date-time-step/by text: Accept and continue\") get wrapped element()",
+          "time" : {
+            "start" : 1635178423832,
+            "stop" : 1635178424487,
+            "duration" : 655
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"app-date-time-step/by text: Accept and continue\") click()",
+        "time" : {
+          "start" : 1635178424810,
+          "stop" : 1635178426335,
+          "duration" : 1525
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click the 'Accept and continue' button",
+      "time" : {
+        "start" : 1635178426835,
+        "stop" : 1635178430337,
+        "duration" : 3502
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-confirmation-step/by text: Accept and continue\") scroll into view(true)",
+        "time" : {
+          "start" : 1635178427336,
+          "stop" : 1635178428314,
+          "duration" : 978
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"app-confirmation-step/by text: Accept and continue\") get wrapped element()",
+          "time" : {
+            "start" : 1635178427336,
+            "stop" : 1635178427990,
+            "duration" : 654
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"app-confirmation-step/by text: Accept and continue\") click()",
+        "time" : {
+          "start" : 1635178428314,
+          "stop" : 1635178429837,
+          "duration" : 1523
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Place the order",
+      "time" : {
+        "start" : 1635178430337,
+        "stop" : 1635178434826,
+        "duration" : 4489
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-order/by text: Place order\") click()",
+        "time" : {
+          "start" : 1635178431337,
+          "stop" : 1635178432826,
+          "duration" : 1489
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click to see order details",
+      "time" : {
+        "start" : 1635178434827,
+        "stop" : 1635178436356,
+        "duration" : 1529
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-sent-order-page/div div a\") click()",
+        "time" : {
+          "start" : 1635178434827,
+          "stop" : 1635178436356,
+          "duration" : 1529
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify the order details",
+      "time" : {
+        "start" : 1635178436356,
+        "stop" : 1635178438659,
+        "duration" : 2303
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-sent-order-page/section\") should have(text 'District Functionality Strategist (8eiki52)')",
+        "time" : {
+          "start" : 1635178437356,
+          "stop" : 1635178438659,
+          "duration" : 1303
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ServiceName",
+        "value" : "District Functionality Strategist (8eiki52)"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click Orders button",
+      "time" : {
+        "start" : 1635178438659,
+        "stop" : 1635178440501,
+        "duration" : 1842
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-sent-order-page/ion-toolbar/ion-item[2]\") click()",
+        "time" : {
+          "start" : 1635178438659,
+          "stop" : 1635178440501,
+          "duration" : 1842
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Simple order check outbox",
+      "time" : {
+        "start" : 1635178440502,
+        "stop" : 1635178444514,
+        "duration" : 4012
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"app-outbox-page\") should have([text 'StantonIIIDVM', text 'District Functionality Strategist (8eiki52)', text '50', text '35'])",
+        "time" : {
+          "start" : 1635178440502,
+          "stop" : 1635178444514,
+          "duration" : 4012
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userFirstName",
+        "value" : "StantonIIIDVM"
+      }, {
+        "name" : "serviceName",
+        "value" : "District Functionality Strategist (8eiki52)"
+      }, {
+        "name" : "servicePrice",
+        "value" : "50"
+      }, {
+        "name" : "serviceTotalDuration",
+        "value" : "35"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1635178446633,
+        "stop" : 1635178447006,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c0cda57cf0ecb89a",
+      "name" : "Screenshot",
+      "source" : "c0cda57cf0ecb89a.png",
+      "type" : "image/png",
+      "size" : 69756
+    }, {
+      "uid" : "41f8be846f429f2b",
+      "name" : "Page source",
+      "source" : "41f8be846f429f2b.html",
+      "type" : "text/plain",
+      "size" : 204005
+    }, {
+      "uid" : "49a5a2f633ad3dcb",
+      "name" : "Browser console logs",
+      "source" : "49a5a2f633ad3dcb.txt",
+      "type" : "text/plain",
+      "size" : 1132
+    }, {
+      "uid" : "ceb2fc3ccdf6332c",
+      "name" : "Video",
+      "source" : "ceb2fc3ccdf6332c.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 66,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:complexTests.PositiveTests]/[method:t00204()]"
+  }, {
+    "name" : "feature",
+    "value" : "Booking"
+  }, {
+    "name" : "story",
+    "value" : "Service booking"
+  }, {
+    "name" : "owner",
+    "value" : "Egor Khlebnikov"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-107"
+  }, {
+    "name" : "thread",
+    "value" : "3935@fv-az74-107.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00204"
+  }, {
+    "name" : "suite",
+    "value" : "complexTests.PositiveTests"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "owner" : "Egor Khlebnikov",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da6f688224b40395.json",
+  "parameterValues" : [ ]
+}
