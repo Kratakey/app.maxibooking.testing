@@ -8,7 +8,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.*;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
@@ -32,12 +31,12 @@ public class TestBase extends TestData {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.browserSize = "1920x1080";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 
         Configuration.timeout = 10000;
 
-        Configuration.startMaximized = true;
-//        Configuration.headless = true;
+//        Configuration.startMaximized = true;
+        Configuration.headless = true;
 
         setTestData();
 
