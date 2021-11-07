@@ -51,8 +51,8 @@ public class TestBase extends TestData {
 
         Configuration.timeout = 10000;
 
-        Configuration.startMaximized = true;
-//        Configuration.headless = true;
+//        Configuration.startMaximized = true;
+        Configuration.headless = true;
 
         setTestData();
     }
