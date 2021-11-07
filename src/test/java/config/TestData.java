@@ -1,7 +1,9 @@
 package config;
 
 import com.github.javafaker.Faker;
+import pages.*;
 
+import java.time.LocalDate;
 import java.util.Locale;
 
 import static java.lang.Long.parseLong;
@@ -87,13 +89,26 @@ public class TestData {
             user10PatronymicNew,
             user10PhoneNumberNew,
             user10CountryNew,
+            user10Region,
+            user10RegionNew,
+            user10SubregionNew,
             user10CityNew,
+            user10DistrictNew,
+            user10ZipCodeNew,
+            user10AddressNew,
+            user10Country2,
+            user10Region2,
+            user10Subregion2,
+            user10City2,
+            user10District2,
+            user10ZipCode2,
+            user10Address2,
             user10dateDD,
             user10dateMM,
             user10dateYYYY,
             user10Nationality,
-            user10Langage1,
-            user10Langage2,
+            user10Language1,
+            user10Language2,
             user11FirstName,
             user11LastName,
             user11PhoneNumber,
@@ -166,9 +181,27 @@ public class TestData {
             masterComment,
             testMessage1,
             testMessage2,
-            empty;
+            empty,
+            nextDay,
+            nextDayPlus;
+
+    public static Integer
+            nextDayInt,
+            nextDayPlusInt;
 
     public static void setTestData() {
+
+        LocalDate currentDate = LocalDate.now();
+        int day = currentDate.getDayOfMonth();
+        nextDayInt = day + 1;
+        if (nextDayInt >= 28) {
+            nextDayInt = 1;
+        } else {
+            nextDay = Integer.toString(nextDayInt);
+        }
+        nextDayPlusInt = nextDayInt + 1;
+        nextDayPlus = Integer.toString(nextDayPlusInt);
+
         Faker generate = new Faker(new Locale("en-US"));
         empty = " ";
         testUser1 = generate.name().username() + "@uu.dd";
@@ -256,7 +289,7 @@ public class TestData {
         service1Description = generate.lorem().characters(20, 2000);
         service1DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service1DurationHours = String.valueOf(generate.number().numberBetween(0, 1));
-        service1DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
+        service1DurationMinutes = String.valueOf(generate.number().numberBetween(15, 45));
         service1Price = String.valueOf(generate.number().numberBetween(1, 999));
         service1Specialization = generate.job().title() + " " + generate.ancient().god();
         service1Country = "Russia";
@@ -268,7 +301,7 @@ public class TestData {
         service2Description = generate.lorem().characters(20, 2000);
         service2DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service2DurationHours = String.valueOf(generate.number().numberBetween(0, 1));
-        service2DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
+        service2DurationMinutes = String.valueOf(generate.number().numberBetween(15, 45));
         service2Price = String.valueOf(generate.number().numberBetween(1, 999));
         service2Specialization = generate.job().title() + " " + generate.ancient().hero();
         service2Country = "Russia";
@@ -280,7 +313,7 @@ public class TestData {
         service3Description = generate.lorem().characters(20, 2000);
         service3DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service3DurationHours = String.valueOf(generate.number().numberBetween(0, 1));
-        service3DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
+        service3DurationMinutes = String.valueOf(generate.number().numberBetween(15, 45));
         service3Price = String.valueOf(generate.number().numberBetween(1, 999));
         service3Specialization = generate.job().title() + " " + generate.ancient().titan();
         service3Country = "Russia";
@@ -292,7 +325,7 @@ public class TestData {
         service4Description = generate.lorem().characters(20, 2000);
         service4DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service4DurationHours = String.valueOf(generate.number().numberBetween(0, 1));
-        service4DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
+        service4DurationMinutes = String.valueOf(generate.number().numberBetween(15, 45));
         service4Price = String.valueOf(generate.number().numberBetween(1, 999));
         service4Specialization = generate.job().title() + " " + generate.ancient().primordial();
         service4Country = "Russia";
@@ -304,7 +337,7 @@ public class TestData {
         service7Description = generate.rickAndMorty().quote() + " " + generate.dune().quote();
         service7DurationDays = String.valueOf(generate.number().numberBetween(0, 0));
         service7DurationHours = String.valueOf(generate.number().numberBetween(0, 1));
-        service7DurationMinutes = String.valueOf(generate.number().numberBetween(0, 59));
+        service7DurationMinutes = String.valueOf(generate.number().numberBetween(15, 45));
         service7Price = String.valueOf(generate.number().numberBetween(1, 999));
         service7Specialization = generate.job().title() + " " + generate.name().suffix();
         service7Country = "Finland";
@@ -333,16 +366,32 @@ public class TestData {
         testPassword10New = generate.internet().password() + "New";
         user10FirstNameNew = generate.name().firstName() + "New";
         user10LastNameNew = generate.name().lastName() + "New";
-        user10PatronymicNew = generate.name().title() + "New";
+        user10PatronymicNew = generate.name().username() + "New";
         user10PhoneNumberNew = "964" + generate.number().digits(7);
+
         user10CountryNew = "Russia";
+        user10Region = "Moscow";
+        user10RegionNew = "St.-Petersburg";
+        user10SubregionNew = "Petrogradskiy Rayon";
         user10CityNew = "Saint Petersburg";
+        user10DistrictNew = "Petrogradka";
+        user10ZipCodeNew = "197101";
+        user10AddressNew = "Каменноостровский пр., 38/96";
+
+        user10Country2 = "Canada";
+        user10Region2 = "Ontario";
+        user10Subregion2 = "Toronto country";
+        user10City2 = "Toronto";
+        user10District2 = "Etobicoke";
+        user10ZipCode2 = "M9A";
+        user10Address2 = "8 Orkney Crescent";
+
         user10dateDD = Long.toString(generate.number().numberBetween(10, 28));
         user10dateMM = Long.toString(generate.number().numberBetween(10, 12));
         user10dateYYYY = Long.toString(generate.number().numberBetween(1950, 2005));
         user10Nationality = "Iceland";
-        user10Langage1 = "Arabic";
-        user10Langage2 = "Irish";
+        user10Language1 = "Arabic";
+        user10Language2 = "Irish";
 
         long service1DurationDaysLong = parseLong(service1DurationDays),
                 service1DurationHoursLong = parseLong(service1DurationHours),

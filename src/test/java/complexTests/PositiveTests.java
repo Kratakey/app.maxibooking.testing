@@ -7,18 +7,6 @@ import pages.*;
 
 public class PositiveTests extends config.TestBase {
 
-    Registration reg = new Registration();
-    ServicePublish pbl = new ServicePublish();
-    Booking bkn = new Booking();
-    Orders ord = new Orders();
-    Messages msg = new Messages();
-    Favorites fav = new Favorites();
-    Reviews rev = new Reviews();
-    Search sch = new Search();
-    LogIn log = new LogIn();
-    UserProfile uprof = new UserProfile();
-    MasterProfile mprof = new MasterProfile();
-
     @Test
     @Feature("User Registration")
     @Owner("Egor Khlebnikov")
@@ -339,7 +327,7 @@ public class PositiveTests extends config.TestBase {
     @Owner("Egor Khlebnikov")
     @Story("Minimal service publication")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Basic positive service publishing, service location: Online(2)")
+    @DisplayName("Basic positive service publishing, service location: Online (2)")
     void t00103() {
 
         log.popupSkip();
@@ -403,6 +391,7 @@ public class PositiveTests extends config.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
+        bkn.pickDateToday();
         bkn.clickNextDay();
         bkn.bookTime();
         bkn.clickForward();
@@ -440,6 +429,7 @@ public class PositiveTests extends config.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
+        bkn.pickDateToday();
         bkn.clickNextDay();
         bkn.bookTime();
         bkn.clickForward();
@@ -477,6 +467,7 @@ public class PositiveTests extends config.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
+        bkn.pickDateToday();
         bkn.clickNextDay();
         bkn.bookTime();
         bkn.clickForward();
@@ -513,6 +504,7 @@ public class PositiveTests extends config.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
+        bkn.pickDateToday();
         bkn.clickNextDay();
         bkn.clickNextDay();
         bkn.bookTime();
@@ -549,6 +541,7 @@ public class PositiveTests extends config.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
+        bkn.pickDateToday();
         bkn.clickNextDay();
         bkn.bookTime();
         bkn.clickForward();
@@ -774,7 +767,7 @@ public class PositiveTests extends config.TestBase {
         ord.openOrderPageTopEN();
         ord.tabArchivedOrdersOutbox();
         ord.clickProfessionalsName();
-        mprof.clickChat();
+        pp.clickChat();
         msg.sendMessage(testMessage1);
         msg.checkMessage(testMessage1);
     }
@@ -925,13 +918,15 @@ public class PositiveTests extends config.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
-        bkn.clickNextDay();
-        bkn.clickNextDay();
-        bkn.bookTime();
-        bkn.clickForward();
 
         log.refreshPage();
         log.popupSkip();
+
+        bkn.pickDateNext2Days();
+        bkn.bookTime();
+        bkn.clickForward();
+
+
 
         bkn.selectNewUser();
         bkn.clickAccept();
@@ -974,14 +969,13 @@ public class PositiveTests extends config.TestBase {
         bkn.verifyServicePaymentOnline();
         bkn.verifyInstantBooking();
         bkn.clickDate();
-        bkn.clickNextDay();
-        bkn.clickNextDay();
-        bkn.clickNextDay();
-        bkn.bookTime();
-        bkn.clickForward();
 
         log.refreshPage();
         log.popupSkip();
+
+        bkn.pickDateNext2Days();
+        bkn.bookTime();
+        bkn.clickForward();
 
         bkn.selectNewUser();
         bkn.clickAccept();
